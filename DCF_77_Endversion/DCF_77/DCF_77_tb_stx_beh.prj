@@ -1,0 +1,2 @@
+vhdl isim_temp "DCF_77_Decoder.vhd"
+vhdl isim_temp "DCF_77_tb.vhd"

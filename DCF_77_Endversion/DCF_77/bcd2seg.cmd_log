@@ -1,0 +1,2 @@
+vhdtdtfi -lib work bcd2seg.vhd -prj DCF_77 -o bcd2seg.spl -module bcd2seg -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w bcd2seg.spl C:/Users/Daniel/Dropbox/Ramsch/New_77/DCF_77/bcd2seg.sym 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work lcd_exnor.vhd -prj DCF_77 -o lcd_exnor.spl -module lcd_exnor -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w lcd_exnor.spl U:/Desktop/DCF_77_noreset/DCF_77/lcd_exnor.sym 

@@ -1,0 +1,1078 @@
+MODELDATA
+MODELDATA_VERSION "v1998.8"
+DESIGN "Top_Schema";
+
+/* port drive, load, max capacitance and max transition in data file */
+PORTDATA
+DIP4: MAXTRANS(0.0);
+SW1: MAXTRANS(0.0);
+clk: MAXTRANS(0.0);
+dcf_77: MAXTRANS(0.0);
+DS1<0>: MAXTRANS(0.0);
+DS1<1>: MAXTRANS(0.0);
+DS1<2>: MAXTRANS(0.0);
+DS1<3>: MAXTRANS(0.0);
+DS1<4>: MAXTRANS(0.0);
+DS1<5>: MAXTRANS(0.0);
+DS1<6>: MAXTRANS(0.0);
+DS1_dp: MAXTRANS(0.0);
+DS2<0>: MAXTRANS(0.0);
+DS2<1>: MAXTRANS(0.0);
+DS2<2>: MAXTRANS(0.0);
+DS2<3>: MAXTRANS(0.0);
+DS2<4>: MAXTRANS(0.0);
+DS2<5>: MAXTRANS(0.0);
+DS2<6>: MAXTRANS(0.0);
+DS2_dp: MAXTRANS(0.0);
+DS3<0>: MAXTRANS(0.0);
+DS3<1>: MAXTRANS(0.0);
+DS3<2>: MAXTRANS(0.0);
+DS3<3>: MAXTRANS(0.0);
+DS3<4>: MAXTRANS(0.0);
+DS3<5>: MAXTRANS(0.0);
+DS3<6>: MAXTRANS(0.0);
+DS3_dp: MAXTRANS(0.0);
+DS4<0>: MAXTRANS(0.0);
+DS4<1>: MAXTRANS(0.0);
+DS4<2>: MAXTRANS(0.0);
+DS4<3>: MAXTRANS(0.0);
+DS4<4>: MAXTRANS(0.0);
+DS4<5>: MAXTRANS(0.0);
+DS4<6>: MAXTRANS(0.0);
+DS4_dp: MAXTRANS(0.0);
+DS5<0>: MAXTRANS(0.0);
+DS5<1>: MAXTRANS(0.0);
+DS5<2>: MAXTRANS(0.0);
+DS5<3>: MAXTRANS(0.0);
+DS5<4>: MAXTRANS(0.0);
+DS5<5>: MAXTRANS(0.0);
+DS5<6>: MAXTRANS(0.0);
+DS5_dp: MAXTRANS(0.0);
+DS6<0>: MAXTRANS(0.0);
+DS6<1>: MAXTRANS(0.0);
+DS6<2>: MAXTRANS(0.0);
+DS6<3>: MAXTRANS(0.0);
+DS6<4>: MAXTRANS(0.0);
+DS6<5>: MAXTRANS(0.0);
+DS6<6>: MAXTRANS(0.0);
+LED1: MAXTRANS(0.0);
+LED2: MAXTRANS(0.0);
+LED3: MAXTRANS(0.0);
+LED4: MAXTRANS(0.0);
+LED5: MAXTRANS(0.0);
+LED6: MAXTRANS(0.0);
+cln1: MAXTRANS(0.0);
+cln2: MAXTRANS(0.0);
+com: MAXTRANS(0.0);
+phase_n: MAXTRANS(0.0);
+ENDPORTDATA
+
+/* timing arc data */
+TIMINGDATA
+
+ARCDATA
+DIP4_DS1<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS1<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS1<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS1<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS1<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS1<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS1<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS2<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS2<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS2<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS2<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS2<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS2<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS2<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS3<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS3<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS3<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS3<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS3<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS3<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS3<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS4<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS4<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS4<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS4<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS4<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS4<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS4<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS5<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS5<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS5<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS5<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS5<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS5<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS5<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS6<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS6<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS6<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS6<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS6<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS6<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+DIP4_DS6<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("6");
+}
+CELL_FALL(scalar) {
+  VALUES("6");
+}
+ENDARCDATA
+
+ARCDATA
+dcf_77_LED2_delay:
+CELL_RISE(scalar) {
+  VALUES("5.7");
+}
+CELL_FALL(scalar) {
+  VALUES("5.7");
+}
+ENDARCDATA
+
+ARCDATA
+clk_LED3_delay:
+CELL_RISE(scalar) {
+  VALUES("5.7");
+}
+CELL_FALL(scalar) {
+  VALUES("5.7");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS1_dp_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS2_dp_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("7.5");
+}
+CELL_FALL(scalar) {
+  VALUES("7.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("7.5");
+}
+CELL_FALL(scalar) {
+  VALUES("7.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("7.5");
+}
+CELL_FALL(scalar) {
+  VALUES("7.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS3_dp_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS4_dp_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("7.5");
+}
+CELL_FALL(scalar) {
+  VALUES("7.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS5_dp_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS6<0>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS6<1>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS6<2>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS6<3>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS6<4>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS6<5>_delay:
+CELL_RISE(scalar) {
+  VALUES("14");
+}
+CELL_FALL(scalar) {
+  VALUES("14");
+}
+ENDARCDATA
+
+ARCDATA
+clk_DS6<6>_delay:
+CELL_RISE(scalar) {
+  VALUES("11");
+}
+CELL_FALL(scalar) {
+  VALUES("11");
+}
+ENDARCDATA
+
+ARCDATA
+clk_LED1_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_LED4_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_LED5_delay:
+CELL_RISE(scalar) {
+  VALUES("7.2");
+}
+CELL_FALL(scalar) {
+  VALUES("7.2");
+}
+ENDARCDATA
+
+ARCDATA
+clk_LED6_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_cln1_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_cln2_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_com_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+clk_phase_n_delay:
+CELL_RISE(scalar) {
+  VALUES("4.5");
+}
+CELL_FALL(scalar) {
+  VALUES("4.5");
+}
+ENDARCDATA
+
+ARCDATA
+SW1_clk_setup:
+CONSTRAINT(scalar) {
+  VALUES("4");
+}
+ENDARCDATA
+
+ARCDATA
+SW1_clk_hold:
+CONSTRAINT(scalar) {
+  VALUES("-2.3");
+}
+ENDARCDATA
+
+ENDTIMINGDATA
+ENDMODELDATA

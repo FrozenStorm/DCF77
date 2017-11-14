@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Fabian/Desktop/DCF_77/Top_Schema.xst" -ofn "C:/Users/Fabian/Desktop/DCF_77/Top_Schema.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc clock_top.ucf -p xc2c256-VQ100-6 Top_Schema.ngc Top_Schema.ngd  
+cpldfit -intstyle ise -p xc2c256-6-VQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 Top_Schema.ngd 
+XSLTProcess Top_Schema_build.xml 
+tsim -intstyle ise Top_Schema Top_Schema.nga 
+taengine -intstyle ise -f Top_Schema -w --format html1 -l Top_Schema_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i Top_Schema 

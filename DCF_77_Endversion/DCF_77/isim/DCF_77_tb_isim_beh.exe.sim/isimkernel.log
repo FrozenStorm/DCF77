@@ -1,0 +1,29 @@
+Command line:
+   DCF_77_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2136
+
+Sat Jun 06 09:58:43 2015
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 663.368 Meg
+
+ Total Signals          : 50
+ Total Nets             : 266
+ Total Signal Drivers   : 36
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 640
+Total Line Count : 86
+
+ Total Simulation Time: 0.702004 sec
+
+ Current Memory Usage: 663.368 Meg
+
+Sat Jun 06 12:23:46 2015
+

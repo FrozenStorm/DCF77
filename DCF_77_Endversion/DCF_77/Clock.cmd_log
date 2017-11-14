@@ -1,0 +1,11 @@
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl Clock_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77/Clock.sch 
+sch2sym -intstyle ise -family xbr -w -refsym Clock C:/Users/Fabian/Desktop/DCF_77/Clock.sch C:/Users/Fabian/Desktop/DCF_77/Clock.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl Clock_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77/Clock.sch 
+sch2sym -intstyle ise -family xbr -w -refsym Clock C:/Users/Fabian/Desktop/DCF_77/Clock.sch C:/Users/Fabian/Desktop/DCF_77/Clock.sym 
+sch2sym -intstyle ise -family xbr -w -refsym Clock C:/Users/Fabian/Desktop/DCF_77/Clock.sch C:/Users/Fabian/Desktop/DCF_77/Clock.sym 
+sch2sym -intstyle ise -family xbr -w -refsym Clock C:/Users/Fabian/Desktop/DCF_77/Clock.sch C:/Users/Fabian/Desktop/DCF_77/Clock.sym 
+sch2sym -intstyle ise -family xbr -w -refsym Clock C:/Users/Fabian/Desktop/DCF_77/Clock.sch C:/Users/Fabian/Desktop/DCF_77/Clock.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl Clock_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77_timing_opt/DCF_77/Clock.sch 
+sch2sym -intstyle ise -family xbr -w -refsym Clock C:/Users/Fabian/Desktop/DCF_77_timing_opt/DCF_77/Clock.sch C:/Users/Fabian/Desktop/DCF_77_timing_opt/DCF_77/Clock.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl Clock_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77/Clock.sch 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl Clock_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77/Clock.sch 

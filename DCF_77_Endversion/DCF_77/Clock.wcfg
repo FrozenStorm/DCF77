@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Fabian/Desktop/DCF_77/display_module_display_module_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="display_module_display_module_sch_tb" />
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/display_module_display_module_sch_tb/seq3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seq3[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seq3[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/seq5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seq5[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seq5[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/seq4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seq4[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seq4[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/seq2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seq2[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seq2[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/seq1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seq1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seq1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/seq0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seq0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">seq0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/sel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/day_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">day_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">day_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/sec_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sec_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/month_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">month_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">month_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/hour_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hour_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/year_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">year_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">year_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/min_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">min_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/month_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">month_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">month_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/min_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">min_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/hour_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hour_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/year_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">year_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">year_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/sec_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sec_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/day_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">day_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">day_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/UUT/cln1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cln1</obj_property>
+      <obj_property name="ObjectShortName">cln1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/UUT/cln2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cln2</obj_property>
+      <obj_property name="ObjectShortName">cln2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/UUT/ds1_dp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ds1_dp</obj_property>
+      <obj_property name="ObjectShortName">ds1_dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/UUT/ds2_dp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ds2_dp</obj_property>
+      <obj_property name="ObjectShortName">ds2_dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/UUT/ds3_dp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ds3_dp</obj_property>
+      <obj_property name="ObjectShortName">ds3_dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/UUT/ds4_dp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ds4_dp</obj_property>
+      <obj_property name="ObjectShortName">ds4_dp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/display_module_display_module_sch_tb/UUT/phase_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">phase_n</obj_property>
+      <obj_property name="ObjectShortName">phase_n</obj_property>
+   </wvobject>
+</wave_config>

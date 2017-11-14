@@ -1,0 +1,314 @@
+
+----------------------------------------
+|  P a r t i t i o n    S u c c e e d  |
+----------------------------------------
+0 Group(s)
+
+GCLK0: 5=clk.p
+----------------- B l o c k 0 ------------------
+PLApt(55/56), Fanin(38/38), Clk(1/3), Bct(1/4), Pin(2/5), Mcell(14/16)
+PLApts[55/56] 240 244 557 561 871 252 569 15 19 375 480 505 507 899 508 905 926 949 970 376 1160 1185 1434 1683 514 1 518 520 597 527 533 584 535 545 575 549 550 540 580 582 522 583 589 1 593 595 601 608 610 899 380 382 509 373 () 500
+Fanins[38] DS1_dp.n N_PZ_1458.n N_PZ_1498.n N_PZ_1517.n N_PZ_749.n XLXI_83/Mxor_sync_next_xor0000__xor0000.n XLXI_83/Mxor_sync_next_xor0000__xor0001.n XLXI_83/Mxor_sync_next_xor0002__xor0000.n XLXI_83/Mxor_sync_next_xor0002__xor0001.n XLXI_83/data<2>.n XLXI_83/data<38>.n XLXI_83/data<3>.n XLXI_83/data<4>.n XLXI_83/data<58>.n XLXI_83/data<5>.n XLXI_83/data<6>.n XLXI_83/data<7>.n XLXI_83/data<8>.n XLXI_83/data_not0001.n XLXI_83/mean<1>.n XLXI_83/mean<2>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXI_83/zero_time<6>.n XLXN_176<0>.n XLXN_176<1>.n XLXN_176<2>.n XLXN_176<3>.n XLXN_217<0>.n XLXN_217<1>.n XLXN_217<2>.n XLXN_217<3>.n XLXN_218<0>.n XLXN_218<1>.n XLXN_218<2>.n XLXN_238.n reset_n.p time_date_select.p
+clk[1] clk 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[14] [DS6<1>(112),DS6<1>(96)] [DS6<2>(106),DS6<2>(97)] [XLXN_217<0>(116)] [XLXN_217<1>(115)]  
+           [XLXN_217<2>(111)] [XLXN_217<3>(110)] [XLXN_218<0>(109)] [XLXN_218<1>(108)] [XLXN_218<2>(107)]  
+           [N_PZ_797(105)] [XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001(104)]  
+           [XLXI_83/data<4>(102)] [XLXI_75/clkCnt<0>(101)] [XLXI_83/data<39>(114)] 
+Signal[14] [ 0: XLXI_75/clkCnt<0>(101)  ][ 1: XLXI_83/data<4>(102)  ][ 2: (99)  ][ 3:  
+           XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001(104)  ][ 4: N_PZ_797(105)  ] 
+           [ 5: DS6<2>(106) DS6<2>(97)  ][ 6: XLXN_218<2>(107)  ][ 7: XLXN_218<1>(108)  ][ 8:  
+           XLXN_218<0>(109)  ][ 9: XLXN_217<3>(110)  ][ 10: XLXN_217<2>(111)  ][ 11: DS6<1>(112) DS6<1>(96)  
+            ][ 12: (95)  ][ 13: XLXI_83/data<39>(114) (94)  ][ 14: XLXN_217<1>(115)  ][ 15: XLXN_217<0>(116)  
+            ]
+----------------- B l o c k 1 ------------------
+PLApt(56/56), Fanin(38/38), Clk(1/3), Bct(0/4), Pin(6/6), Mcell(13/16)
+PLApts[56/56] 886 265 273 283 630 638 648 238 246 256 1 555 563 573 133 261 1 269 613 626 634 118 1 234 242 538 551 559 881 279 644 883 390 392 884 395 399 889 401 405 887 408 410 1 1004 1005 990 1006 1007 1 1016 1017 1 1018 1019 343
+Fanins[38] DS1_dp.n XLXI_75/clkCnt<0>.n XLXI_75/clkCnt<10>.n XLXI_75/clkCnt<1>.n XLXI_75/clkCnt<2>.n XLXI_75/clkCnt<3>.n XLXI_75/clkCnt<4>.n XLXI_75/clkCnt<5>.n XLXI_75/clkCnt<6>.n XLXI_75/clkCnt<8>.n XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001.n XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000.n XLXI_83/data<0>.n XLXI_83/data<10>.n XLXI_83/data<1>.n XLXI_83/data<2>.n XLXI_83/data<6>.n XLXI_83/data<7>.n XLXI_83/data<8>.n XLXI_83/data<9>.n XLXN_176<0>.n XLXN_176<1>.n XLXN_176<2>.n XLXN_176<3>.n XLXN_217<0>.n XLXN_217<1>.n XLXN_217<2>.n XLXN_217<3>.n XLXN_218<0>.n XLXN_218<1>.n XLXN_218<2>.n XLXN_218<3>.n XLXN_238.n XLXN_83<0>.n XLXN_83<1>.n XLXN_83<2>.n XLXN_83<3>.n time_date_select.p
+clk[1] clk 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [DS5_dp(121),DS5_dp(3)] [DS5<3>(130),DS5<3>(6)] [DS6<3>(117),DS6<3>(1)] [DS5<4>(131),DS5<4>(7)]  
+           [DS6<4>(119),DS6<4>(2)] [DS5<2>(128),DS5<2>(4)]  
+           [XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000(132)]  
+           [XLXI_83/Mxor_sync_next_xor0002__xor0000(129)] [XLXI_75/clkCnt<10>(127)]  
+           [XLXI_75/clkCnt<11>(126)] [XLXI_75/clkCnt<8>(125)] [XLXN_238(124)] [XLXI_75/clkCnt<6>(123)] 
+Signal[13] [ 0: DS6<3>(117) DS6<3>(1)  ][ 1:  ][ 2: DS6<4>(119) DS6<4>(2)  ][ 3:  ][ 4: DS5_dp(121)  
+           DS5_dp(3)  ][ 5:  ][ 6: XLXI_75/clkCnt<6>(123)  ][ 7: XLXN_238(124)  ][ 8: XLXI_75/clkCnt<8>(125)  
+            ][ 9: XLXI_75/clkCnt<11>(126)  ][ 10: XLXI_75/clkCnt<10>(127)  ][ 11: DS5<2>(128) DS5<2>(4)  ] 
+           [ 12: XLXI_83/Mxor_sync_next_xor0002__xor0000(129)  ][ 13: DS5<3>(130) DS5<3>(6)  ][ 14:  
+           DS5<4>(131) DS5<4>(7)  ][ 15: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000(132)  ]
+----------------- B l o c k 2 ------------------
+PLApt(56/56), Fanin(37/38), Clk(0/3), Bct(1/4), Pin(1/4), Mcell(11/16)
+PLApts[56/56] 15 19 375 480 871 619 624 625 905 926 949 970 1160 353 1185 1434 778 1683 654 765 657 658 663 668 670 756 676 683 737 685 694 725 699 700 690 731 734 672 736 742 659 747 751 760 763 764 650 769 774 776 782 789 615 791 357 359
+Fanins[37] N_PZ_1458.n N_PZ_1498.n N_PZ_1517.n N_PZ_749.n XLXI_83/Mxor_sync_next_xor0000__xor0000.n XLXI_83/Mxor_sync_next_xor0000__xor0001.n XLXI_83/Mxor_sync_next_xor0002__xor0000.n XLXI_83/Mxor_sync_next_xor0002__xor0001.n XLXI_83/data<11>.n XLXI_83/data<12>.n XLXI_83/data<13>.n XLXI_83/data<17>.n XLXI_83/data<18>.n XLXI_83/data<19>.n XLXI_83/data<1>.n XLXI_83/data<20>.n XLXI_83/data<21>.n XLXI_83/data<22>.n XLXI_83/data<38>.n XLXI_83/data<58>.n XLXI_83/mean<1>.n XLXI_83/mean<2>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXI_83/zero_time<6>.n XLXN_218<3>.n XLXN_238.n XLXN_88<0>.n XLXN_88<1>.n XLXN_88<2>.n XLXN_88<3>.n XLXN_89<0>.n XLXN_89<1>.n XLXN_90<0>.n XLXN_90<1>.n XLXN_90<2>.n reset_n.p
+clk[0] 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[12] [dcf_77(92)] [XLXN_218<3>(147)] [XLXN_88<0>(145)] [XLXN_88<1>(143)] [XLXN_88<2>(142)]  
+           [XLXN_88<3>(141)] [XLXN_89<0>(140)] [XLXN_89<1>(139)] [XLXN_90<0>(138)] [XLXN_90<1>(136)]  
+           [XLXN_90<2>(135)] [XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000(134)] 
+Signal[12] [ 0:  ][ 1: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000(134)  ][ 2:  
+           XLXN_90<2>(135)  ][ 3: XLXN_90<1>(136)  ][ 4: (93)  ][ 5: XLXN_90<0>(138)  ][ 6: XLXN_89<1>(139)  
+            ][ 7: XLXN_89<0>(140)  ][ 8: XLXN_88<3>(141)  ][ 9: XLXN_88<2>(142)  ][ 10: XLXN_88<1>(143)  ] 
+           [ 11: dcf_77(92)  ][ 12: XLXN_88<0>(145)  ][ 13: (91)  ][ 14: XLXN_218<3>(147)  ][ 15: (90)  ]
+----------------- B l o c k 3 ------------------
+PLApt(55/56), Fanin(38/38), Clk(1/3), Bct(1/4), Pin(6/6), Mcell(15/16)
+PLApts[55/56] 886 293 301 311 871 811 819 829 150 289 297 794 807 1 815 307 1 825 337 6 9 96 1 98 99 1 1054 1083 1084 1085 1086 868 1087 1091 869 1092 1093 873 1094 1095 875 1096 1097 877 1098 1039 2 1044 1049 879 1050 16 1035 22 () 104
+Fanins[38] DS1_dp.n N_PZ_797.n N_PZ_834.n N_PZ_925.n XLXI_75/clkCnt<0>.n XLXI_75/clkCnt<1>.n XLXI_75/clkCnt<2>.n XLXI_75/clkCnt<3>.n XLXI_75/clkCnt<4>.n XLXI_75/clkCnt<5>.n XLXI_75/clkCnt<6>.n XLXI_75/clkCnt<8>.n XLXI_83/max_holder<0>.n XLXI_83/max_holder<1>.n XLXI_83/max_holder<2>.n XLXI_83/max_holder<3>.n XLXI_83/max_holder<4>.n XLXI_83/mean<0>.n XLXI_83/mean<1>.n XLXI_83/mean<2>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXN_163.n XLXN_238.n XLXN_84<0>.n XLXN_84<1>.n XLXN_84<2>.n XLXN_84<3>.n XLXN_85<0>.n XLXN_85<1>.n XLXN_85<2>.n XLXN_85<3>.n XLXN_90<0>.n XLXN_90<1>.n XLXN_90<2>.n XLXN_90<3>.n reset_n.p time_date_select.p
+clk[1] clk 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[15] [DS3_dp(154),DS3_dp(12)] [DS4<3>(151),DS4<3>(10)] [DS4<4>(153),DS4<4>(11)]  
+           [DS4<2>(150),DS4<2>(9)] [DS3<2>(161),DS3<2>(13)] [DS4_dp(149),DS4_dp(8)]  
+           [XLXI_83/max_holder<0>(164)] [XLXI_83/data_not0001(163)] [XLXI_75/clkCnt<5>(162)]  
+           [XLXI_75/clkCnt<4>(160)] [XLXI_75/clkCnt<3>(159)] [XLXI_75/clkCnt<2>(158)]  
+           [XLXI_75/clkCnt<1>(157)] [N_PZ_738(156)] [N_PZ_925(155)] 
+Signal[15] [ 0: DS4_dp(149) DS4_dp(8)  ][ 1: DS4<2>(150) DS4<2>(9)  ][ 2: DS4<3>(151) DS4<3>(10)  ][ 3:  ] 
+           [ 4: DS4<4>(153) DS4<4>(11)  ][ 5: DS3_dp(154) DS3_dp(12)  ][ 6: N_PZ_925(155)  ][ 7:  
+           N_PZ_738(156)  ][ 8: XLXI_75/clkCnt<1>(157)  ][ 9: XLXI_75/clkCnt<2>(158)  ][ 10:  
+           XLXI_75/clkCnt<3>(159)  ][ 11: XLXI_75/clkCnt<4>(160)  ][ 12: DS3<2>(161) DS3<2>(13)  ][ 13:  
+           XLXI_75/clkCnt<5>(162)  ][ 14: XLXI_83/data_not0001(163)  ][ 15: XLXI_83/max_holder<0>(164)  ]
+----------------- B l o c k 4 ------------------
+PLApt(56/56), Fanin(38/38), Clk(0/3), Bct(1/4), Pin(1/2), Mcell(15/16)
+PLApts[56/56] 15 19 375 480 871 800 805 806 905 926 899 949 970 899 1160 1185 899 1434 1683 837 839 841 899 467 471 899 474 476 899 420 424 899 427 429 899 439 443 899 446 448 991 992 996 435 999 1001 416 388 343 432 417 418 831 419 433 796
+Fanins[38] N_PZ_1458.n N_PZ_1498.n N_PZ_1517.n N_PZ_749.n XLXI_83/Mxor_sync_next_xor0000__xor0000.n XLXI_83/Mxor_sync_next_xor0000__xor0001.n XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000.n XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001.n XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000.n XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001.n XLXI_83/Mxor_sync_next_xor0002__xor0000.n XLXI_83/Mxor_sync_next_xor0002__xor0001.n XLXI_83/data<10>.n XLXI_83/data<30>.n XLXI_83/data<38>.n XLXI_83/data<58>.n XLXI_83/data<9>.n XLXI_83/data_not0001.n XLXI_83/mean<1>.n XLXI_83/mean<2>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXI_83/zero_time<6>.n XLXN_238.n XLXN_75<0>.n XLXN_75<1>.n XLXN_75<2>.n XLXN_75<3>.n XLXN_76<0>.n XLXN_76<1>.n XLXN_76<2>.n XLXN_77<0>.n XLXN_77<1>.n XLXN_77<2>.n XLXN_77<3>.n XLXN_90<3>.n XLXN_91<0>.n reset_n.p
+clk[0] 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [clk(22)] [XLXN_90<3>(180)] [XLXN_91<0>(179)] [XLXI_83/Mxor_sync_next_xor0000__xor0000(178)]  
+           [XLXI_83/Mxor_sync_next_xor0000__xor0001(177)] [XLXI_83/Mxor_sync_next_xor0001__xor0001(176)]  
+           [XLXI_83/Mxor_sync_next_xor0002__xor0001(175)] [XLXI_83/data<30>(174)] [XLXI_83/data<38>(173)]  
+           [XLXN_75<3>(172)] [XLXI_83/data<10>(171)] [XLXI_83/data<11>(169)] [XLXN_75<0>(167)]  
+           [XLXN_75<1>(166)] [XLXN_75<2>(165)] [XLXN_76<0>(170)] 
+Signal[16] [ 0: XLXN_75<2>(165)  ][ 1: XLXN_75<1>(166)  ][ 2: XLXN_75<0>(167)  ][ 3: (23)  ][ 4:  
+           XLXI_83/data<11>(169)  ][ 5: XLXN_76<0>(170) clk(22)  ][ 6: XLXI_83/data<10>(171)  ][ 7:  
+           XLXN_75<3>(172)  ][ 8: XLXI_83/data<38>(173)  ][ 9: XLXI_83/data<30>(174)  ][ 10:  
+           XLXI_83/Mxor_sync_next_xor0002__xor0001(175)  ][ 11: XLXI_83/Mxor_sync_next_xor0001__xor0001(176)  
+            ][ 12: XLXI_83/Mxor_sync_next_xor0000__xor0001(177)  ][ 13:  
+           XLXI_83/Mxor_sync_next_xor0000__xor0000(178)  ][ 14: XLXN_91<0>(179)  ][ 15: XLXN_90<3>(180)  ]
+----------------- B l o c k 5 ------------------
+PLApt(20/56), Fanin(38/38), Clk(1/3), Bct(0/4), Pin(2/5), Mcell(11/16)
+PLApts[20/56] 222 745 367 369 348 350 458 460 897 1104 () () () () () () () () () () () () () () () 895 () () 894 () () 892 () () 891 () () 890 () () 454 () () () () () 344 () () 886 () () 363 () () 1
+Fanins[38] DS1_dp.n N_PZ_738.n XLXI_75/clkCnt<0>.n XLXI_75/clkCnt<10>.n XLXI_75/clkCnt<11>.n XLXI_75/clkCnt<12>.n XLXI_75/clkCnt<13>.n XLXI_75/clkCnt<14>.n XLXI_75/clkCnt<1>.n XLXI_75/clkCnt<2>.n XLXI_75/clkCnt<3>.n XLXI_75/clkCnt<4>.n XLXI_75/clkCnt<5>.n XLXI_75/clkCnt<6>.n XLXI_75/clkCnt<8>.n XLXI_83/data<11>.n XLXI_83/data<12>.n XLXI_83/data<13>.n XLXI_83/data<14>.n XLXI_83/data<15>.n XLXI_83/data<16>.n XLXI_83/data<20>.n XLXI_83/data<21>.n XLXI_83/data<22>.n XLXN_163.n XLXN_176<0>.n XLXN_176<1>.n XLXN_176<2>.n XLXN_176<3>.n XLXN_238.n XLXN_87<0>.n XLXN_87<1>.n XLXN_87<2>.n XLXN_87<3>.n XLXN_89<0>.n XLXN_89<1>.n reset_n.p time_date_select.p
+clk[1] clk 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[11] [DS1_dp(194),DS1_dp(29)] [DS1<2>(196),DS1<2>(30)]  
+           [XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001(195)]  
+           [XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000(193)]  
+           [XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001(191)]  
+           [XLXI_75/clkCnt<12>(190)] [XLXI_75/clkCnt<13>(189)] [XLXI_75/clkCnt<14>(188)] [XLXN_237(187)]  
+           [N_PZ_1459(186)] [XLXN_176<2>(185)] 
+Signal[11] [ 0:  ][ 1: (24)  ][ 2:  ][ 3: (27)  ][ 4: XLXN_176<2>(185)  ][ 5: N_PZ_1459(186)  ][ 6:  
+           XLXN_237(187)  ][ 7: XLXI_75/clkCnt<14>(188)  ][ 8: XLXI_75/clkCnt<13>(189)  ][ 9:  
+           XLXI_75/clkCnt<12>(190)  ][ 10:  
+           XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001(191)  ][ 11: (28)  ][ 12:  
+           XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000(193)  ][ 13: DS1_dp(194)  
+           DS1_dp(29)  ][ 14: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001(195)  ] 
+           [ 15: DS1<2>(196) DS1<2>(30)  ]
+----------------- B l o c k 6 ------------------
+PLApt(52/56), Fanin(38/38), Clk(1/3), Bct(1/4), Pin(6/6), Mcell(16/16)
+PLApts[52/52] 179 185 198 705 871 713 723 80 177 189 899 688 701 709 200 719 323 331 341 832 168 317 1 327 6 1 9 1109 1133 1108 1124 1122 1153 464 465 946 947 230 415 228 1 229 1105 1111 1123 1100 1 1125 1126 1 1154 451
+Fanins[38] DS1_dp.n N_PZ_1459.n N_PZ_738.n XLXI_83/Mxor_sync_next_xor0001__xor0001.n XLXI_83/data<23>.n XLXI_83/data_not0001.n XLXI_83/zero_time<1>.n XLXI_83/zero_time<2>.n XLXI_83/zero_time<3>.n XLXI_83/zero_time<4>.n XLXI_83/zero_time<5>.n XLXI_83/zero_time<6>.n XLXI_83/zero_time<7>.n XLXN_238.n XLXN_78<0>.n XLXN_78<1>.n XLXN_83<0>.n XLXN_83<1>.n XLXN_83<2>.n XLXN_83<3>.n XLXN_84<0>.n XLXN_84<1>.n XLXN_84<2>.n XLXN_84<3>.n XLXN_85<0>.n XLXN_85<1>.n XLXN_85<2>.n XLXN_85<3>.n XLXN_86<0>.n XLXN_86<1>.n XLXN_86<2>.n XLXN_86<3>.n XLXN_88<0>.n XLXN_88<1>.n XLXN_88<2>.n XLXN_88<3>.n XLXN_91<0>.n time_date_select.p
+clk[1] clk 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [DS2<3>(202),DS2<3>(18)] [DS2<4>(201),DS2<4>(19)] [DS2<2>(207),DS2<2>(17)]  
+           [DS3<3>(210),DS3<3>(14)] [DS3<4>(209),DS3<4>(15)] [DS2_dp(208),DS2_dp(16)] [XLXN_85<3>(212)]  
+           [XLXN_83<3>(211)] [XLXN_83<0>(206)] [N_PZ_1498(205)] [N_PZ_749(204)] [N_PZ_1458(203)]  
+           [N_PZ_1517(200)] [XLXN_83<2>(199)] [XLXN_83<1>(198)] [XLXN_77<3>(197)] 
+Signal[16] [ 0: XLXN_77<3>(197)  ][ 1: XLXN_83<1>(198)  ][ 2: XLXN_83<2>(199)  ][ 3: N_PZ_1517(200)  ][ 4:  
+           DS2<4>(201) DS2<4>(19)  ][ 5: DS2<3>(202) DS2<3>(18)  ][ 6: N_PZ_1458(203)  ][ 7: N_PZ_749(204)  ] 
+           [ 8: N_PZ_1498(205)  ][ 9: XLXN_83<0>(206)  ][ 10: DS2<2>(207) DS2<2>(17)  ][ 11: DS2_dp(208)  
+           DS2_dp(16)  ][ 12: DS3<4>(209) DS3<4>(15)  ][ 13: DS3<3>(210) DS3<3>(14)  ][ 14: XLXN_83<3>(211)  
+            ][ 15: XLXN_85<3>(212)  ]
+----------------- B l o c k 7 ------------------
+PLApt(46/56), Fanin(38/38), Clk(1/3), Bct(1/4), Pin(4/6), Mcell(12/16)
+PLApts[46/46] 886 210 218 226 871 752 94 207 214 726 896 1101 413 414 898 1107 1110 1099 1102 1155 11 26 37 24 31 1 33 39 18 20 21 23 30 17 28 29 32 34 36 12 1 25 27 1 35 38
+Fanins[38] DS1_dp.n N_PZ_1459.n N_PZ_738.n XLXI_75/clkCnt<0>.n XLXI_75/clkCnt<10>.n XLXI_75/clkCnt<11>.n XLXI_75/clkCnt<12>.n XLXI_75/clkCnt<13>.n XLXI_75/clkCnt<14>.n XLXI_75/clkCnt<1>.n XLXI_75/clkCnt<2>.n XLXI_75/clkCnt<3>.n XLXI_75/clkCnt<4>.n XLXI_75/clkCnt<5>.n XLXI_75/clkCnt<6>.n XLXI_75/clkCnt<8>.n XLXI_83/mean<0>.n XLXI_83/mean<1>.n XLXI_83/mean<2>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXI_83/zero_time<0>.n XLXN_163.n XLXN_176<0>.n XLXN_176<1>.n XLXN_176<2>.n XLXN_176<3>.n XLXN_237.n XLXN_238.n XLXN_87<0>.n XLXN_87<1>.n XLXN_87<2>.n XLXN_87<3>.n XLXN_89<0>.n XLXN_89<1>.n dcf_77.p reset_n.p time_date_select.p
+clk[1] clk 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [com(224),com(34)] [DS1<3>(218),DS1<3>(32)] [DS1<4>(223),DS1<4>(33)] [time_date_select(35)]  
+           [XLXN_176<0>(228)] [N_PZ_1548(222)] [XLXN_176<3>(221)] [XLXN_176<1>(220)] [XLXI_83/mean<4>(219)]  
+           [XLXI_83/mean<0>(217)] [XLXI_83/mean<1>(216)] [XLXI_83/mean<2>(215)] [XLXI_83/mean<3>(214)] 
+Signal[13] [ 0:  ][ 1: XLXI_83/mean<3>(214)  ][ 2: XLXI_83/mean<2>(215)  ][ 3: XLXI_83/mean<1>(216)  ][ 4:  
+           XLXI_83/mean<0>(217)  ][ 5: DS1<3>(218) DS1<3>(32)  ][ 6: XLXI_83/mean<4>(219)  ][ 7:  
+           XLXN_176<1>(220)  ][ 8: XLXN_176<3>(221)  ][ 9: N_PZ_1548(222)  ][ 10: DS1<4>(223) DS1<4>(33)  ] 
+           [ 11: com(224) com(34)  ][ 12: time_date_select(35)  ][ 13: (36)  ][ 14: (37)  ][ 15:  
+           XLXN_176<0>(228)  ]
+----------------- B l o c k 8 ------------------
+PLApt(28/56), Fanin(36/38), Clk(1/3), Bct(0/4), Pin(4/5), Mcell(6/16)
+PLApts[28/44] 236 248 250 553 565 567 267 271 632 636 1 246 256 1 563 573 238 254 555 1 571 1103 1138 1139 1106 1140 1142 () () () () () () () () () () () () () () () () 1
+Fanins[36] DS1_dp.n N_PZ_1459.n N_PZ_738.n XLXN_176<0>.n XLXN_176<1>.n XLXN_176<2>.n XLXN_176<3>.n XLXN_217<0>.n XLXN_217<1>.n XLXN_217<2>.n XLXN_217<3>.n XLXN_218<0>.n XLXN_218<1>.n XLXN_218<2>.n XLXN_218<3>.n XLXN_83<0>.n XLXN_83<1>.n XLXN_83<2>.n XLXN_83<3>.n XLXN_84<0>.n XLXN_84<1>.n XLXN_84<2>.n XLXN_84<3>.n XLXN_85<0>.n XLXN_85<1>.n XLXN_85<2>.n XLXN_85<3>.n XLXN_86<0>.n XLXN_86<1>.n XLXN_86<2>.n XLXN_86<3>.n XLXN_87<0>.n XLXN_87<1>.n XLXN_87<2>.n XLXN_87<3>.n time_date_select.p
+clk[1] clk 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[ 6] [DS6<5>(232),DS6<5>(80)] [DS5<1>(229),DS5<1>(78)] [DS6<0>(240),DS6<0>(82)]  
+           [DS6<6>(230),DS6<6>(79)] [XLXN_87<2>(244)] [XLXN_87<3>(243)] 
+Signal[ 6] [ 0: DS5<1>(229) DS5<1>(78)  ][ 1: DS6<6>(230) DS6<6>(79)  ][ 2:  ][ 3: DS6<5>(232) DS6<5>(80)  ] 
+           [ 4:  ][ 5: (81)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  ][ 10:  ][ 11: DS6<0>(240) DS6<0>(82)  ][ 12:  ] 
+           [ 13:  ][ 14: XLXN_87<3>(243)  ][ 15: XLXN_87<2>(244)  ]
+----------------- B l o c k 9 ------------------
+PLApt(54/56), Fanin(36/38), Clk(1/3), Bct(0/4), Pin(7/7), Mcell(12/16)
+PLApts[54/54] 263 275 277 628 640 642 301 311 819 829 295 299 813 1 817 273 1 283 638 1 648 265 1 281 630 1 646 61 14 43 46 71 850 851 1131 141 846 847 1128 68 842 843 1127 1 160 854 855 1115 1132 285 848 849 1113 1130
+Fanins[36] DS1_dp.n N_PZ_1459.n N_PZ_738.n XLXI_83/max_holder<3>.n XLXI_83/max_holder<4>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXN_163.n XLXN_176<0>.n XLXN_218<0>.n XLXN_218<1>.n XLXN_218<2>.n XLXN_218<3>.n XLXN_75<0>.n XLXN_75<2>.n XLXN_75<3>.n XLXN_76<0>.n XLXN_76<2>.n XLXN_83<0>.n XLXN_83<1>.n XLXN_83<2>.n XLXN_83<3>.n XLXN_84<0>.n XLXN_84<1>.n XLXN_84<2>.n XLXN_84<3>.n XLXN_85<0>.n XLXN_85<1>.n XLXN_85<2>.n XLXN_85<3>.n XLXN_90<0>.n XLXN_90<1>.n XLXN_90<2>.n XLXN_90<3>.n reset_n.p time_date_select.p
+clk[1] clk 
+CTC: 
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [DS5<5>(247),DS5<5>(74)] [DS4<0>(256),DS4<0>(70)] [DS4<1>(250),DS4<1>(71)]  
+           [DS5<0>(246),DS5<0>(76)] [DS5<6>(248),DS5<6>(73)] [cln2(249),cln2(72)] [reset_n(77)]  
+           [N_PZ_834(260)] [XLXN_85<0>(259)] [XLXN_84<2>(258)] [XLXN_84<0>(257)] [XLXN_85<2>(255)]  
+           [XLXN_84<3>(254)] 
+Signal[13] [ 0: reset_n(77)  ][ 1: DS5<0>(246) DS5<0>(76)  ][ 2: DS5<5>(247) DS5<5>(74)  ][ 3: DS5<6>(248)  
+           DS5<6>(73)  ][ 4: cln2(249) cln2(72)  ][ 5: DS4<1>(250) DS4<1>(71)  ][ 6:  ][ 7:  ][ 8:  ][ 9:  
+           XLXN_84<3>(254)  ][ 10: XLXN_85<2>(255)  ][ 11: DS4<0>(256) DS4<0>(70)  ][ 12: XLXN_84<0>(257)  ] 
+           [ 13: XLXN_84<2>(258)  ][ 14: XLXN_85<0>(259)  ][ 15: N_PZ_834(260)  ]
+----------------- B l o c k 10 ------------------
+PLApt(56/56), Fanin(38/38), Clk(1/3), Bct(1/4), Pin(0/4), Mcell(11/16)
+PLApts[56/56] 64 858 859 1118 871 1146 1149 1150 72 856 857 1144 1145 899 170 860 899 861 1119 1147 1148 77 862 863 1120 1151 1152 52 866 867 1117 1121 1137 50 864 865 1116 1141 1143 152 852 853 1114 1134 1136 135 844 845 1112 1129 1135 10 44 1029 436 437
+Fanins[38] N_PZ_1459.n N_PZ_738.n N_PZ_925.n XLXI_83/data_not0001.n XLXI_83/max_holder<4>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXN_163.n XLXN_238.n XLXN_75<1>.n XLXN_76<1>.n XLXN_77<0>.n XLXN_77<1>.n XLXN_77<2>.n XLXN_77<3>.n XLXN_78<0>.n XLXN_78<1>.n XLXN_83<0>.n XLXN_83<1>.n XLXN_83<2>.n XLXN_83<3>.n XLXN_84<0>.n XLXN_84<1>.n XLXN_84<2>.n XLXN_84<3>.n XLXN_85<0>.n XLXN_85<1>.n XLXN_85<2>.n XLXN_85<3>.n XLXN_86<0>.n XLXN_86<1>.n XLXN_86<2>.n XLXN_86<3>.n XLXN_87<0>.n XLXN_87<1>.n XLXN_87<2>.n XLXN_87<3>.n reset_n.p
+clk[1] clk 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[11] [XLXN_86<1>(276)] [XLXN_86<0>(275)] [XLXN_86<2>(270)] [XLXN_86<3>(269)] [XLXN_87<1>(268)]  
+           [XLXN_87<0>(267)] [XLXN_85<1>(266)] [XLXN_84<1>(265)] [XLXI_83/max_holder<4>(264)]  
+           [XLXN_77<0>(263)] [XLXN_77<1>(262)] 
+Signal[11] [ 0:  ][ 1: XLXN_77<1>(262)  ][ 2: XLXN_77<0>(263)  ][ 3: XLXI_83/max_holder<4>(264)  ][ 4:  
+           XLXN_84<1>(265)  ][ 5: XLXN_85<1>(266)  ][ 6: XLXN_87<0>(267)  ][ 7: XLXN_87<1>(268)  ][ 8:  
+           XLXN_86<3>(269)  ][ 9: XLXN_86<2>(270)  ][ 10: (85)  ][ 11: (86)  ][ 12: (87)  ][ 13: (89)  ] 
+           [ 14: XLXN_86<0>(275)  ][ 15: XLXN_86<1>(276)  ]
+----------------- B l o c k 11 ------------------
+PLApt(47/56), Fanin(37/38), Clk(0/3), Bct(1/4), Pin(4/4), Mcell(13/16)
+PLApts[47/53] 291 303 305 809 871 821 823 293 309 811 827 331 341 832 325 329 1063 1181 1064 1182 1065 1183 1066 1157 1052 1158 1062 1156 1180 1056 1058 1061 1704 1055 1057 1067 1703 13 40 45 1 47 49 1028 () () 1 () () 2 () () 1
+Fanins[37] DS1_dp.n N_PZ_1458.n N_PZ_1517.n N_PZ_1548.n N_PZ_797.n N_PZ_925.n XLXI_83/max_holder<3>.n XLXI_83/max_holder<4>.n XLXI_83/mean<0>.n XLXI_83/mean<1>.n XLXI_83/mean<2>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXI_83/zero_time<0>.n XLXI_83/zero_time<1>.n XLXI_83/zero_time<2>.n XLXI_83/zero_time<3>.n XLXI_83/zero_time<4>.n XLXI_83/zero_time<5>.n XLXI_83/zero_time<6>.n XLXI_83/zero_time<7>.n XLXN_238.n XLXN_84<0>.n XLXN_84<1>.n XLXN_84<2>.n XLXN_84<3>.n XLXN_85<0>.n XLXN_85<1>.n XLXN_85<2>.n XLXN_85<3>.n XLXN_90<0>.n XLXN_90<1>.n XLXN_90<2>.n XLXN_90<3>.n XLXN_91<0>.n reset_n.p time_date_select.p
+clk[0] 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [DS4<5>(287),DS4<5>(68)] [DS4<6>(289),DS4<6>(67)] [DS3<0>(291),DS3<0>(65)]  
+           [DS3<1>(290),DS3<1>(66)] [XLXI_83/zero_time<3>(292)] [XLXI_83/zero_time<4>(288)]  
+           [XLXI_83/zero_time<5>(286)] [XLXI_83/zero_time<6>(285)] [XLXI_83/zero_time<7>(284)]  
+           [XLXI_83/zero_time<2>(283)] [XLXI_83/zero_time<1>(282)] [XLXI_83/zero_time<0>(281)]  
+           [XLXI_83/max_holder<3>(280)] 
+Signal[13] [ 0:  ][ 1:  ][ 2:  ][ 3: XLXI_83/max_holder<3>(280)  ][ 4: XLXI_83/zero_time<0>(281)  ][ 5:  
+           XLXI_83/zero_time<1>(282)  ][ 6: XLXI_83/zero_time<2>(283)  ][ 7: XLXI_83/zero_time<7>(284)  ] 
+           [ 8: XLXI_83/zero_time<6>(285)  ][ 9: XLXI_83/zero_time<5>(286)  ][ 10: DS4<5>(287) DS4<5>(68)  ] 
+           [ 11: XLXI_83/zero_time<4>(288)  ][ 12: DS4<6>(289) DS4<6>(67)  ][ 13: DS3<1>(290) DS3<1>(66)  ] 
+           [ 14: DS3<0>(291) DS3<0>(65)  ][ 15: XLXI_83/zero_time<3>(292)  ]
+----------------- B l o c k 12 ------------------
+PLApt(53/56), Fanin(38/38), Clk(0/3), Bct(1/4), Pin(4/4), Mcell(13/16)
+PLApts[53/53] 179 194 705 721 871 58 86 88 203 754 218 226 752 1 212 216 900 901 902 1 903 4 41 42 48 2 1053 1068 899 1069 1074 899 60 1040 899 1041 1042 899 1043 1075 899 1082 1088 899 1089 1090 1 453 344 345 346 454 455
+Fanins[38] DS1_dp.n N_PZ_797.n N_PZ_834.n N_PZ_925.n XLXI_83/data<0>.n XLXI_83/data<11>.n XLXI_83/data<12>.n XLXI_83/data<13>.n XLXI_83/data<14>.n XLXI_83/data<15>.n XLXI_83/data_not0001.n XLXI_83/max_holder<0>.n XLXI_83/max_holder<1>.n XLXI_83/max_holder<2>.n XLXI_83/max_holder<3>.n XLXI_83/max_holder<4>.n XLXI_83/mean<0>.n XLXI_83/mean<1>.n XLXI_83/mean<2>.n XLXI_83/mean<3>.n XLXI_83/mean<4>.n XLXN_238.n XLXN_86<0>.n XLXN_86<1>.n XLXN_86<2>.n XLXN_86<3>.n XLXN_87<0>.n XLXN_87<1>.n XLXN_87<2>.n XLXN_87<3>.n XLXN_88<0>.n XLXN_88<1>.n XLXN_88<2>.n XLXN_88<3>.n XLXN_89<0>.n XLXN_89<1>.n reset_n.p time_date_select.p
+clk[0] 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[13] [DS2<6>(305),DS2<6>(56)] [DS1<5>(294),DS1<5>(53)] [DS1<0>(296),DS1<0>(54)]  
+           [DS1<1>(298),DS1<1>(55)] [XLXI_83/data<0>(308)] [XLXI_83/max_holder<2>(307)]  
+           [XLXI_83/max_holder<1>(306)] [XLXI_83/data<1>(304)] [XLXI_83/data<12>(303)]  
+           [XLXI_83/data<13>(302)] [XLXI_83/data<14>(301)] [XLXI_83/data<15>(300)] [XLXI_83/data<16>(299)] 
+Signal[13] [ 0:  ][ 1: DS1<5>(294) DS1<5>(53)  ][ 2:  ][ 3: DS1<0>(296) DS1<0>(54)  ][ 4:  ][ 5: DS1<1>(298)  
+           DS1<1>(55)  ][ 6: XLXI_83/data<16>(299)  ][ 7: XLXI_83/data<15>(300)  ][ 8: XLXI_83/data<14>(301)  
+            ][ 9: XLXI_83/data<13>(302)  ][ 10: XLXI_83/data<12>(303)  ][ 11: XLXI_83/data<1>(304)  ][ 12:  
+           DS2<6>(305) DS2<6>(56)  ][ 13: XLXI_83/max_holder<1>(306)  ][ 14: XLXI_83/max_holder<2>(307)  ] 
+           [ 15: XLXI_83/data<0>(308)  ]
+----------------- B l o c k 13 ------------------
+PLApt(45/56), Fanin(36/38), Clk(0/3), Bct(1/4), Pin(1/5), Mcell(16/16)
+PLApts[45/53] 210 224 748 4 871 374 479 904 925 948 1 969 1051 899 1159 1184 899 1433 1682 899 456 353 899 354 355 899 363 364 899 365 362 899 372 481 899 482 483 899 484 485 899 () () 899 () () 899 () () 899 () () 899
+Fanins[36] DS1_dp.n N_PZ_1458.n N_PZ_1498.n N_PZ_1517.n N_PZ_749.n N_PZ_797.n XLXI_83/Mxor_sync_next_xor0000__xor0000.n XLXI_83/Mxor_sync_next_xor0000__xor0001.n XLXI_83/Mxor_sync_next_xor0002__xor0000.n XLXI_83/Mxor_sync_next_xor0002__xor0001.n XLXI_83/data<16>.n XLXI_83/data<17>.n XLXI_83/data<18>.n XLXI_83/data<19>.n XLXI_83/data<1>.n XLXI_83/data<20>.n XLXI_83/data<21>.n XLXI_83/data<22>.n XLXI_83/data<2>.n XLXI_83/data<38>.n XLXI_83/data<39>.n XLXI_83/data<40>.n XLXI_83/data<41>.n XLXI_83/data<42>.n XLXI_83/data<43>.n XLXI_83/data<58>.n XLXI_83/data_not0001.n XLXI_83/zero_time<6>.n XLXN_238.n XLXN_87<0>.n XLXN_87<1>.n XLXN_87<2>.n XLXN_87<3>.n XLXN_89<1>.n reset_n.p time_date_select.p
+clk[0] 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [DS1<6>(309),DS1<6>(52)] [XLXN_163(324)] [XLXI_83/data<17>(321)] [XLXI_83/data<18>(320)]  
+           [XLXI_83/data<19>(319)] [XLXI_83/data<20>(318)] [XLXI_83/data<21>(317)] [XLXI_83/data<22>(316)]  
+           [XLXI_83/data<23>(315)] [XLXI_83/data<2>(314)] [XLXI_83/data<3>(312)] [XLXI_83/data<40>(310)]  
+           [XLXI_83/data<41>(323)] [XLXI_83/data<42>(322)] [XLXI_83/data<43>(313)] [XLXI_83/data<44>(311)] 
+Signal[16] [ 0: DS1<6>(309) DS1<6>(52)  ][ 1: XLXI_83/data<40>(310)  ][ 2: XLXI_83/data<44>(311) (50)  ][ 3:  
+           XLXI_83/data<3>(312)  ][ 4: XLXI_83/data<43>(313) (49)  ][ 5: XLXI_83/data<2>(314)  ][ 6:  
+           XLXI_83/data<23>(315)  ][ 7: XLXI_83/data<22>(316)  ][ 8: XLXI_83/data<21>(317)  ][ 9:  
+           XLXI_83/data<20>(318)  ][ 10: XLXI_83/data<19>(319)  ][ 11: XLXI_83/data<18>(320)  ][ 12:  
+           XLXI_83/data<17>(321)  ][ 13: XLXI_83/data<42>(322) (46)  ][ 14: XLXI_83/data<41>(323) (44)  ] 
+           [ 15: XLXN_163(324)  ]
+----------------- B l o c k 14 ------------------
+PLApt(49/56), Fanin(28/38), Clk(0/3), Bct(1/4), Pin(6/6), Mcell(16/16)
+PLApts[49/56] 82 192 196 703 871 715 717 185 198 713 899 723 181 899 183 707 899 711 319 899 333 335 899 832 7 899 321 339 899 61 486 899 487 488 899 489 490 899 491 492 1 493 494 1 495 () 1 () () 1 () () 1 () () 1
+Fanins[28] DS1_dp.n XLXI_83/data<44>.n XLXI_83/data<45>.n XLXI_83/data<46>.n XLXI_83/data<47>.n XLXI_83/data<48>.n XLXI_83/data<49>.n XLXI_83/data<50>.n XLXI_83/data<51>.n XLXI_83/data<52>.n XLXI_83/data<53>.n XLXI_83/data_not0001.n XLXN_176<0>.n XLXN_238.n XLXN_85<0>.n XLXN_85<1>.n XLXN_85<2>.n XLXN_85<3>.n XLXN_86<0>.n XLXN_86<1>.n XLXN_86<2>.n XLXN_86<3>.n XLXN_88<0>.n XLXN_88<1>.n XLXN_88<2>.n XLXN_88<3>.n XLXN_91<0>.n time_date_select.p
+clk[0] 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[16] [DS2<5>(335),DS2<5>(58)] [DS2<0>(336),DS2<0>(59)] [DS2<1>(337),DS2<1>(60)]  
+           [DS3<5>(340),DS3<5>(64)] [DS3<6>(339),DS3<6>(63)] [cln1(338),cln1(61)] [XLXI_83/data<45>(334)]  
+           [XLXI_83/data<46>(333)] [XLXI_83/data<47>(332)] [XLXI_83/data<48>(331)] [XLXI_83/data<49>(330)]  
+           [XLXI_83/data<50>(329)] [XLXI_83/data<51>(328)] [XLXI_83/data<52>(327)] [XLXI_83/data<53>(326)]  
+           [XLXI_83/data<54>(325)] 
+Signal[16] [ 0: XLXI_83/data<54>(325)  ][ 1: XLXI_83/data<53>(326)  ][ 2: XLXI_83/data<52>(327)  ][ 3:  
+           XLXI_83/data<51>(328)  ][ 4: XLXI_83/data<50>(329)  ][ 5: XLXI_83/data<49>(330)  ][ 6:  
+           XLXI_83/data<48>(331)  ][ 7: XLXI_83/data<47>(332)  ][ 8: XLXI_83/data<46>(333)  ][ 9:  
+           XLXI_83/data<45>(334)  ][ 10: DS2<5>(335) DS2<5>(58)  ][ 11: DS2<0>(336) DS2<0>(59)  ][ 12:  
+           DS2<1>(337) DS2<1>(60)  ][ 13: cln1(338) cln1(61)  ][ 14: DS3<6>(339) DS3<6>(63)  ][ 15:  
+           DS3<5>(340) DS3<5>(64)  ]
+----------------- B l o c k 15 ------------------
+PLApt(30/56), Fanin(17/38), Clk(0/3), Bct(1/4), Pin(1/5), Mcell(15/16)
+PLApts[30/56] 496 497 498 499 871 377 378 385 386 387 899 434 466 899 438 452 899 463 () 899 () () () () () 899 () () 899 () () 899 () () 899 () () 899 () () 899 () () 3 () () 899 () () 899 () () 899 () () 899
+Fanins[17] XLXI_83/data<23>.n XLXI_83/data<30>.n XLXI_83/data<4>.n XLXI_83/data<54>.n XLXI_83/data<55>.n XLXI_83/data<56>.n XLXI_83/data<57>.n XLXI_83/data<5>.n XLXI_83/data<6>.n XLXI_83/data<7>.n XLXI_83/data<8>.n XLXI_83/data_not0001.n XLXN_238.n XLXN_76<2>.n XLXN_77<3>.n XLXN_78<1>.n dcf_77.p
+clk[0] 
+CTC: (pt=871) XLXN_238 ;
+CTR: 
+CTS: 
+CTE: 
+vref: [0]
+Signal[15] [LED1(352),LED1(40)] [XLXI_83/data<55>(356)] [XLXI_83/data<56>(355)] [XLXI_83/data<57>(354)]  
+           [XLXI_83/data<58>(350)] [XLXI_83/data<5>(349)] [XLXI_83/data<6>(348)] [XLXI_83/data<7>(347)]  
+           [XLXI_83/data<8>(344)] [XLXI_83/data<9>(343)] [XLXN_76<1>(342)] [XLXN_76<2>(341)]  
+           [XLXN_77<2>(353)] [XLXN_78<0>(351)] [XLXN_78<1>(346)] 
+Signal[15] [ 0: XLXN_76<2>(341)  ][ 1: XLXN_76<1>(342)  ][ 2: XLXI_83/data<9>(343)  ][ 3:  
+           XLXI_83/data<8>(344)  ][ 4: (43)  ][ 5: XLXN_78<1>(346) (42)  ][ 6: XLXI_83/data<7>(347)  ][ 7:  
+           XLXI_83/data<6>(348)  ][ 8: XLXI_83/data<5>(349)  ][ 9: XLXI_83/data<58>(350)  ][ 10:  
+           XLXN_78<0>(351) (41)  ][ 11: LED1(352) LED1(40)  ][ 12: XLXN_77<2>(353) (39)  ][ 13:  
+           XLXI_83/data<57>(354)  ][ 14: XLXI_83/data<56>(355)  ][ 15: XLXI_83/data<55>(356)  ]

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Fabian/Desktop/DCF_77/Top_Schema_Top_Schema_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="top_schema_top_schema_sch_tb" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/clk_1s" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_1s</obj_property>
+      <obj_property name="ObjectShortName">clk_1s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
+   </wvobject>
+</wave_config>

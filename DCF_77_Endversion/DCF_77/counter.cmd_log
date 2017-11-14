@@ -1,0 +1,10 @@
+vhdtdtfi -lib work counter.vhd -prj DCF_77 -o counter.spl -module counter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr counter.spl G:/New_77/DCF_77/counter.sym 
+vhdtdtfi -lib work counter.vhd -prj DCF_77 -o counter.spl -module counter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr counter.spl G:/New_77/DCF_77/counter.sym 
+vhdtdtfi -lib work counter.vhd -prj DCF_77 -o counter.spl -module counter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w counter.spl C:/Users/Daniel/Dropbox/Ramsch/New_77/DCF_77/counter.sym 
+vhdtdtfi -lib work counter.vhd -prj DCF_77 -o counter.spl -module counter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w counter.spl C:/Users/Daniel/Dropbox/Ramsch/New_77/DCF_77/counter.sym 
+vhdtdtfi -lib work counter.vhd -prj DCF_77 -o counter.spl -module counter -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w counter.spl C:/Users/Fabian/Desktop/DCF_77/counter.sym 

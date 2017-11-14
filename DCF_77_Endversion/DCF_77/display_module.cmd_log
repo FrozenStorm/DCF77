@@ -1,0 +1,21 @@
+sch2sym -intstyle ise -family xbr -refsym display_module U:/BFH/Digital/Semester_4/Projekt/VHDL/DCF_77/display_module.sch U:/BFH/Digital/Semester_4/Projekt/VHDL/DCF_77/display_module.sym 
+sch2sym -intstyle ise -family xbr -w -refsym display_module C:/Users/Daniel/Dropbox/Ramsch/New_77/DCF_77/display_module.sch C:/Users/Daniel/Dropbox/Ramsch/New_77/DCF_77/display_module.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl display_module_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77/display_module.sch 
+sch2sym -intstyle ise -family xbr -w -refsym display_module C:/Users/Fabian/Desktop/DCF_77/display_module.sch C:/Users/Fabian/Desktop/DCF_77/display_module.sym 
+sch2sym -intstyle ise -family xbr -w -refsym display_module C:/Users/Fabian/Desktop/DCF_77/display_module.sch C:/Users/Fabian/Desktop/DCF_77/display_module.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl display_module_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77/display_module.sch 
+sch2sym -intstyle ise -family xbr -w -refsym display_module C:/Users/Fabian/Desktop/DCF_77/display_module.sch C:/Users/Fabian/Desktop/DCF_77/display_module.sym 
+sch2sym -intstyle ise -family xbr -w -refsym display_module C:/Users/Fabian/Desktop/DCF_77/display_module.sch C:/Users/Fabian/Desktop/DCF_77/display_module.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl display_module_drc.vhf -w C:/Users/Fabian/Desktop/DCF_77/display_module.sch 
+sch2sym -intstyle ise -family xbr -w -refsym display_module C:/Users/Fabian/Desktop/DCF_77/display_module.sch C:/Users/Fabian/Desktop/DCF_77/display_module.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl display_module_drc.vhf -w U:/Desktop/DCF_77_noreset/DCF_77/display_module.sch 
+sch2sym -intstyle ise -family xbr -w -refsym display_module U:/Desktop/DCF_77_noreset/DCF_77/display_module.sch U:/Desktop/DCF_77_noreset/DCF_77/display_module.sym 
+sch2sym -intstyle ise -family xbr -w -refsym display_module U:/Desktop/DCF_77_noreset/DCF_77/display_module.sch U:/Desktop/DCF_77_noreset/DCF_77/display_module.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl display_module_drc.vhf -w U:/Desktop/DCF_77_noreset/DCF_77/display_module.sch 
+sch2sym -intstyle ise -family xbr -w -refsym display_module U:/Desktop/DCF_77_noreset/DCF_77/display_module.sch U:/Desktop/DCF_77_noreset/DCF_77/display_module.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl display_module_drc.vhf -w X:/Desktop/DCF_77_noreset/DCF_77/display_module.sch 
+sch2sym -intstyle ise -family xbr -w -refsym display_module X:/Desktop/DCF_77_noreset/DCF_77/display_module.sch X:/Desktop/DCF_77_noreset/DCF_77/display_module.sym 
+sch2sym -intstyle ise -family xbr -w -refsym display_module U:/Desktop/DCF_77_noreset/DCF_77/display_module.sch U:/Desktop/DCF_77_noreset/DCF_77/display_module.sym 
+sch2sym -intstyle ise -family xbr -w -refsym display_module U:/Desktop/DCF_77_noreset/DCF_77/display_module.sch U:/Desktop/DCF_77_noreset/DCF_77/display_module.sym 
+sch2hdl -intstyle ise -family xbr -flat -suppress -vhdl display_module_drc.vhf -w X:/Desktop/DCF_77_noreset/DCF_77/display_module.sch 
+sch2sym -intstyle ise -family xbr -w -refsym display_module X:/Desktop/DCF_77_noreset/DCF_77/display_module.sch X:/Desktop/DCF_77_noreset/DCF_77/display_module.sym 

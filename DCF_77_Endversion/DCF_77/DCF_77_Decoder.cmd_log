@@ -1,0 +1,28 @@
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl C:/Users/Fabian/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl C:/Users/Fabian/Desktop/DCF_77_timing_opt/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl C:/Users/Fabian/Desktop/DCF_77_timing_opt/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl C:/Users/Fabian/Desktop/DCF_77_timing_opt/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77_tested/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77_tested/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 
+vhdtdtfi -lib work DCF_77_Decoder.vhd -prj DCF_77 -o DCF_77_Decoder.spl -module DCF_77_Decoder -template C:/Apps/Xilinx/14.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w DCF_77_Decoder.spl U:/Desktop/DCF_77/DCF_77_Decoder.sym 

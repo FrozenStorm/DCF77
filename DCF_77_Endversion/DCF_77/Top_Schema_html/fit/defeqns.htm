@@ -1,0 +1,1842 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS1(0) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND XLXN_89(0) AND NOT XLXN_89(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(2) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(0) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_87(2) AND NOT XLXN_87(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS1(1) <= NOT DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_87(2) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(0) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_87(2) AND NOT XLXN_87(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS1(2) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND NOT XLXN_89(0) AND XLXN_89(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(0) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(2) AND NOT XLXN_87(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS1(3) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND XLXN_89(0) AND NOT XLXN_89(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_87(0) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_87(2) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(2) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(0) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_87(2) AND NOT XLXN_87(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS1(4) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND XLXN_89(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(1) AND XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS1(5) <= DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(0) AND NOT XLXN_87(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(0) AND XLXN_87(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(1) AND XLXN_87(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_89(0) AND NOT XLXN_89(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS1(6) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND NOT XLXN_89(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_87(1) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_87(0) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_87(2) AND NOT XLXN_87(3))));
+</td></tr><tr><td>
+FTCPE_DS1_dp: FTCPE port map (DS1_dp,DS1_dp_T,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DS1_dp_T <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2(0) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(2) AND NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_88(0) AND NOT XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_88(2) AND NOT XLXN_88(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2(1) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_86(1) AND NOT XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_88(2) AND NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_88(0) AND XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_88(2) AND NOT XLXN_88(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2(2) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_86(1) AND NOT XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_88(0) AND XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(2) AND NOT XLXN_88(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2(3) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_86(1) AND XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_88(2) AND NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(2) AND NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_88(0) AND NOT XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_88(2) AND NOT XLXN_88(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2(4) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_86(0) AND NOT XLXN_86(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_88(1) AND XLXN_88(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2(5) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_86(1) AND XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_86(1) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(1) AND NOT XLXN_88(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2(6) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_88(1) AND NOT XLXN_88(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_86(1) AND XLXN_86(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_88(0) AND XLXN_88(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_88(2) AND NOT XLXN_88(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS2_dp <= ((DS1_dp AND time_date_select)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT DS1_dp AND NOT time_date_select));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS3(0) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND XLXN_91(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(2) AND NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_85(0) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS3(1) <= NOT DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_85(0) AND XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS3(2) <= NOT DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (time_date_select AND NOT XLXN_85(0) AND XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(2) AND NOT XLXN_85(3));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS3(3) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND XLXN_91(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(0) AND XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(2) AND NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_85(0) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS3(4) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND XLXN_91(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_85(1) AND XLXN_85(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS3(5) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select AND XLXN_91(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(0) AND XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_85(1) AND NOT XLXN_85(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS3(6) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT time_date_select)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_85(1) AND NOT XLXN_85(2) AND NOT XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_85(0) AND XLXN_85(1) AND XLXN_85(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3))));
+</td></tr><tr><td>
+FDCPE_DS3_dp: FDCPE port map (DS3_dp,DS3_dp_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DS3_dp_D <= DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4(0) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_84(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(2) AND NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_90(0) AND NOT XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_90(2) AND NOT XLXN_90(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4(1) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_84(0) AND XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_90(2) AND NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_90(0) AND XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_90(2) AND NOT XLXN_90(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4(2) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_84(0) AND XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_90(0) AND XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(2) AND NOT XLXN_90(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4(3) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_84(0) AND XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_84(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_90(2) AND NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(2) AND NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_90(0) AND NOT XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_90(2) AND NOT XLXN_90(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4(4) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_84(0) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_84(1) AND XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_90(1) AND XLXN_90(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4(5) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_84(0) AND XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_84(0) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(1) AND NOT XLXN_90(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4(6) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_90(1) AND NOT XLXN_90(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_84(0) AND XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(2) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_90(0) AND XLXN_90(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_90(2) AND NOT XLXN_90(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS4_dp <= ((DS1_dp AND time_date_select)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT DS1_dp AND NOT time_date_select));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS5(0) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_83(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(2) AND NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_218(0) AND NOT XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_218(2) AND NOT XLXN_218(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS5(1) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_83(0) AND XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_218(2) AND NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_218(0) AND XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_218(2) AND NOT XLXN_218(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS5(2) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_83(0) AND XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_218(0) AND XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(2) AND NOT XLXN_218(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS5(3) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_83(0) AND XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_83(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_218(2) AND NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(2) AND NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_218(0) AND NOT XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_218(2) AND NOT XLXN_218(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS5(4) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_83(0) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_218(1) AND XLXN_218(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS5(5) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_83(0) AND XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_83(0) AND NOT XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_83(1) AND NOT XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(1) AND NOT XLXN_218(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS5(6) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_83(1) AND NOT XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_218(1) AND NOT XLXN_218(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_83(0) AND XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_218(0) AND XLXN_218(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_218(2) AND NOT XLXN_218(3))));
+</td></tr><tr><td>
+FDCPE_DS5_dp: FDCPE port map (DS5_dp,DS5_dp_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DS5_dp_D <= DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS6(0) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_176(0) AND NOT XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(2) AND NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_217(0) AND NOT XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_217(2) AND NOT XLXN_217(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS6(1) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_176(0) AND XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_217(2) AND NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_217(0) AND XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_217(2) AND NOT XLXN_217(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS6(2) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_176(0) AND XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_217(0) AND XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(2) AND NOT XLXN_217(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS6(3) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_176(0) AND XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_176(0) AND NOT XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_217(2) AND NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(2) AND NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_217(0) AND NOT XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_217(2) AND NOT XLXN_217(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS6(4) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_176(0) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND NOT XLXN_176(1) AND XLXN_176(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_217(1) AND XLXN_217(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS6(5) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND XLXN_176(0) AND XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_176(0) AND NOT XLXN_176(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_176(1) AND NOT XLXN_176(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(1) AND NOT XLXN_217(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+DS6(6) <= NOT (DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((time_date_select AND NOT XLXN_176(1) AND NOT XLXN_176(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND NOT XLXN_217(1) AND NOT XLXN_217(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (time_date_select AND XLXN_176(0) AND XLXN_176(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_176(2) AND NOT XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT time_date_select AND XLXN_217(0) AND XLXN_217(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_217(2) AND NOT XLXN_217(3))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+LED1 <= dcf_77;
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1458 <= ((NOT XLXI_83/zero_time(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/zero_time(5) AND NOT XLXI_83/zero_time(6)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1459 <= (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND NOT XLXI_75/clkCnt(11) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND NOT XLXI_75/clkCnt(14) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(1) AND NOT XLXN_176(2) AND XLXN_176(3));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1498 <= ((XLXN_78(1) AND XLXI_83/data(23))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_78(1) AND NOT XLXI_83/data(23)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1517 <= ((NOT XLXI_83/zero_time(1) AND NOT XLXI_83/zero_time(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/zero_time(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/zero_time(2) AND NOT XLXI_83/zero_time(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/zero_time(4)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_1548 <= ((NOT XLXI_83/mean(2) AND XLXI_83/zero_time(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_738 <= (reset_n AND NOT XLXN_163);
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_749 <= ((XLXN_78(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0001__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_78(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0001__xor0001));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_797 <= ((reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_834 <= ((NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND XLXI_83/max_holder(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(4)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+N_PZ_925 <= ((XLXI_83/mean(2) AND XLXI_83/mean(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(2) AND XLXI_83/mean(0)));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt0: FTCPE port map (XLXI_75/clkCnt(0),'0',clk,'0','0','1');
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt1: FTCPE port map (XLXI_75/clkCnt(1),XLXI_75/clkCnt(0),clk,'0','0','1');
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt2: FTCPE port map (XLXI_75/clkCnt(2),XLXI_75/clkCnt_T(2),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(2) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt3: FTCPE port map (XLXI_75/clkCnt(3),XLXI_75/clkCnt_T(3),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(3) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt4: FTCPE port map (XLXI_75/clkCnt(4),XLXI_75/clkCnt_T(4),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(4) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt5: FTCPE port map (XLXI_75/clkCnt(5),XLXI_75/clkCnt_T(5),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(5) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt6: FTCPE port map (XLXI_75/clkCnt(6),XLXI_75/clkCnt_T(6),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(6) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt8: FTCPE port map (XLXI_75/clkCnt(8),XLXI_75/clkCnt_T(8),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(8) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt10: FTCPE port map (XLXI_75/clkCnt(10),XLXI_75/clkCnt_T(10),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(10) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp);
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt11: FTCPE port map (XLXI_75/clkCnt(11),XLXI_75/clkCnt_T(11),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(11) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(10));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt12: FTCPE port map (XLXI_75/clkCnt(12),XLXI_75/clkCnt_T(12),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(12) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(10) AND XLXI_75/clkCnt(11));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt13: FTCPE port map (XLXI_75/clkCnt(13),XLXI_75/clkCnt_T(13),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(13) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(10) AND XLXI_75/clkCnt(11) AND XLXI_75/clkCnt(12));
+</td></tr><tr><td>
+FTCPE_XLXI_75/clkCnt14: FTCPE port map (XLXI_75/clkCnt(14),XLXI_75/clkCnt_T(14),clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_75/clkCnt_T(14) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(10) AND XLXI_75/clkCnt(11) AND XLXI_75/clkCnt(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(13));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0000__xor0000 <= XLXN_76(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXN_76(1) AND XLXN_76(2) AND XLXI_83/data(30))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_76(1) AND NOT XLXN_76(2) AND NOT XLXI_83/data(30))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_76(1) AND XLXN_76(2) AND NOT XLXI_83/data(30))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_76(1) AND NOT XLXN_76(2) AND XLXI_83/data(30)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0000__xor0001 <= XLXN_75(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXN_75(1) AND XLXN_75(2) AND XLXN_75(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_75(1) AND NOT XLXN_75(2) AND NOT XLXN_75(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_75(1) AND XLXN_75(2) AND NOT XLXN_75(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_75(1) AND NOT XLXN_75(2) AND XLXN_75(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0001__xor0001 <= XLXN_77(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXN_77(1) AND XLXN_77(2) AND XLXN_77(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_77(1) AND NOT XLXN_77(2) AND NOT XLXN_77(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_77(1) AND XLXN_77(2) AND NOT XLXN_77(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_77(1) AND NOT XLXN_77(2) AND XLXN_77(3)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001 <= XLXI_83/data(3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/data(5) AND NOT XLXI_83/data(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(5) AND XLXI_83/data(4)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000 <= XLXI_83/data(10)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/data(9) AND XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(7) AND NOT XLXI_83/data(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/data(9) AND XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(7) AND XLXI_83/data(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(7) AND XLXI_83/data(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(7) AND NOT XLXI_83/data(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(9) AND XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(7) AND XLXI_83/data(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(9) AND XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(7) AND NOT XLXI_83/data(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(7) AND NOT XLXI_83/data(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(7) AND XLXI_83/data(6)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000 <= XLXI_83/data(17)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/data(19) AND NOT XLXI_83/data(18))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(19) AND XLXI_83/data(18)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 <= XLXI_83/data(20)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/data(22) AND NOT XLXI_83/data(21))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(22) AND XLXI_83/data(21)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 <= XLXI_83/data(11)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/data(13) AND NOT XLXI_83/data(12))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(13) AND XLXI_83/data(12)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001 <= XLXI_83/data(14)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/data(16) AND NOT XLXI_83/data(15))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(16) AND XLXI_83/data(15)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002__xor0000 <= XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/data(2) AND XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/data(2) AND XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(2) AND XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(2) AND XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/data(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/Mxor_sync_next_xor0002__xor0001 <= XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001));
+</td></tr><tr><td>
+FDCPE_XLXI_83/data0: FDCPE port map (XLXI_83/data(0),XLXI_83/data_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/data_D(0) <= NOT (((NOT XLXI_83/data(0) AND NOT XLXI_83/data_not0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/max_holder(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(2) AND XLXI_83/data_not0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/max_holder(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/data_not0001 AND XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/max_holder(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND XLXI_83/data_not0001 AND NOT XLXI_83/max_holder(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(0))));
+</td></tr><tr><td>
+FDCPE_XLXI_83/data1: FDCPE port map (XLXI_83/data(1),XLXI_83/data(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data2: FDCPE port map (XLXI_83/data(2),XLXI_83/data(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data3: FDCPE port map (XLXI_83/data(3),XLXI_83/data(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data4: FDCPE port map (XLXI_83/data(4),XLXI_83/data(3),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data5: FDCPE port map (XLXI_83/data(5),XLXI_83/data(4),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data6: FDCPE port map (XLXI_83/data(6),XLXI_83/data(5),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data7: FDCPE port map (XLXI_83/data(7),XLXI_83/data(6),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data8: FDCPE port map (XLXI_83/data(8),XLXI_83/data(7),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data9: FDCPE port map (XLXI_83/data(9),XLXI_83/data(8),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data10: FDCPE port map (XLXI_83/data(10),XLXI_83/data(9),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data11: FDCPE port map (XLXI_83/data(11),XLXI_83/data(10),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data12: FDCPE port map (XLXI_83/data(12),XLXI_83/data(11),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data13: FDCPE port map (XLXI_83/data(13),XLXI_83/data(12),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data14: FDCPE port map (XLXI_83/data(14),XLXI_83/data(13),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data15: FDCPE port map (XLXI_83/data(15),XLXI_83/data(14),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data16: FDCPE port map (XLXI_83/data(16),XLXI_83/data(15),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data17: FDCPE port map (XLXI_83/data(17),XLXI_83/data(16),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data18: FDCPE port map (XLXI_83/data(18),XLXI_83/data(17),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data19: FDCPE port map (XLXI_83/data(19),XLXI_83/data(18),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data20: FDCPE port map (XLXI_83/data(20),XLXI_83/data(19),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data21: FDCPE port map (XLXI_83/data(21),XLXI_83/data(20),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data22: FDCPE port map (XLXI_83/data(22),XLXI_83/data(21),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data23: FDCPE port map (XLXI_83/data(23),XLXI_83/data(22),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data30: FDCPE port map (XLXI_83/data(30),XLXN_77(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data38: FDCPE port map (XLXI_83/data(38),XLXN_75(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data39: FDCPE port map (XLXI_83/data(39),XLXI_83/data(38),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data40: FDCPE port map (XLXI_83/data(40),XLXI_83/data(39),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data41: FDCPE port map (XLXI_83/data(41),XLXI_83/data(40),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data42: FDCPE port map (XLXI_83/data(42),XLXI_83/data(41),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data43: FDCPE port map (XLXI_83/data(43),XLXI_83/data(42),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data44: FDCPE port map (XLXI_83/data(44),XLXI_83/data(43),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data45: FDCPE port map (XLXI_83/data(45),XLXI_83/data(44),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data46: FDCPE port map (XLXI_83/data(46),XLXI_83/data(45),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data47: FDCPE port map (XLXI_83/data(47),XLXI_83/data(46),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data48: FDCPE port map (XLXI_83/data(48),XLXI_83/data(47),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data49: FDCPE port map (XLXI_83/data(49),XLXI_83/data(48),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data50: FDCPE port map (XLXI_83/data(50),XLXI_83/data(49),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data51: FDCPE port map (XLXI_83/data(51),XLXI_83/data(50),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data52: FDCPE port map (XLXI_83/data(52),XLXI_83/data(51),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data53: FDCPE port map (XLXI_83/data(53),XLXI_83/data(52),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data54: FDCPE port map (XLXI_83/data(54),XLXI_83/data(53),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data55: FDCPE port map (XLXI_83/data(55),XLXI_83/data(54),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data56: FDCPE port map (XLXI_83/data(56),XLXI_83/data(55),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data57: FDCPE port map (XLXI_83/data(57),XLXI_83/data(56),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXI_83/data58: FDCPE port map (XLXI_83/data(58),XLXI_83/data(57),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXI_83/data_not0001 <= (XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(3) AND NOT N_PZ_925)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(3) AND NOT XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(2) AND XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(2) AND XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1) AND NOT XLXI_83/max_holder(0)));
+</td></tr><tr><td>
+FDCPE_XLXI_83/max_holder0: FDCPE port map (XLXI_83/max_holder(0),XLXI_83/max_holder_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/max_holder_D(0) <= NOT (NOT XLXI_83/max_holder(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((NOT reset_n AND XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(4) AND NOT XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4) AND XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND N_PZ_797 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(3) AND NOT XLXI_83/mean(0) AND XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(2) AND NOT XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND NOT N_PZ_834 AND XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(0) AND N_PZ_925 AND NOT N_PZ_834 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(1) AND XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(2) AND NOT XLXI_83/mean(0) AND NOT N_PZ_834 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(0) AND NOT XLXI_83/max_holder(4) AND NOT N_PZ_834 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/max_holder(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(3) AND XLXI_83/mean(0) AND NOT N_PZ_797 AND NOT N_PZ_834 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/max_holder(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(0) AND NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(1) AND XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_925 AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(1) AND XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(0) AND N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(0) AND N_PZ_925 AND NOT N_PZ_797 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_834 AND NOT XLXI_83/max_holder(1) AND NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(4) AND XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(0) AND NOT XLXI_83/max_holder(2) AND NOT N_PZ_834 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(1) AND XLXI_83/max_holder(0))));
+</td></tr><tr><td>
+FDCPE_XLXI_83/max_holder1: FDCPE port map (XLXI_83/max_holder(1),XLXI_83/max_holder_D(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/max_holder_D(1) <= NOT (((NOT reset_n)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(1) AND NOT XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_834 AND NOT XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND N_PZ_797)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(0) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(2) AND NOT N_PZ_834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_925 AND XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/max_holder(3) AND XLXI_83/max_holder(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_925 AND XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1) AND NOT N_PZ_797 AND NOT N_PZ_834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(4) AND NOT XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT N_PZ_925 AND XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))));
+</td></tr><tr><td>
+FDCPE_XLXI_83/max_holder2: FDCPE port map (XLXI_83/max_holder(2),XLXI_83/max_holder_D(2),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/max_holder_D(2) <= NOT (((NOT reset_n)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(2) AND NOT XLXI_83/max_holder(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(2) AND N_PZ_834)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND N_PZ_797)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(3) AND NOT XLXI_83/mean(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4) AND NOT N_PZ_925 AND NOT N_PZ_797)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(4) AND XLXI_83/mean(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4) AND NOT N_PZ_925 AND NOT N_PZ_797)));
+</td></tr><tr><td>
+FDCPE_XLXI_83/max_holder3: FDCPE port map (XLXI_83/max_holder(3),XLXI_83/max_holder_D(3),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/max_holder_D(3) <= ((reset_n AND XLXI_83/max_holder(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/max_holder(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(4) AND XLXI_83/max_holder(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/max_holder(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(4) AND N_PZ_925)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(3) AND XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/max_holder(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(3) AND XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(0) AND NOT XLXI_83/max_holder(4)));
+</td></tr><tr><td>
+FDCPE_XLXI_83/max_holder4: FDCPE port map (XLXI_83/max_holder(4),XLXI_83/max_holder_D(4),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/max_holder_D(4) <= ((reset_n AND XLXI_83/mean(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/max_holder(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/max_holder(4) AND N_PZ_925));
+</td></tr><tr><td>
+FTCPE_XLXI_83/mean0: FTCPE port map (XLXI_83/mean(0),XLXI_83/mean_T(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/mean_T(0) <= NOT (((NOT reset_n AND NOT XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(4) AND dcf_77 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(3) AND XLXI_83/mean(2) AND XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(4) AND dcf_77 AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(2) AND XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT dcf_77 AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))));
+</td></tr><tr><td>
+FTCPE_XLXI_83/mean1: FTCPE port map (XLXI_83/mean(1),XLXI_83/mean_T(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/mean_T(1) <= NOT (((NOT reset_n AND NOT XLXI_83/mean(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND dcf_77 AND NOT XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT dcf_77 AND XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(2) AND XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT dcf_77 AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXI_83/mean2: FDCPE port map (XLXI_83/mean(2),XLXI_83/mean_D(2),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/mean_D(2) <= ((reset_n AND dcf_77 AND XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT dcf_77 AND XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(2) AND XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND dcf_77 AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(1) AND XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(4) AND NOT dcf_77 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT dcf_77 AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0)));
+</td></tr><tr><td>
+FTCPE_XLXI_83/mean3: FTCPE port map (XLXI_83/mean(3),XLXI_83/mean_T(3),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/mean_T(3) <= ((NOT reset_n AND XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT dcf_77 AND XLXI_83/mean(3) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND dcf_77 AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(2) AND XLXI_83/mean(1) AND XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND dcf_77 AND XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(2) AND XLXI_83/mean(1) AND XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/mean(4) AND NOT dcf_77 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(3) AND NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(0)));
+</td></tr><tr><td>
+FTCPE_XLXI_83/mean4: FTCPE port map (XLXI_83/mean(4),XLXI_83/mean_T(4),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/mean_T(4) <= ((NOT reset_n AND XLXI_83/mean(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/mean(4) AND NOT dcf_77 AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND dcf_77 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(3) AND XLXI_83/mean(2) AND XLXI_83/mean(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/mean(0)));
+</td></tr><tr><td>
+FTCPE_XLXI_83/zero_time0: FTCPE port map (XLXI_83/zero_time(0),XLXI_83/zero_time_T(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_T(0) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_797 AND NOT XLXI_83/zero_time(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_797 AND NOT XLXI_83/zero_time(5) AND NOT XLXI_83/zero_time(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_797 AND NOT XLXI_83/zero_time(6) AND N_PZ_1517));
+</td></tr><tr><td>
+FTCPE_XLXI_83/zero_time1: FTCPE port map (XLXI_83/zero_time(1),XLXI_83/zero_time_T(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_T(1) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_797 AND XLXI_83/zero_time(0) AND NOT XLXI_83/zero_time(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_797 AND NOT XLXI_83/zero_time(5) AND NOT XLXI_83/zero_time(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_797 AND NOT XLXI_83/zero_time(6) AND XLXI_83/zero_time(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1517));
+</td></tr><tr><td>
+FTCPE_XLXI_83/zero_time2: FTCPE port map (XLXI_83/zero_time(2),XLXI_83/zero_time_T(2),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_T(2) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1458 AND XLXI_83/zero_time(1) AND N_PZ_1548)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(1) AND NOT XLXI_83/zero_time(6) AND NOT XLXI_83/zero_time(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/zero_time(3) AND N_PZ_1548 AND NOT XLXI_83/zero_time(4)));
+</td></tr><tr><td>
+FTCPE_XLXI_83/zero_time3: FTCPE port map (XLXI_83/zero_time(3),XLXI_83/zero_time_T(3),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_T(3) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1458 AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1548));
+</td></tr><tr><td>
+FTCPE_XLXI_83/zero_time4: FTCPE port map (XLXI_83/zero_time(4),XLXI_83/zero_time_T(4),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_T(4) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1458 AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(3) AND N_PZ_1548));
+</td></tr><tr><td>
+FTCPE_XLXI_83/zero_time5: FTCPE port map (XLXI_83/zero_time(5),XLXI_83/zero_time_T(5),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_T(5) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1458 AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(3) AND N_PZ_1548 AND XLXI_83/zero_time(4)));
+</td></tr><tr><td>
+FTCPE_XLXI_83/zero_time6: FTCPE port map (XLXI_83/zero_time(6),XLXI_83/zero_time_T(6),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_T(6) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(5) AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(3) AND N_PZ_1548 AND NOT XLXI_83/zero_time(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(4)));
+</td></tr><tr><td>
+FDCPE_XLXI_83/zero_time7: FDCPE port map (XLXI_83/zero_time(7),XLXI_83/zero_time_D(7),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXI_83/zero_time_D(7) <= ((N_PZ_797 AND XLXI_83/zero_time(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/mean(3) AND N_PZ_797 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(5) AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(2) AND XLXI_83/zero_time(3) AND N_PZ_1548 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/zero_time(4)));
+</td></tr><tr><td>
+FDCPE_XLXN_163: FDCPE port map (XLXN_163,XLXN_163_D,XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_163_D <= NOT (((NOT reset_n)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_797)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_749 AND NOT N_PZ_1498)));
+</td></tr><tr><td>
+FDCPE_XLXN_1760: FDCPE port map (XLXN_176(0),XLXN_176_D(0),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_176_D(0) <= ((N_PZ_738 AND XLXN_176(0) AND NOT XLXN_237)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reset_n AND NOT XLXN_163 AND NOT XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(14)));
+</td></tr><tr><td>
+FDCPE_XLXN_1761: FDCPE port map (XLXN_176(1),XLXN_176_D(1),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_176_D(1) <= ((N_PZ_738 AND NOT XLXN_176(0) AND XLXN_176(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_738 AND NOT XLXN_237 AND XLXN_176(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_738 AND NOT N_PZ_1459 AND XLXN_176(0) AND XLXN_237 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_176(1)));
+</td></tr><tr><td>
+FTCPE_XLXN_1762: FTCPE port map (XLXN_176(2),XLXN_176_T(2),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_176_T(2) <= ((NOT N_PZ_738 AND XLXN_176(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reset_n AND NOT XLXN_163 AND XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(14) AND XLXN_176(1)));
+</td></tr><tr><td>
+FTCPE_XLXN_1763: FTCPE port map (XLXN_176(3),XLXN_176_T(3),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_176_T(3) <= ((N_PZ_1459)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT N_PZ_738 AND XLXN_176(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reset_n AND NOT XLXN_163 AND XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(14) AND XLXN_176(1) AND XLXN_176(2)));
+</td></tr><tr><td>
+FDCPE_XLXN_2170: FDCPE port map (XLXN_217(0),XLXN_217_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_217_D(0) <= NOT (XLXN_217(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_217(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(8) AND NOT XLXN_217(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(8) AND XLXN_217(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_2171: FDCPE port map (XLXN_217(1),XLXN_217_D(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_217_D(1) <= NOT (XLXN_217(1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_217(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(7) AND NOT XLXN_217(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(7) AND XLXN_217(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_2172: FDCPE port map (XLXN_217(2),XLXN_217_D(2),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_217_D(2) <= NOT (XLXN_217(2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_217(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(6) AND NOT XLXN_217(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(6) AND XLXN_217(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_2173: FDCPE port map (XLXN_217(3),XLXN_217_D(3),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_217_D(3) <= NOT (XLXN_217(3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(5) AND NOT XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(5) AND XLXN_217(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_2180: FDCPE port map (XLXN_218(0),XLXN_218_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_218_D(0) <= NOT (XLXN_218(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_218(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(4) AND NOT XLXN_218(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(4) AND XLXN_218(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_2181: FDCPE port map (XLXN_218(1),XLXN_218_D(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_218_D(1) <= NOT (XLXN_218(1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_218(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(3) AND NOT XLXN_218(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(3) AND XLXN_218(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_2182: FDCPE port map (XLXN_218(2),XLXN_218_D(2),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_218_D(2) <= NOT (XLXN_218(2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_218(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(2) AND NOT XLXN_218(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(2) AND XLXN_218(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_2183: FDCPE port map (XLXN_218(3),XLXN_218_D(3),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_218_D(3) <= NOT (XLXN_218(3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(1) AND NOT XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(1) AND XLXN_218(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+XLXN_237 <= (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(10) AND NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_75/clkCnt(13) AND NOT XLXI_75/clkCnt(14));
+</td></tr><tr><td>
+FTCPE_XLXN_238: FTCPE port map (XLXN_238,XLXN_238_T,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_238_T <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6));
+</td></tr><tr><td>
+FDCPE_XLXN_750: FDCPE port map (XLXN_75(0),XLXN_75(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_751: FDCPE port map (XLXN_75(1),XLXN_75(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_752: FDCPE port map (XLXN_75(2),XLXN_75(3),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_753: FDCPE port map (XLXN_75(3),XLXN_76(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_760: FDCPE port map (XLXN_76(0),XLXN_76(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_761: FDCPE port map (XLXN_76(1),XLXN_76(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_762: FDCPE port map (XLXN_76(2),XLXI_83/data(30),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_770: FDCPE port map (XLXN_77(0),XLXN_77(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_771: FDCPE port map (XLXN_77(1),XLXN_77(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_772: FDCPE port map (XLXN_77(2),XLXN_77(3),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_773: FDCPE port map (XLXN_77(3),XLXN_78(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_780: FDCPE port map (XLXN_78(0),XLXN_78(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_781: FDCPE port map (XLXN_78(1),XLXI_83/data(23),XLXN_238,'0','0',XLXI_83/data_not0001);
+</td></tr><tr><td>
+FDCPE_XLXN_830: FDCPE port map (XLXN_83(0),XLXN_83_D(0),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_83_D(0) <= ((XLXN_83(0) AND N_PZ_738 AND NOT N_PZ_1459)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_83(0) AND N_PZ_738 AND N_PZ_1459));
+</td></tr><tr><td>
+FDCPE_XLXN_831: FDCPE port map (XLXN_83(1),XLXN_83_D(1),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_83_D(1) <= ((NOT XLXN_83(0) AND N_PZ_738 AND XLXN_83(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (N_PZ_738 AND NOT N_PZ_1459 AND XLXN_83(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_832: FTCPE port map (XLXN_83(2),XLXN_83_T(2),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_83_T(2) <= ((NOT N_PZ_738 AND XLXN_83(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_83(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_1459 AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_833: FTCPE port map (XLXN_83(3),XLXN_83_T(3),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_83_T(3) <= ((NOT N_PZ_738 AND XLXN_83(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2)));
+</td></tr><tr><td>
+FTCPE_XLXN_840: FTCPE port map (XLXN_84(0),XLXN_84_T(0),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_84_T(0) <= ((NOT reset_n AND XLXN_84(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_75(0) AND XLXN_84(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_75(0) AND NOT XLXN_84(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_841: FTCPE port map (XLXN_84(1),XLXN_84_T(1),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_84_T(1) <= ((NOT reset_n AND XLXN_84(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_75(1) AND XLXN_84(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_75(1) AND NOT XLXN_84(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND NOT XLXN_84(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_842: FTCPE port map (XLXN_84(2),XLXN_84_T(2),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_84_T(2) <= ((NOT reset_n AND XLXN_84(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_75(2) AND XLXN_84(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_75(2) AND NOT XLXN_84(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(1)));
+</td></tr><tr><td>
+FTCPE_XLXN_843: FTCPE port map (XLXN_84(3),XLXN_84_T(3),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_84_T(3) <= ((NOT reset_n AND XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_75(3) AND XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_75(3) AND NOT XLXN_84(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_850: FTCPE port map (XLXN_85(0),XLXN_85_T(0),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_85_T(0) <= ((NOT reset_n AND XLXN_85(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_76(0) AND XLXN_85(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_76(0) AND NOT XLXN_85(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_851: FTCPE port map (XLXN_85(1),XLXN_85_T(1),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_85_T(1) <= ((NOT reset_n AND XLXN_85(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_76(1) AND XLXN_85(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_76(1) AND NOT XLXN_85(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND NOT XLXN_85(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_852: FTCPE port map (XLXN_85(2),XLXN_85_T(2),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_85_T(2) <= ((NOT reset_n AND XLXN_85(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_76(2) AND XLXN_85(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_76(2) AND NOT XLXN_85(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_853: FTCPE port map (XLXN_85(3),XLXN_85_T(3),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_85_T(3) <= ((NOT N_PZ_738 AND XLXN_85(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2)));
+</td></tr><tr><td>
+FTCPE_XLXN_860: FTCPE port map (XLXN_86(0),XLXN_86_T(0),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_86_T(0) <= ((NOT reset_n AND XLXN_86(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_77(0) AND XLXN_86(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_77(0) AND NOT XLXN_86(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND XLXN_85(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_87(0) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND XLXN_85(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(3) AND NOT XLXN_87(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_861: FTCPE port map (XLXN_86(1),XLXN_86_T(1),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_86_T(1) <= ((NOT reset_n AND XLXN_86(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_77(1) AND XLXN_86(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_77(1) AND NOT XLXN_86(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_87(0) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND NOT XLXN_87(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_862: FTCPE port map (XLXN_86(2),XLXN_86_T(2),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_86_T(2) <= ((NOT reset_n AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_77(2) AND XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_77(2) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND XLXN_86(1) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_863: FTCPE port map (XLXN_86(3),XLXN_86_T(3),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_86_T(3) <= ((NOT reset_n AND XLXN_86(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_163 AND NOT XLXN_77(3) AND XLXN_86(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_163 AND XLXN_77(3) AND NOT XLXN_86(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND XLXN_86(1) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_163 AND NOT XLXN_86(1) AND NOT XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(2) AND NOT XLXN_87(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_870: FTCPE port map (XLXN_87(0),XLXN_87_T(0),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_87_T(0) <= ((XLXN_87(0) AND NOT reset_n)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_78(0) AND XLXN_163)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_87(0) AND reset_n AND XLXN_78(0) AND XLXN_163)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_163 AND NOT XLXN_86(1) AND XLXN_83(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND XLXN_86(3) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_86(1) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND XLXN_87(2) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_86(1) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2) AND XLXN_87(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_871: FTCPE port map (XLXN_87(1),XLXN_87_T(1),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_87_T(1) <= ((NOT reset_n AND XLXN_87(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_78(1) AND XLXN_163 AND XLXN_87(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXN_78(1) AND XLXN_163 AND NOT XLXN_87(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_86(1) AND XLXN_83(0) AND N_PZ_738 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND XLXN_86(3) AND NOT XLXN_85(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND XLXN_83(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_87(3)));
+</td></tr><tr><td>
+FTCPE_XLXN_872: FTCPE port map (XLXN_87(2),XLXN_87_T(2),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_87_T(2) <= ((NOT N_PZ_738 AND XLXN_87(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND XLXN_86(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2)));
+</td></tr><tr><td>
+FTCPE_XLXN_873: FTCPE port map (XLXN_87(3),XLXN_87_T(3),NOT clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_87_T(3) <= ((NOT N_PZ_738 AND XLXN_87(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (XLXN_87(0) AND NOT XLXN_86(1) AND XLXN_87(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND XLXN_87(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXN_86(2)));
+</td></tr><tr><td>
+FDCPE_XLXN_880: FDCPE port map (XLXN_88(0),XLXN_88_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_88_D(0) <= NOT (XLXN_88(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_88(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(22) AND NOT XLXN_88(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(22) AND XLXN_88(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_881: FDCPE port map (XLXN_88(1),XLXN_88_D(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_88_D(1) <= NOT (XLXN_88(1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_88(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(21) AND NOT XLXN_88(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(21) AND XLXN_88(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_882: FDCPE port map (XLXN_88(2),XLXN_88_D(2),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_88_D(2) <= NOT (XLXN_88(2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_88(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(20) AND NOT XLXN_88(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(20) AND XLXN_88(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_883: FDCPE port map (XLXN_88(3),XLXN_88_D(3),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_88_D(3) <= NOT (XLXN_88(3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(19) AND NOT XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(19) AND XLXN_88(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_890: FDCPE port map (XLXN_89(0),XLXN_89_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_89_D(0) <= NOT (XLXN_89(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_89(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(18) AND NOT XLXN_89(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(18) AND XLXN_89(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_891: FDCPE port map (XLXN_89(1),XLXN_89_D(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_89_D(1) <= NOT (XLXN_89(1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_89(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(17) AND NOT XLXN_89(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(17) AND XLXN_89(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_900: FDCPE port map (XLXN_90(0),XLXN_90_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_90_D(0) <= NOT (XLXN_90(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_90(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(13) AND NOT XLXN_90(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(13) AND XLXN_90(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_901: FDCPE port map (XLXN_90(1),XLXN_90_D(1),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_90_D(1) <= NOT (XLXN_90(1)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_90(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(12) AND NOT XLXN_90(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(12) AND XLXN_90(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_902: FDCPE port map (XLXN_90(2),XLXN_90_D(2),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_90_D(2) <= NOT (XLXN_90(2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_90(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(11) AND NOT XLXN_90(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(11) AND XLXN_90(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_903: FDCPE port map (XLXN_90(3),XLXN_90_D(3),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_90_D(3) <= NOT (XLXN_90(3)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(10) AND NOT XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(10) AND XLXN_90(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+FDCPE_XLXN_910: FDCPE port map (XLXN_91(0),XLXN_91_D(0),XLXN_238,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;XLXN_91_D(0) <= NOT (XLXN_91(0)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR ((reset_n AND NOT XLXI_83/data(38))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(58))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_1458)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reset_n AND NOT XLXN_91(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT XLXI_83/data(9) AND NOT XLXN_91(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/data(9) AND XLXN_91(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT XLXI_83/mean(1))));
+</td></tr><tr><td>
+</td></tr><tr><td>
+cln1 <= DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (time_date_select AND XLXN_176(0));
+</td></tr><tr><td>
+</td></tr><tr><td>
+cln2 <= DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (time_date_select AND XLXN_176(0));
+</td></tr><tr><td>
+FDCPE_com: FDCPE port map (com,com_D,clk,'0','0','1');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;com_D <= DS1_dp
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XOR (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+</td></tr><tr><td>
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

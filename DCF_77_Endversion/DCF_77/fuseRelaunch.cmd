@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Daniel/Dropbox/DCF77/DCF_77_Endversion/DCF_77/divider_tb_isim_beh.exe" -prj "C:/Users/Daniel/Dropbox/DCF77/DCF_77_Endversion/DCF_77/divider_tb_beh.prj" "work.divider_tb" 

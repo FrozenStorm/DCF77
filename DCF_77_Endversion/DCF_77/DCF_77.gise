@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="DCF_77.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Clock.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="Clock.vhf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Clock_Clock_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Counter_3_9.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Counter_3_9_TB_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DCF_77_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DCF_77_tb_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Top_Schema.bld"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CHK" xil_pn:name="Top_Schema.chk"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Top_Schema.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_CXT" xil_pn:name="Top_Schema.cxt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_GYD" xil_pn:name="Top_Schema.gyd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_JEDEC" xil_pn:name="Top_Schema.jed"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="Top_Schema.log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Top_Schema.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MFD" xil_pn:name="Top_Schema.mfd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGA" xil_pn:name="Top_Schema.nga"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Top_Schema.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Top_Schema.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Top_Schema.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Top_Schema.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PNX" xil_pn:name="Top_Schema.pnx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Top_Schema.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_Schema.rpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Top_Schema.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Top_Schema.syr"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_Schema.tim"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_Schema.tspec"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="Top_Schema.vhf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VM6" xil_pn:name="Top_Schema.vm6"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_Schema.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Top_Schema.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Top_Schema_Top_Schema_sch_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Top_Schema_build.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="Top_Schema_html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_Schema_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Top_Schema_pad.csv"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Top_Schema_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Top_Schema_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="bcd2seg.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="counter.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="display_module.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_VHDL" xil_pn:name="display_module.vhf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="divider.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="divider_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="divider_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="divider_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="divider_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="lcd_exnor.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="multiplexer.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1433577414" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1433577414">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1433666813" xil_pn:in_ck="-5018090354766507013" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1433666812">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Clock_TB.vhd"/>
+      <outfile xil_pn:name="Counter_3_9.vhd"/>
+      <outfile xil_pn:name="Counter_3_9_TB.vhd"/>
+      <outfile xil_pn:name="Counter_TB.vhd"/>
+      <outfile xil_pn:name="DCF_77_Decoder.vhd"/>
+      <outfile xil_pn:name="DCF_77_tb.vhd"/>
+      <outfile xil_pn:name="bcd2seg.vhd"/>
+      <outfile xil_pn:name="counter.vhd"/>
+      <outfile xil_pn:name="display_module_tb.vhd"/>
+      <outfile xil_pn:name="divider.vhd"/>
+      <outfile xil_pn:name="divider_tb.vhd"/>
+      <outfile xil_pn:name="lcd_exnor.vhd"/>
+      <outfile xil_pn:name="multiplexer.vhd"/>
+      <outfile xil_pn:name="top_schema_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1433666816" xil_pn:in_ck="4822846653624350606" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3661637716686053990" xil_pn:start_ts="1433666813">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Clock.vhf"/>
+      <outfile xil_pn:name="Top_Schema.vhf"/>
+      <outfile xil_pn:name="display_module.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1433666816" xil_pn:in_ck="338619994699264379" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1433666816">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Clock.vhf"/>
+      <outfile xil_pn:name="Clock_TB.vhd"/>
+      <outfile xil_pn:name="Counter_3_9.vhd"/>
+      <outfile xil_pn:name="Counter_3_9_TB.vhd"/>
+      <outfile xil_pn:name="Counter_TB.vhd"/>
+      <outfile xil_pn:name="DCF_77_Decoder.vhd"/>
+      <outfile xil_pn:name="DCF_77_tb.vhd"/>
+      <outfile xil_pn:name="Top_Schema.vhf"/>
+      <outfile xil_pn:name="bcd2seg.vhd"/>
+      <outfile xil_pn:name="counter.vhd"/>
+      <outfile xil_pn:name="display_module.vhf"/>
+      <outfile xil_pn:name="display_module_tb.vhd"/>
+      <outfile xil_pn:name="divider.vhd"/>
+      <outfile xil_pn:name="divider_tb.vhd"/>
+      <outfile xil_pn:name="lcd_exnor.vhd"/>
+      <outfile xil_pn:name="multiplexer.vhd"/>
+      <outfile xil_pn:name="top_schema_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1433666821" xil_pn:in_ck="338619994699264379" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8833964654818264358" xil_pn:start_ts="1433666816">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="divider_tb_beh.prj"/>
+      <outfile xil_pn:name="divider_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1433666821" xil_pn:in_ck="-8624135935045055851" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="8232521529091532391" xil_pn:start_ts="1433666821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="divider_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1433519590" xil_pn:in_ck="4822846653624350606" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2923389515691720444" xil_pn:start_ts="1433519587">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Clock.vhf"/>
+      <outfile xil_pn:name="Top_Schema.vhf"/>
+      <outfile xil_pn:name="display_module.vhf"/>
+    </transform>
+    <transform xil_pn:end_ts="1433519596" xil_pn:in_ck="-8835338531546486941" xil_pn:name="TRANEXT_xstsynthesize_xbr" xil_pn:prop_ck="-2726745424430016992" xil_pn:start_ts="1433519590">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="Top_Schema.lso"/>
+      <outfile xil_pn:name="Top_Schema.ngc"/>
+      <outfile xil_pn:name="Top_Schema.ngr"/>
+      <outfile xil_pn:name="Top_Schema.prj"/>
+      <outfile xil_pn:name="Top_Schema.stx"/>
+      <outfile xil_pn:name="Top_Schema.syr"/>
+      <outfile xil_pn:name="Top_Schema.xst"/>
+      <outfile xil_pn:name="Top_Schema_vhdl.prj"/>
+      <outfile xil_pn:name="Top_Schema_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1433519596" xil_pn:in_ck="4733667513525344682" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8766505088132184037" xil_pn:start_ts="1433519596">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1433519601" xil_pn:in_ck="4797878736546039475" xil_pn:name="TRAN_ngdbuild" xil_pn:prop_ck="8144070544029564185" xil_pn:start_ts="1433519596">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Top_Schema.bld"/>
+      <outfile xil_pn:name="Top_Schema.ngd"/>
+      <outfile xil_pn:name="Top_Schema_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1433519634" xil_pn:in_ck="-264519740802332054" xil_pn:name="TRANEXT_vm6File_xbr" xil_pn:prop_ck="1909345349936984061" xil_pn:start_ts="1433519601">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Top_Schema.chk"/>
+      <outfile xil_pn:name="Top_Schema.cxt"/>
+      <outfile xil_pn:name="Top_Schema.gyd"/>
+      <outfile xil_pn:name="Top_Schema.log"/>
+      <outfile xil_pn:name="Top_Schema.mfd"/>
+      <outfile xil_pn:name="Top_Schema.nga"/>
+      <outfile xil_pn:name="Top_Schema.pad"/>
+      <outfile xil_pn:name="Top_Schema.pnx"/>
+      <outfile xil_pn:name="Top_Schema.rpt"/>
+      <outfile xil_pn:name="Top_Schema.tim"/>
+      <outfile xil_pn:name="Top_Schema.tspec"/>
+      <outfile xil_pn:name="Top_Schema.vm6"/>
+      <outfile xil_pn:name="Top_Schema.xml"/>
+      <outfile xil_pn:name="Top_Schema_build.xml"/>
+      <outfile xil_pn:name="Top_Schema_html"/>
+      <outfile xil_pn:name="Top_Schema_pad.csv"/>
+    </transform>
+    <transform xil_pn:end_ts="1433519636" xil_pn:in_ck="-264519740802323190" xil_pn:name="TRANEXT_crtProg_xbr" xil_pn:prop_ck="5245363024343" xil_pn:start_ts="1433519634">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Top_Schema.jed"/>
+    </transform>
+    <transform xil_pn:end_ts="1433519634" xil_pn:in_ck="-264519740802323190" xil_pn:name="TRAN_timRpt" xil_pn:prop_ck="111903974446" xil_pn:start_ts="1433519632">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+  </transforms>
+
+</generated_project>

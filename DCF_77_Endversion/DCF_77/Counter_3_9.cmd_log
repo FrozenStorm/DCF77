@@ -1,0 +1,2 @@
+vhdtdtfi -lib work Counter_3_9.vhd -prj DCF_77 -o Counter_3_9.spl -module Counter_3_9 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w Counter_3_9.spl C:/Users/Daniel/Dropbox/Ramsch/New_77/DCF_77/Counter_3_9.sym 

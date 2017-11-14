@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Daniel/Dropbox/DCF77/DCF_77_Endversion/DCF_77/Top_Schema_Top_Schema_sch_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_signed" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="top_schema_top_schema_sch_tb" />
+            <top_module name="vcomponents" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/reset_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/time_date_select" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">time_date_select</obj_property>
+      <obj_property name="ObjectShortName">time_date_select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/ds1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ds1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ds1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/ds2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ds2[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ds2[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/ds3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ds3[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ds3[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/ds4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ds4[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ds4[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/ds5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ds5[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ds5[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/ds6" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ds6[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ds6[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/com" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">com</obj_property>
+      <obj_property name="ObjectShortName">com</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/dcfbits" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dcfbits[58:0]</obj_property>
+      <obj_property name="ObjectShortName">dcfbits[58:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data[58:0]</obj_property>
+      <obj_property name="ObjectShortName">data[58:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/dcf_77" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dcf_77</obj_property>
+      <obj_property name="ObjectShortName">dcf_77</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/mean" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">mean</obj_property>
+      <obj_property name="ObjectShortName">mean</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/min_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">min_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/min_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">min_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/hour_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hour_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/hour_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hour_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/day_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">day_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">day_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/day_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">day_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">day_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/month_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">month_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">month_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/month_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">month_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">month_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/year_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">year_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">year_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/year_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">year_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">year_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_83/sync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sync</obj_property>
+      <obj_property name="ObjectShortName">sync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/sec_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sec_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/sec_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sec_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/min_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">min_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/min_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">min_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_ten[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/hour_one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hour_one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_one[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_schema_top_schema_sch_tb/UUT/XLXI_11/hour_ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hour_ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hour_ten[3:0]</obj_property>
+   </wvobject>
+</wave_config>

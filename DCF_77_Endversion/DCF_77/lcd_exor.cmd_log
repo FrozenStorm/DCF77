@@ -1,0 +1,2 @@
+vhdtdtfi -lib work lcd_exor.vhd -prj DCF_77 -o lcd_exor.spl -module lcd_exor -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xbr -w lcd_exor.spl C:/Users/Daniel/Dropbox/Ramsch/New_77/DCF_77/lcd_exor.sym 

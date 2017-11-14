@@ -1,0 +1,72 @@
+V3 49
+FL C:/Users/Fabian/Desktop/DCF_77/bcd2seg.vhd 2015/06/04.21:31:28 P.20131013
+EN work/bcd2seg 1433519593 FL C:/Users/Fabian/Desktop/DCF_77/bcd2seg.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/bcd2seg/Behavioral 1433519594 \
+      FL C:/Users/Fabian/Desktop/DCF_77/bcd2seg.vhd EN work/bcd2seg 1433519593
+FL C:/Users/Fabian/Desktop/DCF_77/Clock.vhf 2015/06/05.17:53:08 P.20131013
+EN work/Clock 1433519611 FL C:/Users/Fabian/Desktop/DCF_77/Clock.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Clock/BEHAVIORAL 1433519612 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Clock.vhf EN work/Clock 1433519611 CP VCC \
+      CP Counter_3_9 CP counter CP GND
+FL C:/Users/Fabian/Desktop/DCF_77/counter.vhd 2015/06/04.21:31:28 P.20131013
+EN work/counter 1433519599 FL C:/Users/Fabian/Desktop/DCF_77/counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/counter/Behavioral 1433519600 \
+      FL C:/Users/Fabian/Desktop/DCF_77/counter.vhd EN work/counter 1433519599
+FL C:/Users/Fabian/Desktop/DCF_77/Counter_3_9.vhd 2015/06/04.21:31:28 P.20131013
+EN work/Counter_3_9 1433519597 FL C:/Users/Fabian/Desktop/DCF_77/Counter_3_9.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_SIGNED 1381692178
+AR work/Counter_3_9/Behavioral 1433519598 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Counter_3_9.vhd EN work/Counter_3_9 1433519597
+FL C:/Users/Fabian/Desktop/DCF_77/DCF_77_Decoder.vhd 2015/06/04.21:31:28 P.20131013
+EN work/DCF_77_Decoder 1433519603 \
+      FL C:/Users/Fabian/Desktop/DCF_77/DCF_77_Decoder.vhd PB ieee/std_logic_1164 1381692176
+AR work/DCF_77_Decoder/Behavioral 1433519604 \
+      FL C:/Users/Fabian/Desktop/DCF_77/DCF_77_Decoder.vhd EN work/DCF_77_Decoder 1433519603
+FL C:/Users/Fabian/Desktop/DCF_77/display_module.vhf 2015/06/05.17:53:09 P.20131013
+EN work/display_module 1433519613 \
+      FL C:/Users/Fabian/Desktop/DCF_77/display_module.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/display_module/BEHAVIORAL 1433519614 \
+      FL C:/Users/Fabian/Desktop/DCF_77/display_module.vhf EN work/display_module 1433519613 \
+      CP multiplexer CP bcd2seg CP BUF CP lcd_exnor CP XNOR2 CP NAND2
+FL C:/Users/Fabian/Desktop/DCF_77/divider.vhd 2015/06/05.17:53:00 P.20131013
+EN work/divider 1433519601 FL C:/Users/Fabian/Desktop/DCF_77/divider.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/divider/Behavioral 1433519602 \
+      FL C:/Users/Fabian/Desktop/DCF_77/divider.vhd EN work/divider 1433519601
+FL C:/Users/Fabian/Desktop/DCF_77/lcd_exnor.vhd 2015/06/04.21:31:28 P.20131013
+EN work/lcd_exnor 1433519595 FL C:/Users/Fabian/Desktop/DCF_77/lcd_exnor.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/lcd_exnor/Behavioral 1433519596 \
+      FL C:/Users/Fabian/Desktop/DCF_77/lcd_exnor.vhd EN work/lcd_exnor 1433519595
+FL C:/Users/Fabian/Desktop/DCF_77/multiplexer.vhd 2015/06/04.21:31:28 P.20131013
+EN work/multiplexer 1433519591 FL C:/Users/Fabian/Desktop/DCF_77/multiplexer.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/multiplexer/Behavioral 1433519592 \
+      FL C:/Users/Fabian/Desktop/DCF_77/multiplexer.vhd EN work/multiplexer 1433519591
+FL C:/Users/Fabian/Desktop/DCF_77/Top_Schema.vhf 2015/06/05.17:53:08 P.20131013
+EN work/display_module_MUSER_Top_Schema 1433519605 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Top_Schema.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/display_module_MUSER_Top_Schema/BEHAVIORAL 1433519606 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Top_Schema.vhf \
+      EN work/display_module_MUSER_Top_Schema 1433519605 CP multiplexer CP bcd2seg \
+      CP BUF CP lcd_exnor CP XNOR2 CP NAND2
+EN work/Clock_MUSER_Top_Schema 1433519607 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Top_Schema.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/Clock_MUSER_Top_Schema/BEHAVIORAL 1433519608 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Top_Schema.vhf \
+      EN work/Clock_MUSER_Top_Schema 1433519607 CP VCC CP Counter_3_9 CP counter \
+      CP GND
+EN work/Top_Schema 1433519609 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Top_Schema.vhf PB ieee/std_logic_1164 1381692176 \
+      PB ieee/NUMERIC_STD 1381692181 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/Top_Schema/BEHAVIORAL 1433519610 \
+      FL C:/Users/Fabian/Desktop/DCF_77/Top_Schema.vhf EN work/Top_Schema 1433519609 \
+      CP Clock_MUSER_Top_Schema CP display_module_MUSER_Top_Schema CP divider \
+      CP DCF_77_Decoder CP BUF

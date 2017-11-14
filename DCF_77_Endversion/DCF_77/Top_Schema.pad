@@ -1,0 +1,129 @@
+Release 8.1i - Fit P.20131013
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 6- 5-2015  5:53PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The pipe '|'
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  Top_Schema.ngd
+output file: Top_Schema.pad
+Part type:   xc2c256
+Speed grade: -6
+Package:     vq100
+
+Pinout by Pin Number:
+
+-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+Pin Number|Signal Name|Pin Usage|Pin Name|Direction|IO Standard|IO Bank Number|{blank}|Slew Rate|Termination|{blank}|Voltage|Constraint|
+P1|DS6<3>|O|I/O/GTS2|OUTPUT|LVCMOS18|2||FAST||||
+P2|DS6<4>|O|I/O/GTS3|OUTPUT|LVCMOS18|2||FAST||||
+P3|DS5_dp|O|I/O/GTS0|OUTPUT|LVCMOS18|2||FAST||||
+P4|DS5<2>|O|I/O/GTS1|OUTPUT|LVCMOS18|2||FAST||||
+P5||VCCAUX|VAUX||||||||||
+P6|DS5<3>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P7|DS5<4>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P8|DS4_dp|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P9|DS4<2>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P10|DS4<3>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P11|DS4<4>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P12|DS3_dp|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P13|DS3<2>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P14|DS3<3>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P15|DS3<4>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P16|DS2_dp|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P17|DS2<2>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P18|DS2<3>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P19|DS2<4>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P20||VCCIO-1.8|VCCIO|||1|||||||
+P21|GND||GND||||||||||
+P22|clk|GCK|I/O/GCK0||LVCMOS18|1||FAST||||
+P23|KPR||I/O/GCK1|||1|||||||
+P24|KPR||I/O/CDR|||1|||||||
+P25|GND||GND||||||||||
+P26||VCC|VCC||||||||||
+P27|KPR||I/O/GCK2|||1|||||||
+P28|KPR||I/O/DGE0|||1|||||||
+P29|DS1_dp|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P30|DS1<2>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P31|GND||GND||||||||||
+P32|DS1<3>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P33|DS1<4>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P34|com|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P35|time_date_select|I|I/O|INPUT|LVCMOS18|1||FAST||||
+P36|KPR||I/O|||1|||||||
+P37|KPR||I/O|||1|||||||
+P38||VCCIO-1.8|VCCIO|||1|||||||
+P39|KPR||I/O|||1|||||||
+P40|LED1|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P41|KPR||I/O|||1|||||||
+P42|KPR||I/O|||1|||||||
+P43|KPR||I/O|||1|||||||
+P44|KPR||I/O|||1|||||||
+P45|TDI||TDI||||||||||
+P46|KPR||I/O|||1|||||||
+P47|TMS||TMS||||||||||
+P48|TCK||TCK||||||||||
+P49|KPR||I/O|||1|||||||
+P50|KPR||I/O|||1|||||||
+P51||VCCIO-1.8|VCCIO|||1|||||||
+P52|DS1<6>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P53|DS1<5>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P54|DS1<0>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P55|DS1<1>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P56|DS2<6>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P57||VCC|VCC||||||||||
+P58|DS2<5>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P59|DS2<0>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P60|DS2<1>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P61|cln1|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P62|GND||GND||||||||||
+P63|DS3<6>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P64|DS3<5>|O|I/O|OUTPUT|LVCMOS18|1||FAST||||
+P65|DS3<0>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P66|DS3<1>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P67|DS4<6>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P68|DS4<5>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P69|GND||GND||||||||||
+P70|DS4<0>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P71|DS4<1>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P72|cln2|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P73|DS5<6>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P74|DS5<5>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P75|GND||GND||||||||||
+P76|DS5<0>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P77|reset_n|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P78|DS5<1>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P79|DS6<6>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P80|DS6<5>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P81|KPR||I/O|||2|||||||
+P82|DS6<0>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P83|TDO||TDO||||||||||
+P84|GND||GND||||||||||
+P85|KPR||I/O/DGE1|||2|||||||
+P86|KPR||I/O|||2|||||||
+P87|KPR||I/O|||2|||||||
+P88||VCCIO-1.8|VCCIO|||2|||||||
+P89|KPR||I/O|||2|||||||
+P90|KPR||I/O|||2|||||||
+P91|KPR||I/O|||2|||||||
+P92|dcf_77|I|I/O|INPUT|LVCMOS18|2||FAST||||
+P93|KPR||I/O|||2|||||||
+P94|KPR||I/O|||2|||||||
+P95|KPR||I/O|||2|||||||
+P96|DS6<1>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P97|DS6<2>|O|I/O|OUTPUT|LVCMOS18|2||FAST||||
+P98||VCCIO-1.8|VCCIO|||2|||||||
+P99|KPR||I/O/GSR|||2|||||||
+P100|GND||GND||||||||||
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

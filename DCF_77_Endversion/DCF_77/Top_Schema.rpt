@@ -1,0 +1,3241 @@
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: Top_Schema                          Date:  6- 5-2015,  5:53PM
+Device Used: XC2C256-6-VQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+209/256 ( 82%) 758 /896  ( 85%) 569 /640  ( 89%) 139/256 ( 54%) 55 /80  ( 69%)
+
+** Function Block Resources **
+
+Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
+Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
+FB1      14/16     38/40*   55/56     2/ 5    1/1*     0/1      0/1      0/1
+FB2      13/16     38/40*   56/56*    6/ 6*   0/1      0/1      0/1      0/1
+FB3      11/16     37/40    56/56*    0/ 4    1/1*     0/1      0/1      0/1
+FB4      15/16     38/40*   55/56     6/ 6*   1/1*     0/1      0/1      0/1
+FB5      15/16     38/40*   56/56*    0/ 2    1/1*     0/1      0/1      0/1
+FB6      11/16     38/40*   20/56     2/ 5    0/1      0/1      0/1      0/1
+FB7      16/16*    38/40*   52/56     6/ 6*   1/1*     0/1      0/1      0/1
+FB8      12/16     38/40*   46/56     3/ 6    1/1*     0/1      0/1      0/1
+FB9       6/16     36/40    28/56     4/ 5    0/1      0/1      0/1      0/1
+FB10     12/16     36/40    54/56     6/ 7    0/1      0/1      0/1      0/1
+FB11     11/16     38/40*   56/56*    0/ 4    1/1*     0/1      0/1      0/1
+FB12     13/16     37/40    47/56     4/ 4*   1/1*     0/1      0/1      0/1
+FB13     13/16     38/40*   53/56     4/ 4*   1/1*     0/1      0/1      0/1
+FB14     16/16*    36/40    45/56     1/ 5    1/1*     0/1      0/1      0/1
+FB15     16/16*    28/40    49/56     6/ 6*   1/1*     0/1      0/1      0/1
+FB16     15/16     17/40    30/56     1/ 5    1/1*     0/1      0/1      0/1
+         -----    -------  -------   -----    ---      ---      ---      ---
+Total   209/256   569/640  758/896   51/80   12/16     0/16     0/16     0/16
+
+CTC - Control Term Clock
+CTR - Control Term Reset
+CTS - Control Term Set
+CTE - Control Term Output Enable
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+GCK         GSR         GTS         DGE         
+Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+1/3         0/1         0/4         0/1
+
+Signal 'clk' mapped onto global clock net GCK0.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :    3           3    |  I/O              :    50     70
+Output        :   51          51    |  GCK/IO           :     1      3
+Bidirectional :    0           0    |  GTS/IO           :     4      4
+GCK           :    1           1    |  GSR/IO           :     0      1
+GTS           :    0           0    |  CDR/IO           :     0      1
+GSR           :    0           0    |  DGE/IO           :     0      1
+                 ----        ----
+        Total     55          55
+
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'Top_Schema.ise'.
+INFO:Cpld - Inferring BUFG constraint for signal 'clk' based upon the LOC
+   constraint 'P22'. It is recommended that you declare this BUFG explicitedly
+   in your design. Note that for certain device families the output of a BUFG
+   constraint can not drive a gated clock, and the BUFG constraint will be
+   ignored.
+*************************  Summary of Mapped Logic  ************************
+
+** 51 Outputs **
+
+Signal                                                               Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                                                                 Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+DS6<2>                                                               3     10    2    FB1_6   97    I/O       O       LVCMOS18           FAST         
+DS6<1>                                                               5     10    2    FB1_12  96    I/O       O       LVCMOS18           FAST         
+DS6<3>                                                               7     10    2    FB2_1   1     GTS/I/O   O       LVCMOS18           FAST         
+DS6<4>                                                               7     10    2    FB2_3   2     GTS/I/O   O       LVCMOS18           FAST         
+DS5_dp                                                               2     10    2    FB2_5   3     GTS/I/O   O       LVCMOS18           FAST DFF     RESET
+DS5<2>                                                               3     10    2    FB2_12  4     GTS/I/O   O       LVCMOS18           FAST         
+DS5<3>                                                               7     10    2    FB2_14  6     I/O       O       LVCMOS18           FAST         
+DS5<4>                                                               7     10    2    FB2_15  7     I/O       O       LVCMOS18           FAST         
+DS4_dp                                                               2     2     2    FB4_1   8     I/O       O       LVCMOS18           FAST         
+DS4<2>                                                               3     10    2    FB4_2   9     I/O       O       LVCMOS18           FAST         
+DS4<3>                                                               7     10    2    FB4_3   10    I/O       O       LVCMOS18           FAST         
+DS4<4>                                                               7     10    2    FB4_5   11    I/O       O       LVCMOS18           FAST         
+DS3_dp                                                               2     10    2    FB4_6   12    I/O       O       LVCMOS18           FAST DFF     RESET
+DS3<2>                                                               2     6     2    FB4_13  13    I/O       O       LVCMOS18           FAST         
+DS1_dp                                                               1     9     1    FB6_14  29    I/O       O       LVCMOS18           FAST TFF     RESET
+DS1<2>                                                               3     8     1    FB6_16  30    I/O       O       LVCMOS18           FAST         
+DS2<4>                                                               7     10    1    FB7_5   19    I/O       O       LVCMOS18           FAST         
+DS2<3>                                                               7     10    1    FB7_6   18    I/O       O       LVCMOS18           FAST         
+DS2<2>                                                               3     10    1    FB7_11  17    I/O       O       LVCMOS18           FAST         
+DS2_dp                                                               2     2     1    FB7_12  16    I/O       O       LVCMOS18           FAST         
+DS3<4>                                                               5     7     1    FB7_13  15    I/O       O       LVCMOS18           FAST         
+DS3<3>                                                               5     7     1    FB7_14  14    I/O       O       LVCMOS18           FAST         
+DS1<3>                                                               5     8     1    FB8_6   32    I/O       O       LVCMOS18           FAST         
+DS1<4>                                                               5     7     1    FB8_11  33    I/O       O       LVCMOS18           FAST         
+com                                                                  2     10    1    FB8_12  34    I/O       O       LVCMOS18           FAST DFF     RESET
+DS5<1>                                                               5     10    2    FB9_1   78    I/O       O       LVCMOS18           FAST         
+DS6<6>                                                               5     10    2    FB9_2   79    I/O       O       LVCMOS18           FAST         
+DS6<5>                                                               7     10    2    FB9_4   80    I/O       O       LVCMOS18           FAST         
+DS6<0>                                                               5     10    2    FB9_12  82    I/O       O       LVCMOS18           FAST         
+DS5<0>                                                               5     10    2    FB10_2  76    I/O       O       LVCMOS18           FAST         
+DS5<5>                                                               7     10    2    FB10_3  74    I/O       O       LVCMOS18           FAST         
+DS5<6>                                                               5     10    2    FB10_4  73    I/O       O       LVCMOS18           FAST         
+cln2                                                                 2     3     2    FB10_5  72    I/O       O       LVCMOS18           FAST         
+DS4<1>                                                               5     10    2    FB10_6  71    I/O       O       LVCMOS18           FAST         
+DS4<0>                                                               5     10    2    FB10_12 70    I/O       O       LVCMOS18           FAST         
+DS4<5>                                                               7     10    2    FB12_11 68    I/O       O       LVCMOS18           FAST         
+DS4<6>                                                               5     10    2    FB12_13 67    I/O       O       LVCMOS18           FAST         
+DS3<1>                                                               3     6     2    FB12_14 66    I/O       O       LVCMOS18           FAST         
+DS3<0>                                                               4     7     2    FB12_15 65    I/O       O       LVCMOS18           FAST         
+DS1<5>                                                               6     8     1    FB13_2  53    I/O       O       LVCMOS18           FAST         
+
+Signal                                                               Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                                                                 Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+DS1<0>                                                               4     8     1    FB13_4  54    I/O       O       LVCMOS18           FAST         
+DS1<1>                                                               3     6     1    FB13_6  55    I/O       O       LVCMOS18           FAST         
+DS2<6>                                                               5     10    1    FB13_13 56    I/O       O       LVCMOS18           FAST         
+DS1<6>                                                               4     7     1    FB14_1  52    I/O       O       LVCMOS18           FAST         
+DS2<5>                                                               7     10    1    FB15_11 58    I/O       O       LVCMOS18           FAST         
+DS2<0>                                                               5     10    1    FB15_12 59    I/O       O       LVCMOS18           FAST         
+DS2<1>                                                               5     10    1    FB15_13 60    I/O       O       LVCMOS18           FAST         
+cln1                                                                 2     3     1    FB15_14 61    I/O       O       LVCMOS18           FAST         
+DS3<6>                                                               4     6     1    FB15_15 63    I/O       O       LVCMOS18           FAST         
+DS3<5>                                                               5     7     1    FB15_16 64    I/O       O       LVCMOS18           FAST         
+LED1                                                                 1     1     1    FB16_12 40    I/O       O       LVCMOS18           FAST         
+
+** 158 Buried Nodes **
+
+Signal                                                               Total Total Loc     Reg     Reg Init
+Name                                                                 Pts   Inps          Use     State
+XLXI_75/clkCnt<0>                                                    0     0     FB1_1   TFF     RESET
+XLXI_83/data<4>                                                      3     3     FB1_2   DEFF    RESET
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001  3     3     FB1_4           
+N_PZ_797                                                             2     5     FB1_5           
+XLXN_218<2>                                                          17    19    FB1_7   DFF     RESET
+XLXN_218<1>                                                          17    19    FB1_8   DFF     RESET
+XLXN_218<0>                                                          17    19    FB1_9   DFF     RESET
+XLXN_217<3>                                                          17    19    FB1_10  DFF     RESET
+XLXN_217<2>                                                          17    19    FB1_11  DFF     RESET
+XLXI_83/data<39>                                                     3     3     FB1_14  DEFF    RESET
+XLXN_217<1>                                                          17    19    FB1_15  DFF     RESET
+XLXN_217<0>                                                          17    19    FB1_16  DFF     RESET
+XLXI_75/clkCnt<6>                                                    1     6     FB2_7   TFF     RESET
+XLXN_238                                                             1     7     FB2_8   TFF     RESET
+XLXI_75/clkCnt<8>                                                    1     8     FB2_9   TFF     RESET
+XLXI_75/clkCnt<11>                                                   1     11    FB2_10  TFF     RESET
+XLXI_75/clkCnt<10>                                                   1     10    FB2_11  TFF     RESET
+XLXI_83/Mxor_sync_next_xor0002__xor0000                              9     5     FB2_13          
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000                9     5     FB2_16          
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000  3     3     FB3_2           
+XLXN_90<2>                                                           17    19    FB3_3   DFF     RESET
+XLXN_90<1>                                                           17    19    FB3_4   DFF     RESET
+XLXN_90<0>                                                           17    19    FB3_6   DFF     RESET
+XLXN_89<1>                                                           17    19    FB3_7   DFF     RESET
+XLXN_89<0>                                                           17    19    FB3_8   DFF     RESET
+XLXN_88<3>                                                           17    19    FB3_9   DFF     RESET
+XLXN_88<2>                                                           17    19    FB3_10  DFF     RESET
+XLXN_88<1>                                                           17    19    FB3_11  DFF     RESET
+XLXN_88<0>                                                           17    19    FB3_13  DFF     RESET
+XLXN_218<3>                                                          17    19    FB3_15  DFF     RESET
+N_PZ_925                                                             2     3     FB4_7           
+N_PZ_738                                                             1     2     FB4_8           
+XLXI_75/clkCnt<1>                                                    1     1     FB4_9   TFF     RESET
+XLXI_75/clkCnt<2>                                                    1     2     FB4_10  TFF     RESET
+XLXI_75/clkCnt<3>                                                    1     3     FB4_11  TFF     RESET
+XLXI_75/clkCnt<4>                                                    1     4     FB4_12  TFF     RESET
+XLXI_75/clkCnt<5>                                                    1     5     FB4_14  TFF     RESET
+XLXI_83/data_not0001                                                 5     8     FB4_15          
+XLXI_83/max_holder<0>                                                19    15    FB4_16  DFF     RESET
+XLXN_75<2>                                                           3     3     FB5_1   DEFF    RESET
+
+Signal                                                               Total Total Loc     Reg     Reg Init
+Name                                                                 Pts   Inps          Use     State
+XLXN_75<1>                                                           3     3     FB5_2   DEFF    RESET
+XLXN_75<0>                                                           3     3     FB5_3   DEFF    RESET
+XLXI_83/data<11>                                                     3     3     FB5_5   DEFF    RESET
+XLXN_76<0>                                                           3     3     FB5_6   DEFF    RESET
+XLXI_83/data<10>                                                     3     3     FB5_7   DEFF    RESET
+XLXN_75<3>                                                           3     3     FB5_8   DEFF    RESET
+XLXI_83/data<38>                                                     3     3     FB5_9   DEFF    RESET
+XLXI_83/data<30>                                                     3     3     FB5_10  DEFF    RESET
+XLXI_83/Mxor_sync_next_xor0002__xor0001                              5     4     FB5_11          
+XLXI_83/Mxor_sync_next_xor0001__xor0001                              5     4     FB5_12          
+XLXI_83/Mxor_sync_next_xor0000__xor0001                              5     4     FB5_13          
+XLXI_83/Mxor_sync_next_xor0000__xor0000                              5     4     FB5_14          
+XLXN_91<0>                                                           17    19    FB5_15  DFF     RESET
+XLXN_90<3>                                                           17    19    FB5_16  DFF     RESET
+XLXN_176<2>                                                          2     21    FB6_5   TFF     RESET
+N_PZ_1459                                                            1     19    FB6_6           
+XLXN_237                                                             1     15    FB6_7           
+XLXI_75/clkCnt<14>                                                   1     14    FB6_8   TFF     RESET
+XLXI_75/clkCnt<13>                                                   1     13    FB6_9   TFF     RESET
+XLXI_75/clkCnt<12>                                                   1     12    FB6_10  TFF     RESET
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001  3     3     FB6_11          
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000  3     3     FB6_13          
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001  3     3     FB6_15          
+XLXN_77<3>                                                           3     3     FB7_1   DEFF    RESET
+XLXN_83<1>                                                           4     6     FB7_2   DFF     RESET
+XLXN_83<2>                                                           3     6     FB7_3   TFF     RESET
+N_PZ_1517                                                            2     4     FB7_4           
+N_PZ_1458                                                            2     3     FB7_7           
+N_PZ_749                                                             2     2     FB7_8           
+N_PZ_1498                                                            2     2     FB7_9           
+XLXN_83<0>                                                           2     3     FB7_10  DFF     RESET
+XLXN_83<3>                                                           2     6     FB7_15  TFF     RESET
+XLXN_85<3>                                                           2     14    FB7_16  TFF     RESET
+XLXI_83/mean<3>                                                      6     8     FB8_2   TFF     RESET
+XLXI_83/mean<2>                                                      8     8     FB8_3   DFF     RESET
+XLXI_83/mean<1>                                                      6     8     FB8_4   TFF     RESET
+XLXI_83/mean<0>                                                      5     8     FB8_5   TFF     RESET
+XLXI_83/mean<4>                                                      4     8     FB8_7   TFF     RESET
+XLXN_176<1>                                                          3     5     FB8_8   DFF     RESET
+XLXN_176<3>                                                          3     23    FB8_9   TFF     RESET
+
+Signal                                                               Total Total Loc     Reg     Reg Init
+Name                                                                 Pts   Inps          Use     State
+N_PZ_1548                                                            2     4     FB8_10          
+XLXN_176<0>                                                          2     20    FB8_16  DFF     RESET
+XLXN_87<3>                                                           3     22    FB9_15  TFF     RESET
+XLXN_87<2>                                                           3     21    FB9_16  TFF     RESET
+XLXN_84<3>                                                           5     13    FB10_10 TFF     RESET
+XLXN_85<2>                                                           5     17    FB10_11 TFF     RESET
+XLXN_84<0>                                                           4     10    FB10_13 TFF     RESET
+XLXN_84<2>                                                           4     12    FB10_14 TFF     RESET
+XLXN_85<0>                                                           4     14    FB10_15 TFF     RESET
+N_PZ_834                                                             3     4     FB10_16         
+XLXN_77<1>                                                           3     3     FB11_2  DEFF    RESET
+XLXN_77<0>                                                           3     3     FB11_3  DEFF    RESET
+XLXI_83/max_holder<4>                                                4     6     FB11_4  DFF     RESET
+XLXN_84<1>                                                           6     13    FB11_5  TFF     RESET
+XLXN_85<1>                                                           6     17    FB11_6  TFF     RESET
+XLXN_87<0>                                                           7     25    FB11_7  TFF     RESET
+XLXN_87<1>                                                           6     25    FB11_8  TFF     RESET
+XLXN_86<3>                                                           6     25    FB11_9  TFF     RESET
+XLXN_86<2>                                                           6     25    FB11_10 TFF     RESET
+XLXN_86<0>                                                           5     22    FB11_15 TFF     RESET
+XLXN_86<1>                                                           7     25    FB11_16 TFF     RESET
+XLXI_83/max_holder<3>                                                7     10    FB12_4  DFF     RESET
+XLXI_83/zero_time<0>                                                 5     10    FB12_5  TFF     RESET
+XLXI_83/zero_time<1>                                                 5     11    FB12_6  TFF     RESET
+XLXI_83/zero_time<2>                                                 4     12    FB12_7  TFF     RESET
+XLXI_83/zero_time<7>                                                 3     11    FB12_8  DFF     RESET
+XLXI_83/zero_time<6>                                                 3     13    FB12_9  TFF     RESET
+XLXI_83/zero_time<5>                                                 3     12    FB12_10 TFF     RESET
+XLXI_83/zero_time<4>                                                 3     11    FB12_12 TFF     RESET
+XLXI_83/zero_time<3>                                                 3     10    FB12_16 TFF     RESET
+XLXI_83/data<16>                                                     3     3     FB13_7  DEFF    RESET
+XLXI_83/data<15>                                                     3     3     FB13_8  DEFF    RESET
+XLXI_83/data<14>                                                     3     3     FB13_9  DEFF    RESET
+XLXI_83/data<13>                                                     3     3     FB13_10 DEFF    RESET
+XLXI_83/data<12>                                                     3     3     FB13_11 DEFF    RESET
+XLXI_83/data<1>                                                      3     3     FB13_12 DEFF    RESET
+XLXI_83/max_holder<1>                                                13    14    FB13_14 DFF     RESET
+XLXI_83/max_holder<2>                                                9     12    FB13_15 DFF     RESET
+XLXI_83/data<0>                                                      5     8     FB13_16 DFF     RESET
+XLXI_83/data<40>                                                     3     3     FB14_2  DEFF    RESET
+
+Signal                                                               Total Total Loc     Reg     Reg Init
+Name                                                                 Pts   Inps          Use     State
+XLXI_83/data<44>                                                     3     3     FB14_3  DEFF    RESET
+XLXI_83/data<3>                                                      3     3     FB14_4  DEFF    RESET
+XLXI_83/data<43>                                                     3     3     FB14_5  DEFF    RESET
+XLXI_83/data<2>                                                      3     3     FB14_6  DEFF    RESET
+XLXI_83/data<23>                                                     3     3     FB14_7  DEFF    RESET
+XLXI_83/data<22>                                                     3     3     FB14_8  DEFF    RESET
+XLXI_83/data<21>                                                     3     3     FB14_9  DEFF    RESET
+XLXI_83/data<20>                                                     3     3     FB14_10 DEFF    RESET
+XLXI_83/data<19>                                                     3     3     FB14_11 DEFF    RESET
+XLXI_83/data<18>                                                     3     3     FB14_12 DEFF    RESET
+XLXI_83/data<17>                                                     3     3     FB14_13 DEFF    RESET
+XLXI_83/data<42>                                                     3     3     FB14_14 DEFF    RESET
+XLXI_83/data<41>                                                     3     3     FB14_15 DEFF    RESET
+XLXN_163                                                             13    14    FB14_16 DFF     RESET
+XLXI_83/data<54>                                                     3     3     FB15_1  DEFF    RESET
+XLXI_83/data<53>                                                     3     3     FB15_2  DEFF    RESET
+XLXI_83/data<52>                                                     3     3     FB15_3  DEFF    RESET
+XLXI_83/data<51>                                                     3     3     FB15_4  DEFF    RESET
+XLXI_83/data<50>                                                     3     3     FB15_5  DEFF    RESET
+XLXI_83/data<49>                                                     3     3     FB15_6  DEFF    RESET
+XLXI_83/data<48>                                                     3     3     FB15_7  DEFF    RESET
+XLXI_83/data<47>                                                     3     3     FB15_8  DEFF    RESET
+XLXI_83/data<46>                                                     3     3     FB15_9  DEFF    RESET
+XLXI_83/data<45>                                                     3     3     FB15_10 DEFF    RESET
+XLXN_76<2>                                                           3     3     FB16_1  DEFF    RESET
+XLXN_76<1>                                                           3     3     FB16_2  DEFF    RESET
+XLXI_83/data<9>                                                      3     3     FB16_3  DEFF    RESET
+XLXI_83/data<8>                                                      3     3     FB16_4  DEFF    RESET
+XLXN_78<1>                                                           3     3     FB16_6  DEFF    RESET
+XLXI_83/data<7>                                                      3     3     FB16_7  DEFF    RESET
+XLXI_83/data<6>                                                      3     3     FB16_8  DEFF    RESET
+XLXI_83/data<5>                                                      3     3     FB16_9  DEFF    RESET
+XLXI_83/data<58>                                                     3     3     FB16_10 DEFF    RESET
+XLXN_78<0>                                                           3     3     FB16_11 DEFF    RESET
+XLXN_77<2>                                                           3     3     FB16_13 DEFF    RESET
+XLXI_83/data<57>                                                     3     3     FB16_14 DEFF    RESET
+XLXI_83/data<56>                                                     3     3     FB16_15 DEFF    RESET
+XLXI_83/data<55>                                                     3     3     FB16_16 DEFF    RESET
+
+** 4 Inputs **
+
+Signal                                                               Bank Loc     Pin   Pin       Pin     I/O      I/O
+Name                                                                              No.   Type      Use     STD      Style
+dcf_77                                                               2    FB3_12  92    I/O       I       LVCMOS18 KPR
+clk                                                                  1    FB5_6   22    GCK/I/O   GCK     LVCMOS18 KPR
+time_date_select                                                     1    FB8_13  35    I/O       I       LVCMOS18 KPR
+reset_n                                                              2    FB10_1  77    I/O       I       LVCMOS18 KPR
+
+Legend:
+Pin No.   - ~     - User Assigned
+I/O Style - OD    - OpenDrain
+          - PU    - Pullup
+          - KPR   - Keeper
+          - S     - SchmittTrigger
+          - DG    - DataGate
+Reg Use   - LATCH - Transparent latch
+          - DFF   - D-flip-flop
+          - DEFF  - D-flip-flop with clock enable
+          - TFF   - T-flip-flop
+          - TDFF  - Dual-edge-triggered T-flip-flop
+          - DDFF  - Dual-edge-triggered flip-flop
+          - DDEFF - Dual-edge-triggered flip-flop with clock enable
+          /S (after any above flop/latch type) indicates initial state is Set
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+              VRF - Vref
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   55/1
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+XLXI_75/clkCnt<0>             0     FB1_1        (b)     (b)               
+XLXI_83/data<4>               3     FB1_2        (b)     (b)    +          
+(unused)                      0     FB1_3   99   GSR/I/O       
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001
+                              3     FB1_4        (b)     (b)               
+N_PZ_797                      2     FB1_5        (b)     (b)               
+DS6<2>                        3     FB1_6   97   I/O     O                 
+XLXN_218<2>                   17    FB1_7        (b)     (b)    +          
+XLXN_218<1>                   17    FB1_8        (b)     (b)    +          
+XLXN_218<0>                   17    FB1_9        (b)     (b)    +          
+XLXN_217<3>                   17    FB1_10       (b)     (b)    +          
+XLXN_217<2>                   17    FB1_11       (b)     (b)    +          
+DS6<1>                        5     FB1_12  96   I/O     O                 
+(unused)                      0     FB1_13  95   I/O           
+XLXI_83/data<39>              3     FB1_14  94   I/O     (b)    +          
+XLXN_217<1>                   17    FB1_15       (b)     (b)    +          
+XLXN_217<0>                   17    FB1_16       (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                                   14: XLXI_83/data<58>      27: XLXN_176<2> 
+  2: N_PZ_1458                                15: XLXI_83/data<5>       28: XLXN_176<3> 
+  3: N_PZ_1498                                16: XLXI_83/data<6>       29: XLXN_217<0> 
+  4: N_PZ_1517                                17: XLXI_83/data<7>       30: XLXN_217<1> 
+  5: N_PZ_749                                 18: XLXI_83/data<8>       31: XLXN_217<2> 
+  6: XLXI_83/Mxor_sync_next_xor0000__xor0000  19: XLXI_83/data_not0001  32: XLXN_217<3> 
+  7: XLXI_83/Mxor_sync_next_xor0000__xor0001  20: XLXI_83/mean<1>       33: XLXN_218<0> 
+  8: XLXI_83/Mxor_sync_next_xor0002__xor0000  21: XLXI_83/mean<2>       34: XLXN_218<1> 
+  9: XLXI_83/Mxor_sync_next_xor0002__xor0001  22: XLXI_83/mean<3>       35: XLXN_218<2> 
+ 10: XLXI_83/data<2>                          23: XLXI_83/mean<4>       36: XLXN_238 
+ 11: XLXI_83/data<38>                         24: XLXI_83/zero_time<6>  37: reset_n 
+ 12: XLXI_83/data<3>                          25: XLXN_176<0>           38: time_date_select 
+ 13: XLXI_83/data<4>                          26: XLXN_176<1>          
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXI_75/clkCnt<0> 
+                  ........................................ 0       
+XLXI_83/data<4>   ...........X......X................X.... 3       
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001 
+                  ...........XX.X......................... 3       
+N_PZ_797          ...................XXXX.............X... 5       
+DS6<2>            X.......................XXXXXXXX.....X.. 10      
+XLXN_218<2>       .XXXXXXXXXX..X.....XXXXX..........XXX... 19      
+XLXN_218<1>       .XXXXXXXX.XX.X.....XXXXX.........X.XX... 19      
+XLXN_218<0>       .XXXXXXXX.X.XX.....XXXXX........X..XX... 19      
+XLXN_217<3>       .XXXXXXXX.X..XX....XXXXX.......X...XX... 19      
+XLXN_217<2>       .XXXXXXXX.X..X.X...XXXXX......X....XX... 19      
+DS6<1>            X.......................XXXXXXXX.....X.. 10      
+XLXI_83/data<39>  ..........X.......X................X.... 3       
+XLXN_217<1>       .XXXXXXXX.X..X..X..XXXXX.....X.....XX... 19      
+XLXN_217<0>       .XXXXXXXX.X..X...X.XXXXX....X......XX... 19      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB2  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DS6<3>                        7     FB2_1   1    GTS/I/O O                 
+(unused)                      0     FB2_2        (b)           
+DS6<4>                        7     FB2_3   2    GTS/I/O O                 
+(unused)                      0     FB2_4        (b)           
+DS5_dp                        2     FB2_5   3    GTS/I/O O                 
+(unused)                      0     FB2_6        (b)           
+XLXI_75/clkCnt<6>             1     FB2_7        (b)     (b)               
+XLXN_238                      1     FB2_8        (b)     (b)               
+XLXI_75/clkCnt<8>             1     FB2_9        (b)     (b)               
+XLXI_75/clkCnt<11>            1     FB2_10       (b)     (b)               
+XLXI_75/clkCnt<10>            1     FB2_11       (b)     (b)               
+DS5<2>                        3     FB2_12  4    GTS/I/O O                 
+XLXI_83/Mxor_sync_next_xor0002__xor0000
+                              9     FB2_13       (b)     (b)               
+DS5<3>                        7     FB2_14  6    I/O     O                 
+DS5<4>                        7     FB2_15  7    I/O     O                 
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000
+                              9     FB2_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                                                               14: XLXI_83/data<10>  27: XLXN_217<2> 
+  2: XLXI_75/clkCnt<0>                                                    15: XLXI_83/data<1>   28: XLXN_217<3> 
+  3: XLXI_75/clkCnt<10>                                                   16: XLXI_83/data<2>   29: XLXN_218<0> 
+  4: XLXI_75/clkCnt<1>                                                    17: XLXI_83/data<6>   30: XLXN_218<1> 
+  5: XLXI_75/clkCnt<2>                                                    18: XLXI_83/data<7>   31: XLXN_218<2> 
+  6: XLXI_75/clkCnt<3>                                                    19: XLXI_83/data<8>   32: XLXN_218<3> 
+  7: XLXI_75/clkCnt<4>                                                    20: XLXI_83/data<9>   33: XLXN_238 
+  8: XLXI_75/clkCnt<5>                                                    21: XLXN_176<0>       34: XLXN_83<0> 
+  9: XLXI_75/clkCnt<6>                                                    22: XLXN_176<1>       35: XLXN_83<1> 
+ 10: XLXI_75/clkCnt<8>                                                    23: XLXN_176<2>       36: XLXN_83<2> 
+ 11: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001  24: XLXN_176<3>       37: XLXN_83<3> 
+ 12: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000                25: XLXN_217<0>       38: time_date_select 
+ 13: XLXI_83/data<0>                                                      26: XLXN_217<1>      
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DS6<3>            X...................XXXXXXXX.........X.. 10      
+DS6<4>            X...................XXXXXXXX.........X.. 10      
+DS5_dp            XX.XXXXXXX......................X....... 10      
+XLXI_75/clkCnt<6> 
+                  .X.XXXXX................................ 6       
+XLXN_238          .X.XXXXXX............................... 7       
+XLXI_75/clkCnt<8> 
+                  .X.XXXXXX.......................X....... 8       
+XLXI_75/clkCnt<11> 
+                  XXXXXXXXXX......................X....... 11      
+XLXI_75/clkCnt<10> 
+                  XX.XXXXXXX......................X....... 10      
+DS5<2>            X...........................XXXX.XXXXX.. 10      
+XLXI_83/Mxor_sync_next_xor0002__xor0000 
+                  ..........XXX.XX........................ 5       
+DS5<3>            X...........................XXXX.XXXXX.. 10      
+DS5<4>            X...........................XXXX.XXXXX.. 10      
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000 
+                  .............X..XXXX.................... 5       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB3  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               37/3
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB3_1        (b)           
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000
+                              3     FB3_2        (b)     (b)               
+XLXN_90<2>                    17    FB3_3        (b)     (b)    +          
+XLXN_90<1>                    17    FB3_4        (b)     (b)    +          
+(unused)                      0     FB3_5   93   I/O           
+XLXN_90<0>                    17    FB3_6        (b)     (b)    +          
+XLXN_89<1>                    17    FB3_7        (b)     (b)    +          
+XLXN_89<0>                    17    FB3_8        (b)     (b)    +          
+XLXN_88<3>                    17    FB3_9        (b)     (b)    +          
+XLXN_88<2>                    17    FB3_10       (b)     (b)    +          
+XLXN_88<1>                    17    FB3_11       (b)     (b)    +          
+(unused)                      0     FB3_12  92   I/O     I     
+XLXN_88<0>                    17    FB3_13       (b)     (b)    +          
+(unused)                      0     FB3_14  91   I/O           
+XLXN_218<3>                   17    FB3_15       (b)     (b)    +          
+(unused)                      0     FB3_16  90   I/O           
+
+Signals Used by Logic in Function Block
+  1: N_PZ_1458                                14: XLXI_83/data<19>      26: XLXN_218<3> 
+  2: N_PZ_1498                                15: XLXI_83/data<1>       27: XLXN_238 
+  3: N_PZ_1517                                16: XLXI_83/data<20>      28: XLXN_88<0> 
+  4: N_PZ_749                                 17: XLXI_83/data<21>      29: XLXN_88<1> 
+  5: XLXI_83/Mxor_sync_next_xor0000__xor0000  18: XLXI_83/data<22>      30: XLXN_88<2> 
+  6: XLXI_83/Mxor_sync_next_xor0000__xor0001  19: XLXI_83/data<38>      31: XLXN_88<3> 
+  7: XLXI_83/Mxor_sync_next_xor0002__xor0000  20: XLXI_83/data<58>      32: XLXN_89<0> 
+  8: XLXI_83/Mxor_sync_next_xor0002__xor0001  21: XLXI_83/mean<1>       33: XLXN_89<1> 
+  9: XLXI_83/data<11>                         22: XLXI_83/mean<2>       34: XLXN_90<0> 
+ 10: XLXI_83/data<12>                         23: XLXI_83/mean<3>       35: XLXN_90<1> 
+ 11: XLXI_83/data<13>                         24: XLXI_83/mean<4>       36: XLXN_90<2> 
+ 12: XLXI_83/data<17>                         25: XLXI_83/zero_time<6>  37: reset_n 
+ 13: XLXI_83/data<18>                        
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000 
+                  ...........XXX.......................... 3       
+XLXN_90<2>        XXXXXXXXX.........XXXXXXX.X........XX... 19      
+XLXN_90<1>        XXXXXXXX.X........XXXXXXX.X.......X.X... 19      
+XLXN_90<0>        XXXXXXXX..X.......XXXXXXX.X......X..X... 19      
+XLXN_89<1>        XXXXXXXX...X......XXXXXXX.X.....X...X... 19      
+XLXN_89<0>        XXXXXXXX....X.....XXXXXXX.X....X....X... 19      
+XLXN_88<3>        XXXXXXXX.....X....XXXXXXX.X...X.....X... 19      
+XLXN_88<2>        XXXXXXXX.......X..XXXXXXX.X..X......X... 19      
+XLXN_88<1>        XXXXXXXX........X.XXXXXXX.X.X.......X... 19      
+XLXN_88<0>        XXXXXXXX.........XXXXXXXX.XX........X... 19      
+XLXN_218<3>       XXXXXXXX......X...XXXXXXXXX.........X... 19      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB4  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   55/1
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DS4_dp                        2     FB4_1   8    I/O     O                 
+DS4<2>                        3     FB4_2   9    I/O     O                 
+DS4<3>                        7     FB4_3   10   I/O     O                 
+(unused)                      0     FB4_4        (b)           
+DS4<4>                        7     FB4_5   11   I/O     O                 
+DS3_dp                        2     FB4_6   12   I/O     O                 
+N_PZ_925                      2     FB4_7        (b)     (b)               
+N_PZ_738                      1     FB4_8        (b)     (b)               
+XLXI_75/clkCnt<1>             1     FB4_9        (b)     (b)               
+XLXI_75/clkCnt<2>             1     FB4_10       (b)     (b)               
+XLXI_75/clkCnt<3>             1     FB4_11       (b)     (b)               
+XLXI_75/clkCnt<4>             1     FB4_12       (b)     (b)               
+DS3<2>                        2     FB4_13  13   I/O     O                 
+XLXI_75/clkCnt<5>             1     FB4_14       (b)     (b)               
+XLXI_83/data_not0001          5     FB4_15       (b)     (b)               
+XLXI_83/max_holder<0>         19    FB4_16       (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                 14: XLXI_83/max_holder<1>  27: XLXN_84<2> 
+  2: N_PZ_797               15: XLXI_83/max_holder<2>  28: XLXN_84<3> 
+  3: N_PZ_834               16: XLXI_83/max_holder<3>  29: XLXN_85<0> 
+  4: N_PZ_925               17: XLXI_83/max_holder<4>  30: XLXN_85<1> 
+  5: XLXI_75/clkCnt<0>      18: XLXI_83/mean<0>        31: XLXN_85<2> 
+  6: XLXI_75/clkCnt<1>      19: XLXI_83/mean<1>        32: XLXN_85<3> 
+  7: XLXI_75/clkCnt<2>      20: XLXI_83/mean<2>        33: XLXN_90<0> 
+  8: XLXI_75/clkCnt<3>      21: XLXI_83/mean<3>        34: XLXN_90<1> 
+  9: XLXI_75/clkCnt<4>      22: XLXI_83/mean<4>        35: XLXN_90<2> 
+ 10: XLXI_75/clkCnt<5>      23: XLXN_163               36: XLXN_90<3> 
+ 11: XLXI_75/clkCnt<6>      24: XLXN_238               37: reset_n 
+ 12: XLXI_75/clkCnt<8>      25: XLXN_84<0>             38: time_date_select 
+ 13: XLXI_83/max_holder<0>  26: XLXN_84<1>            
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DS4_dp            X....................................X.. 2       
+DS4<2>            X.......................XXXX....XXXX.X.. 10      
+DS4<3>            X.......................XXXX....XXXX.X.. 10      
+DS4<4>            X.......................XXXX....XXXX.X.. 10      
+DS3_dp            X...XXXXXXXX...........X................ 10      
+N_PZ_925          .................XXX.................... 3       
+N_PZ_738          ......................X.............X... 2       
+XLXI_75/clkCnt<1> 
+                  ....X................................... 1       
+XLXI_75/clkCnt<2> 
+                  ....XX.................................. 2       
+XLXI_75/clkCnt<3> 
+                  ....XXX................................. 3       
+XLXI_75/clkCnt<4> 
+                  ....XXXX................................ 4       
+DS3<2>            X...........................XXXX.....X.. 6       
+XLXI_75/clkCnt<5> 
+                  ....XXXXX............................... 5       
+XLXI_83/data_not0001 
+                  ...X........XXXXX...XX.................. 8       
+XLXI_83/max_holder<0> 
+                  .XXX........XXXXXXXXXX.X............X... 15      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB5  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+XLXN_75<2>                    3     FB5_1        (b)     (b)    +          
+XLXN_75<1>                    3     FB5_2        (b)     (b)    +          
+XLXN_75<0>                    3     FB5_3        (b)     (b)    +          
+(unused)                      0     FB5_4   23   GCK/I/O       
+XLXI_83/data<11>              3     FB5_5        (b)     (b)    +          
+XLXN_76<0>                    3     FB5_6   22   GCK/I/O GCK    +          
+XLXI_83/data<10>              3     FB5_7        (b)     (b)    +          
+XLXN_75<3>                    3     FB5_8        (b)     (b)    +          
+XLXI_83/data<38>              3     FB5_9        (b)     (b)    +          
+XLXI_83/data<30>              3     FB5_10       (b)     (b)    +          
+XLXI_83/Mxor_sync_next_xor0002__xor0001
+                              5     FB5_11       (b)     (b)               
+XLXI_83/Mxor_sync_next_xor0001__xor0001
+                              5     FB5_12       (b)     (b)               
+XLXI_83/Mxor_sync_next_xor0000__xor0001
+                              5     FB5_13       (b)     (b)               
+XLXI_83/Mxor_sync_next_xor0000__xor0000
+                              5     FB5_14       (b)     (b)               
+XLXN_91<0>                    17    FB5_15       (b)     (b)    +          
+XLXN_90<3>                    17    FB5_16       (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: N_PZ_1458                                                            14: XLXI_83/data<30>      27: XLXN_75<2> 
+  2: N_PZ_1498                                                            15: XLXI_83/data<38>      28: XLXN_75<3> 
+  3: N_PZ_1517                                                            16: XLXI_83/data<58>      29: XLXN_76<0> 
+  4: N_PZ_749                                                             17: XLXI_83/data<9>       30: XLXN_76<1> 
+  5: XLXI_83/Mxor_sync_next_xor0000__xor0000                              18: XLXI_83/data_not0001  31: XLXN_76<2> 
+  6: XLXI_83/Mxor_sync_next_xor0000__xor0001                              19: XLXI_83/mean<1>       32: XLXN_77<0> 
+  7: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000  20: XLXI_83/mean<2>       33: XLXN_77<1> 
+  8: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001  21: XLXI_83/mean<3>       34: XLXN_77<2> 
+  9: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000  22: XLXI_83/mean<4>       35: XLXN_77<3> 
+ 10: XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001  23: XLXI_83/zero_time<6>  36: XLXN_90<3> 
+ 11: XLXI_83/Mxor_sync_next_xor0002__xor0000                              24: XLXN_238              37: XLXN_91<0> 
+ 12: XLXI_83/Mxor_sync_next_xor0002__xor0001                              25: XLXN_75<0>            38: reset_n 
+ 13: XLXI_83/data<10>                                                     26: XLXN_75<1>           
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXN_75<2>        .................X.....X...X............ 3       
+XLXN_75<1>        .................X.....X..X............. 3       
+XLXN_75<0>        .................X.....X.X.............. 3       
+XLXI_83/data<11>  ............X....X.....X................ 3       
+XLXN_76<0>        .................X.....X.....X.......... 3       
+XLXI_83/data<10>  ................XX.....X................ 3       
+XLXN_75<3>        .................X.....X....X........... 3       
+XLXI_83/data<38>  .................X.....XX............... 3       
+XLXI_83/data<30>  .................X.....X.......X........ 3       
+XLXI_83/Mxor_sync_next_xor0002__xor0001 
+                  ......XXXX.............................. 4       
+XLXI_83/Mxor_sync_next_xor0001__xor0001 
+                  ...............................XXXX..... 4       
+XLXI_83/Mxor_sync_next_xor0000__xor0001 
+                  ........................XXXX............ 4       
+XLXI_83/Mxor_sync_next_xor0000__xor0000 
+                  .............X..............XXX......... 4       
+XLXN_91<0>        XXXXXX....XX..XXX.XXXXXX............XX.. 19      
+XLXN_90<3>        XXXXXX....XXX.XX..XXXXXX...........X.X.. 19      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB6  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   20/36
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB6_1        (b)           
+(unused)                      0     FB6_2   24   CDR/I/O       
+(unused)                      0     FB6_3        (b)           
+(unused)                      0     FB6_4   27   GCK/I/O       
+XLXN_176<2>                   2     FB6_5        (b)     (b)               
+N_PZ_1459                     1     FB6_6        (b)     (b)               
+XLXN_237                      1     FB6_7        (b)     (b)               
+XLXI_75/clkCnt<14>            1     FB6_8        (b)     (b)               
+XLXI_75/clkCnt<13>            1     FB6_9        (b)     (b)               
+XLXI_75/clkCnt<12>            1     FB6_10       (b)     (b)               
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001
+                              3     FB6_11       (b)     (b)               
+(unused)                      0     FB6_12  28   DGE/I/O       
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000
+                              3     FB6_13       (b)     (b)               
+DS1_dp                        1     FB6_14  29   I/O     O                 
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001
+                              3     FB6_15       (b)     (b)               
+DS1<2>                        3     FB6_16  30   I/O     O                 
+
+Signals Used by Logic in Function Block
+  1: DS1_dp              14: XLXI_75/clkCnt<6>  27: XLXN_176<1> 
+  2: N_PZ_738            15: XLXI_75/clkCnt<8>  28: XLXN_176<2> 
+  3: XLXI_75/clkCnt<0>   16: XLXI_83/data<11>   29: XLXN_176<3> 
+  4: XLXI_75/clkCnt<10>  17: XLXI_83/data<12>   30: XLXN_238 
+  5: XLXI_75/clkCnt<11>  18: XLXI_83/data<13>   31: XLXN_87<0> 
+  6: XLXI_75/clkCnt<12>  19: XLXI_83/data<14>   32: XLXN_87<1> 
+  7: XLXI_75/clkCnt<13>  20: XLXI_83/data<15>   33: XLXN_87<2> 
+  8: XLXI_75/clkCnt<14>  21: XLXI_83/data<16>   34: XLXN_87<3> 
+  9: XLXI_75/clkCnt<1>   22: XLXI_83/data<20>   35: XLXN_89<0> 
+ 10: XLXI_75/clkCnt<2>   23: XLXI_83/data<21>   36: XLXN_89<1> 
+ 11: XLXI_75/clkCnt<3>   24: XLXI_83/data<22>   37: reset_n 
+ 12: XLXI_75/clkCnt<4>   25: XLXN_163           38: time_date_select 
+ 13: XLXI_75/clkCnt<5>   26: XLXN_176<0>       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXN_176<2>       XXXXXXXXXXXXXXX.........XXXX.X......X... 21      
+N_PZ_1459         X.XXXXXXXXXXXXX..........XXXXX.......... 19      
+XLXN_237          X.XXXXXXXXXXXXX..............X.......... 15      
+XLXI_75/clkCnt<14> 
+                  X.XXXXX.XXXXXXX..............X.......... 14      
+XLXI_75/clkCnt<13> 
+                  X.XXXX..XXXXXXX..............X.......... 13      
+XLXI_75/clkCnt<12> 
+                  X.XXX...XXXXXXX..............X.......... 12      
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001 
+                  ..................XXX................... 3       
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 
+                  ...............XXX...................... 3       
+DS1_dp            ..X.....XXXXXXX..............X.......... 9       
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 
+                  .....................XXX................ 3       
+DS1<2>            X.............................XXXXXX.X.. 8       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB7  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   52/4
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+XLXN_77<3>                    3     FB7_1        (b)     (b)    +          
+XLXN_83<1>                    4     FB7_2        (b)     (b)               
+XLXN_83<2>                    3     FB7_3        (b)     (b)               
+N_PZ_1517                     2     FB7_4        (b)     (b)               
+DS2<4>                        7     FB7_5   19   I/O     O                 
+DS2<3>                        7     FB7_6   18   I/O     O                 
+N_PZ_1458                     2     FB7_7        (b)     (b)               
+N_PZ_749                      2     FB7_8        (b)     (b)               
+N_PZ_1498                     2     FB7_9        (b)     (b)               
+XLXN_83<0>                    2     FB7_10       (b)     (b)               
+DS2<2>                        3     FB7_11  17   I/O     O                 
+DS2_dp                        2     FB7_12  16   I/O     O                 
+DS3<4>                        5     FB7_13  15   I/O     O                 
+DS3<3>                        5     FB7_14  14   I/O     O                 
+XLXN_83<3>                    2     FB7_15       (b)     (b)               
+XLXN_85<3>                    2     FB7_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                                   14: XLXN_238          27: XLXN_85<2> 
+  2: N_PZ_1459                                15: XLXN_78<0>        28: XLXN_85<3> 
+  3: N_PZ_738                                 16: XLXN_78<1>        29: XLXN_86<0> 
+  4: XLXI_83/Mxor_sync_next_xor0001__xor0001  17: XLXN_83<0>        30: XLXN_86<1> 
+  5: XLXI_83/data<23>                         18: XLXN_83<1>        31: XLXN_86<2> 
+  6: XLXI_83/data_not0001                     19: XLXN_83<2>        32: XLXN_86<3> 
+  7: XLXI_83/zero_time<1>                     20: XLXN_83<3>        33: XLXN_88<0> 
+  8: XLXI_83/zero_time<2>                     21: XLXN_84<0>        34: XLXN_88<1> 
+  9: XLXI_83/zero_time<3>                     22: XLXN_84<1>        35: XLXN_88<2> 
+ 10: XLXI_83/zero_time<4>                     23: XLXN_84<2>        36: XLXN_88<3> 
+ 11: XLXI_83/zero_time<5>                     24: XLXN_84<3>        37: XLXN_91<0> 
+ 12: XLXI_83/zero_time<6>                     25: XLXN_85<0>        38: time_date_select 
+ 13: XLXI_83/zero_time<7>                     26: XLXN_85<1>       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXN_77<3>        .....X.......XX......................... 3       
+XLXN_83<1>        .XX.............XXXX.................... 6       
+XLXN_83<2>        .XX.............XXXX.................... 6       
+N_PZ_1517         ......XXXX.............................. 4       
+DS2<4>            X...........................XXXXXXXX.X.. 10      
+DS2<3>            X...........................XXXXXXXX.X.. 10      
+N_PZ_1458         ..........XXX........................... 3       
+N_PZ_749          ...X..........X......................... 2       
+N_PZ_1498         ....X..........X........................ 2       
+XLXN_83<0>        .XX.............X....................... 3       
+DS2<2>            X...........................XXXXXXXX.X.. 10      
+DS2_dp            X....................................X.. 2       
+DS3<4>            X.......................XXXX........XX.. 7       
+DS3<3>            X.......................XXXX........XX.. 7       
+XLXN_83<3>        .XX.............XXXX.................... 6       
+XLXN_85<3>        .XX.............XXXXXXXXXXXX............ 14      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB8  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   46/10
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB8_1        (b)           
+XLXI_83/mean<3>               6     FB8_2        (b)     (b)    +          
+XLXI_83/mean<2>               8     FB8_3        (b)     (b)    +          
+XLXI_83/mean<1>               6     FB8_4        (b)     (b)    +          
+XLXI_83/mean<0>               5     FB8_5        (b)     (b)    +          
+DS1<3>                        5     FB8_6   32   I/O     O                 
+XLXI_83/mean<4>               4     FB8_7        (b)     (b)    +          
+XLXN_176<1>                   3     FB8_8        (b)     (b)               
+XLXN_176<3>                   3     FB8_9        (b)     (b)               
+N_PZ_1548                     2     FB8_10       (b)     (b)               
+DS1<4>                        5     FB8_11  33   I/O     O                 
+com                           2     FB8_12  34   I/O     O                 
+(unused)                      0     FB8_13  35   I/O     I     
+(unused)                      0     FB8_14  36   I/O           
+(unused)                      0     FB8_15  37   I/O           
+XLXN_176<0>                   2     FB8_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: DS1_dp              14: XLXI_75/clkCnt<5>     27: XLXN_176<3> 
+  2: N_PZ_1459           15: XLXI_75/clkCnt<6>     28: XLXN_237 
+  3: N_PZ_738            16: XLXI_75/clkCnt<8>     29: XLXN_238 
+  4: XLXI_75/clkCnt<0>   17: XLXI_83/mean<0>       30: XLXN_87<0> 
+  5: XLXI_75/clkCnt<10>  18: XLXI_83/mean<1>       31: XLXN_87<1> 
+  6: XLXI_75/clkCnt<11>  19: XLXI_83/mean<2>       32: XLXN_87<2> 
+  7: XLXI_75/clkCnt<12>  20: XLXI_83/mean<3>       33: XLXN_87<3> 
+  8: XLXI_75/clkCnt<13>  21: XLXI_83/mean<4>       34: XLXN_89<0> 
+  9: XLXI_75/clkCnt<14>  22: XLXI_83/zero_time<0>  35: XLXN_89<1> 
+ 10: XLXI_75/clkCnt<1>   23: XLXN_163              36: dcf_77 
+ 11: XLXI_75/clkCnt<2>   24: XLXN_176<0>           37: reset_n 
+ 12: XLXI_75/clkCnt<3>   25: XLXN_176<1>           38: time_date_select 
+ 13: XLXI_75/clkCnt<4>   26: XLXN_176<2>          
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXI_83/mean<3>   ................XXXXX.......X......XX... 8       
+XLXI_83/mean<2>   ................XXXXX.......X......XX... 8       
+XLXI_83/mean<1>   ................XXXXX.......X......XX... 8       
+XLXI_83/mean<0>   ................XXXXX.......X......XX... 8       
+DS1<3>            X............................XXXXXX..X.. 8       
+XLXI_83/mean<4>   ................XXXXX.......X......XX... 8       
+XLXN_176<1>       .XX....................XX..X............ 5       
+XLXN_176<3>       XXXXXXXXXXXXXXXX......XXXXX.X.......X... 23      
+N_PZ_1548         ................XXX..X.................. 4       
+DS1<4>            X............................XXXXX...X.. 7       
+com               X..X.....XXXXXXX............X........... 10      
+XLXN_176<0>       X.XXXXXXXXXXXXXX......XX...XX.......X... 20      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB9  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               36/4
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   28/28
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DS5<1>                        5     FB9_1   78   I/O     O                 
+DS6<6>                        5     FB9_2   79   I/O     O                 
+(unused)                      0     FB9_3        (b)           
+DS6<5>                        7     FB9_4   80   I/O     O                 
+(unused)                      0     FB9_5        (b)           
+(unused)                      0     FB9_6   81   I/O           
+(unused)                      0     FB9_7        (b)           
+(unused)                      0     FB9_8        (b)           
+(unused)                      0     FB9_9        (b)           
+(unused)                      0     FB9_10       (b)           
+(unused)                      0     FB9_11       (b)           
+DS6<0>                        5     FB9_12  82   I/O     O                 
+(unused)                      0     FB9_13       (b)           
+(unused)                      0     FB9_14       (b)           
+XLXN_87<3>                    3     FB9_15       (b)     (b)               
+XLXN_87<2>                    3     FB9_16       (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: DS1_dp            13: XLXN_218<1>       25: XLXN_85<1> 
+  2: N_PZ_1459         14: XLXN_218<2>       26: XLXN_85<2> 
+  3: N_PZ_738          15: XLXN_218<3>       27: XLXN_85<3> 
+  4: XLXN_176<0>       16: XLXN_83<0>        28: XLXN_86<0> 
+  5: XLXN_176<1>       17: XLXN_83<1>        29: XLXN_86<1> 
+  6: XLXN_176<2>       18: XLXN_83<2>        30: XLXN_86<2> 
+  7: XLXN_176<3>       19: XLXN_83<3>        31: XLXN_86<3> 
+  8: XLXN_217<0>       20: XLXN_84<0>        32: XLXN_87<0> 
+  9: XLXN_217<1>       21: XLXN_84<1>        33: XLXN_87<1> 
+ 10: XLXN_217<2>       22: XLXN_84<2>        34: XLXN_87<2> 
+ 11: XLXN_217<3>       23: XLXN_84<3>        35: XLXN_87<3> 
+ 12: XLXN_218<0>       24: XLXN_85<0>        36: time_date_select 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DS5<1>            X..........XXXXXXXX................X.... 10      
+DS6<6>            X..XXXXXXXX........................X.... 10      
+DS6<5>            X..XXXXXXXX........................X.... 10      
+DS6<0>            X..XXXXXXXX........................X.... 10      
+XLXN_87<3>        .XX............XXXXXXXXXXXXXXXXXXXX..... 22      
+XLXN_87<2>        .XX............XXXXXXXXXXXXXXXXXXX...... 21      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB10 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               36/4
+Number of function block control terms used/remaining:        0/4
+Number of PLA product terms used/remaining:                   54/2
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB10_1  77   I/O     I     
+DS5<0>                        5     FB10_2  76   I/O     O                 
+DS5<5>                        7     FB10_3  74   I/O     O                 
+DS5<6>                        5     FB10_4  73   I/O     O                 
+cln2                          2     FB10_5  72   I/O     O                 
+DS4<1>                        5     FB10_6  71   I/O     O                 
+(unused)                      0     FB10_7       (b)           
+(unused)                      0     FB10_8       (b)           
+(unused)                      0     FB10_9       (b)           
+XLXN_84<3>                    5     FB10_10      (b)     (b)               
+XLXN_85<2>                    5     FB10_11      (b)     (b)               
+DS4<0>                        5     FB10_12 70   I/O     O                 
+XLXN_84<0>                    4     FB10_13      (b)     (b)               
+XLXN_84<2>                    4     FB10_14      (b)     (b)               
+XLXN_85<0>                    4     FB10_15      (b)     (b)               
+N_PZ_834                      3     FB10_16      (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                 13: XLXN_218<3>       25: XLXN_84<2> 
+  2: N_PZ_1459              14: XLXN_75<0>        26: XLXN_84<3> 
+  3: N_PZ_738               15: XLXN_75<2>        27: XLXN_85<0> 
+  4: XLXI_83/max_holder<3>  16: XLXN_75<3>        28: XLXN_85<1> 
+  5: XLXI_83/max_holder<4>  17: XLXN_76<0>        29: XLXN_85<2> 
+  6: XLXI_83/mean<3>        18: XLXN_76<2>        30: XLXN_85<3> 
+  7: XLXI_83/mean<4>        19: XLXN_83<0>        31: XLXN_90<0> 
+  8: XLXN_163               20: XLXN_83<1>        32: XLXN_90<1> 
+  9: XLXN_176<0>            21: XLXN_83<2>        33: XLXN_90<2> 
+ 10: XLXN_218<0>            22: XLXN_83<3>        34: XLXN_90<3> 
+ 11: XLXN_218<1>            23: XLXN_84<0>        35: reset_n 
+ 12: XLXN_218<2>            24: XLXN_84<1>        36: time_date_select 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DS5<0>            X........XXXX.....XXXX.............X.... 10      
+DS5<5>            X........XXXX.....XXXX.............X.... 10      
+DS5<6>            X........XXXX.....XXXX.............X.... 10      
+cln2              X.......X..........................X.... 3       
+DS4<1>            X.....................XXXX....XXXX.X.... 10      
+XLXN_84<3>        .XX....X.......X..XXXXXXXX........X..... 13      
+XLXN_85<2>        .XX....X.........XXXXXXXXXXXXX....X..... 17      
+DS4<0>            X.....................XXXX....XXXX.X.... 10      
+XLXN_84<0>        .XX....X.....X....XXXXX...........X..... 10      
+XLXN_84<2>        .XX....X......X...XXXXXXX.........X..... 12      
+XLXN_85<0>        .XX....X........X.XXXXXXXXX.......X..... 14      
+N_PZ_834          ...XXXX................................. 4       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB11 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   56/0
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB11_1       (b)           
+XLXN_77<1>                    3     FB11_2       (b)     (b)    +          
+XLXN_77<0>                    3     FB11_3       (b)     (b)    +          
+XLXI_83/max_holder<4>         4     FB11_4       (b)     (b)    +          
+XLXN_84<1>                    6     FB11_5       (b)     (b)               
+XLXN_85<1>                    6     FB11_6       (b)     (b)               
+XLXN_87<0>                    7     FB11_7       (b)     (b)               
+XLXN_87<1>                    6     FB11_8       (b)     (b)               
+XLXN_86<3>                    6     FB11_9       (b)     (b)               
+XLXN_86<2>                    6     FB11_10      (b)     (b)               
+(unused)                      0     FB11_11 85   I/O           
+(unused)                      0     FB11_12 86   I/O           
+(unused)                      0     FB11_13 87   I/O           
+(unused)                      0     FB11_14 89   I/O           
+XLXN_86<0>                    5     FB11_15      (b)     (b)               
+XLXN_86<1>                    7     FB11_16      (b)     (b)               
+
+Signals Used by Logic in Function Block
+  1: N_PZ_1459              14: XLXN_77<2>        27: XLXN_85<1> 
+  2: N_PZ_738               15: XLXN_77<3>        28: XLXN_85<2> 
+  3: N_PZ_925               16: XLXN_78<0>        29: XLXN_85<3> 
+  4: XLXI_83/data_not0001   17: XLXN_78<1>        30: XLXN_86<0> 
+  5: XLXI_83/max_holder<4>  18: XLXN_83<0>        31: XLXN_86<1> 
+  6: XLXI_83/mean<3>        19: XLXN_83<1>        32: XLXN_86<2> 
+  7: XLXI_83/mean<4>        20: XLXN_83<2>        33: XLXN_86<3> 
+  8: XLXN_163               21: XLXN_83<3>        34: XLXN_87<0> 
+  9: XLXN_238               22: XLXN_84<0>        35: XLXN_87<1> 
+ 10: XLXN_75<1>             23: XLXN_84<1>        36: XLXN_87<2> 
+ 11: XLXN_76<1>             24: XLXN_84<2>        37: XLXN_87<3> 
+ 12: XLXN_77<0>             25: XLXN_84<3>        38: reset_n 
+ 13: XLXN_77<1>             26: XLXN_85<0>       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXN_77<1>        ...X....X....X.......................... 3       
+XLXN_77<0>        ...X....X...X........................... 3       
+XLXI_83/max_holder<4> 
+                  ..X.XXX.X............................X.. 6       
+XLXN_84<1>        XX.....X.X.......XXXXXXXX............X.. 13      
+XLXN_85<1>        XX.....X..X......XXXXXXXXXXXX........X.. 17      
+XLXN_87<0>        XX.....X.......X.XXXXXXXXXXXXXXXXXXXXX.. 25      
+XLXN_87<1>        XX.....X........XXXXXXXXXXXXXXXXXXXXXX.. 25      
+XLXN_86<3>        XX.....X......X..XXXXXXXXXXXXXXXXXXXXX.. 25      
+XLXN_86<2>        XX.....X.....X...XXXXXXXXXXXXXXXXXXXXX.. 25      
+XLXN_86<0>        XX.....X...X.....XXXXXXXXXXXXX...XXXXX.. 22      
+XLXN_86<1>        XX.....X....X....XXXXXXXXXXXXXXXXXXXXX.. 25      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB12 ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               37/3
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   47/9
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB12_1       (b)           
+(unused)                      0     FB12_2       (b)           
+(unused)                      0     FB12_3       (b)           
+XLXI_83/max_holder<3>         7     FB12_4       (b)     (b)    +          
+XLXI_83/zero_time<0>          5     FB12_5       (b)     (b)    +          
+XLXI_83/zero_time<1>          5     FB12_6       (b)     (b)    +          
+XLXI_83/zero_time<2>          4     FB12_7       (b)     (b)    +          
+XLXI_83/zero_time<7>          3     FB12_8       (b)     (b)    +          
+XLXI_83/zero_time<6>          3     FB12_9       (b)     (b)    +          
+XLXI_83/zero_time<5>          3     FB12_10      (b)     (b)    +          
+DS4<5>                        7     FB12_11 68   I/O     O                 
+XLXI_83/zero_time<4>          3     FB12_12      (b)     (b)    +          
+DS4<6>                        5     FB12_13 67   I/O     O                 
+DS3<1>                        3     FB12_14 66   I/O     O                 
+DS3<0>                        4     FB12_15 65   I/O     O                 
+XLXI_83/zero_time<3>          3     FB12_16      (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                 14: XLXI_83/zero_time<0>  26: XLXN_84<3> 
+  2: N_PZ_1458              15: XLXI_83/zero_time<1>  27: XLXN_85<0> 
+  3: N_PZ_1517              16: XLXI_83/zero_time<2>  28: XLXN_85<1> 
+  4: N_PZ_1548              17: XLXI_83/zero_time<3>  29: XLXN_85<2> 
+  5: N_PZ_797               18: XLXI_83/zero_time<4>  30: XLXN_85<3> 
+  6: N_PZ_925               19: XLXI_83/zero_time<5>  31: XLXN_90<0> 
+  7: XLXI_83/max_holder<3>  20: XLXI_83/zero_time<6>  32: XLXN_90<1> 
+  8: XLXI_83/max_holder<4>  21: XLXI_83/zero_time<7>  33: XLXN_90<2> 
+  9: XLXI_83/mean<0>        22: XLXN_238              34: XLXN_90<3> 
+ 10: XLXI_83/mean<1>        23: XLXN_84<0>            35: XLXN_91<0> 
+ 11: XLXI_83/mean<2>        24: XLXN_84<1>            36: reset_n 
+ 12: XLXI_83/mean<3>        25: XLXN_84<2>            37: time_date_select 
+ 13: XLXI_83/mean<4>       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXI_83/max_holder<3> 
+                  .....XXXXXXXX........X.............X.... 10      
+XLXI_83/zero_time<0> 
+                  ..X.XX.....XXX....XXXX.................. 10      
+XLXI_83/zero_time<1> 
+                  ..X.XX.....XXXX...XXXX.................. 11      
+XLXI_83/zero_time<2> 
+                  .X.XX......XX.XXXX.X.X.............X.... 12      
+XLXI_83/zero_time<7> 
+                  ...XX......X..XXXXXXXX.................. 11      
+XLXI_83/zero_time<6> 
+                  ...XX......XX.XXXXXXXX.............X.... 13      
+XLXI_83/zero_time<5> 
+                  .X.XX......XX.XXXXX..X.............X.... 12      
+DS4<5>            X.....................XXXX....XXXX..X... 10      
+XLXI_83/zero_time<4> 
+                  .X.XX......XX.XXXX...X.............X.... 11      
+DS4<6>            X.....................XXXX....XXXX..X... 10      
+DS3<1>            X.........................XXXX......X... 6       
+DS3<0>            X.........................XXXX....X.X... 7       
+XLXI_83/zero_time<3> 
+                  .X.XX......XX.XXX....X.............X.... 10      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB13 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               38/2
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   53/3
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+(unused)                      0     FB13_1       (b)           
+DS1<5>                        6     FB13_2  53   I/O     O                 
+(unused)                      0     FB13_3       (b)           
+DS1<0>                        4     FB13_4  54   I/O     O                 
+(unused)                      0     FB13_5       (b)           
+DS1<1>                        3     FB13_6  55   I/O     O                 
+XLXI_83/data<16>              3     FB13_7       (b)     (b)    +          
+XLXI_83/data<15>              3     FB13_8       (b)     (b)    +          
+XLXI_83/data<14>              3     FB13_9       (b)     (b)    +          
+XLXI_83/data<13>              3     FB13_10      (b)     (b)    +          
+XLXI_83/data<12>              3     FB13_11      (b)     (b)    +          
+XLXI_83/data<1>               3     FB13_12      (b)     (b)    +          
+DS2<6>                        5     FB13_13 56   I/O     O                 
+XLXI_83/max_holder<1>         13    FB13_14      (b)     (b)    +          
+XLXI_83/max_holder<2>         9     FB13_15      (b)     (b)    +          
+XLXI_83/data<0>               5     FB13_16      (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                 14: XLXI_83/max_holder<2>  27: XLXN_87<0> 
+  2: N_PZ_797               15: XLXI_83/max_holder<3>  28: XLXN_87<1> 
+  3: N_PZ_834               16: XLXI_83/max_holder<4>  29: XLXN_87<2> 
+  4: N_PZ_925               17: XLXI_83/mean<0>        30: XLXN_87<3> 
+  5: XLXI_83/data<0>        18: XLXI_83/mean<1>        31: XLXN_88<0> 
+  6: XLXI_83/data<11>       19: XLXI_83/mean<2>        32: XLXN_88<1> 
+  7: XLXI_83/data<12>       20: XLXI_83/mean<3>        33: XLXN_88<2> 
+  8: XLXI_83/data<13>       21: XLXI_83/mean<4>        34: XLXN_88<3> 
+  9: XLXI_83/data<14>       22: XLXN_238               35: XLXN_89<0> 
+ 10: XLXI_83/data<15>       23: XLXN_86<0>             36: XLXN_89<1> 
+ 11: XLXI_83/data_not0001   24: XLXN_86<1>             37: reset_n 
+ 12: XLXI_83/max_holder<0>  25: XLXN_86<2>             38: time_date_select 
+ 13: XLXI_83/max_holder<1>  26: XLXN_86<3>            
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DS1<5>            X.........................XXXX....XX.X.. 8       
+DS1<0>            X.........................XXXX....XX.X.. 8       
+DS1<1>            X.........................XXXX.......X.. 6       
+XLXI_83/data<16>  .........XX..........X.................. 3       
+XLXI_83/data<15>  ........X.X..........X.................. 3       
+XLXI_83/data<14>  .......X..X..........X.................. 3       
+XLXI_83/data<13>  ......X...X..........X.................. 3       
+XLXI_83/data<12>  .....X....X..........X.................. 3       
+XLXI_83/data<1>   ....X.....X..........X.................. 3       
+DS2<6>            X.....................XXXX....XXXX...X.. 10      
+XLXI_83/max_holder<1> 
+                  .XXX........XXXXXXXXXX..............X... 14      
+XLXI_83/max_holder<2> 
+                  .XXX.........XXXX.XXXX..............X... 12      
+XLXI_83/data<0>   ....X.....XXXXXX.....X.................. 8       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB14 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               36/4
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   45/11
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+DS1<6>                        4     FB14_1  52   I/O     O                 
+XLXI_83/data<40>              3     FB14_2       (b)     (b)    +          
+XLXI_83/data<44>              3     FB14_3  50   I/O     (b)    +          
+XLXI_83/data<3>               3     FB14_4       (b)     (b)    +          
+XLXI_83/data<43>              3     FB14_5  49   I/O     (b)    +          
+XLXI_83/data<2>               3     FB14_6       (b)     (b)    +          
+XLXI_83/data<23>              3     FB14_7       (b)     (b)    +          
+XLXI_83/data<22>              3     FB14_8       (b)     (b)    +          
+XLXI_83/data<21>              3     FB14_9       (b)     (b)    +          
+XLXI_83/data<20>              3     FB14_10      (b)     (b)    +          
+XLXI_83/data<19>              3     FB14_11      (b)     (b)    +          
+XLXI_83/data<18>              3     FB14_12      (b)     (b)    +          
+XLXI_83/data<17>              3     FB14_13      (b)     (b)    +          
+XLXI_83/data<42>              3     FB14_14 46   I/O     (b)    +          
+XLXI_83/data<41>              3     FB14_15 44   I/O     (b)    +          
+XLXN_163                      13    FB14_16      (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: DS1_dp                                   13: XLXI_83/data<18>  25: XLXI_83/data<43> 
+  2: N_PZ_1458                                14: XLXI_83/data<19>  26: XLXI_83/data<58> 
+  3: N_PZ_1498                                15: XLXI_83/data<1>   27: XLXI_83/data_not0001 
+  4: N_PZ_1517                                16: XLXI_83/data<20>  28: XLXI_83/zero_time<6> 
+  5: N_PZ_749                                 17: XLXI_83/data<21>  29: XLXN_238 
+  6: N_PZ_797                                 18: XLXI_83/data<22>  30: XLXN_87<0> 
+  7: XLXI_83/Mxor_sync_next_xor0000__xor0000  19: XLXI_83/data<2>   31: XLXN_87<1> 
+  8: XLXI_83/Mxor_sync_next_xor0000__xor0001  20: XLXI_83/data<38>  32: XLXN_87<2> 
+  9: XLXI_83/Mxor_sync_next_xor0002__xor0000  21: XLXI_83/data<39>  33: XLXN_87<3> 
+ 10: XLXI_83/Mxor_sync_next_xor0002__xor0001  22: XLXI_83/data<40>  34: XLXN_89<1> 
+ 11: XLXI_83/data<16>                         23: XLXI_83/data<41>  35: reset_n 
+ 12: XLXI_83/data<17>                         24: XLXI_83/data<42>  36: time_date_select 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+DS1<6>            X............................XXXXX.X.... 7       
+XLXI_83/data<40>  ....................X.....X.X........... 3       
+XLXI_83/data<44>  ........................X.X.X........... 3       
+XLXI_83/data<3>   ..................X.......X.X........... 3       
+XLXI_83/data<43>  .......................X..X.X........... 3       
+XLXI_83/data<2>   ..............X...........X.X........... 3       
+XLXI_83/data<23>  .................X........X.X........... 3       
+XLXI_83/data<22>  ................X.........X.X........... 3       
+XLXI_83/data<21>  ...............X..........X.X........... 3       
+XLXI_83/data<20>  .............X............X.X........... 3       
+XLXI_83/data<19>  ............X.............X.X........... 3       
+XLXI_83/data<18>  ...........X..............X.X........... 3       
+XLXI_83/data<17>  ..........X...............X.X........... 3       
+XLXI_83/data<42>  ......................X...X.X........... 3       
+XLXI_83/data<41>  .....................X....X.X........... 3       
+XLXN_163          .XXXXXXXXX.........X.....X.XX.....X..... 14      
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB15 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               28/12
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   49/7
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+XLXI_83/data<54>              3     FB15_1       (b)     (b)    +          
+XLXI_83/data<53>              3     FB15_2       (b)     (b)    +          
+XLXI_83/data<52>              3     FB15_3       (b)     (b)    +          
+XLXI_83/data<51>              3     FB15_4       (b)     (b)    +          
+XLXI_83/data<50>              3     FB15_5       (b)     (b)    +          
+XLXI_83/data<49>              3     FB15_6       (b)     (b)    +          
+XLXI_83/data<48>              3     FB15_7       (b)     (b)    +          
+XLXI_83/data<47>              3     FB15_8       (b)     (b)    +          
+XLXI_83/data<46>              3     FB15_9       (b)     (b)    +          
+XLXI_83/data<45>              3     FB15_10      (b)     (b)    +          
+DS2<5>                        7     FB15_11 58   I/O     O                 
+DS2<0>                        5     FB15_12 59   I/O     O                 
+DS2<1>                        5     FB15_13 60   I/O     O                 
+cln1                          2     FB15_14 61   I/O     O                 
+DS3<6>                        4     FB15_15 63   I/O     O                 
+DS3<5>                        5     FB15_16 64   I/O     O                 
+
+Signals Used by Logic in Function Block
+  1: DS1_dp            11: XLXI_83/data<53>      20: XLXN_86<1> 
+  2: XLXI_83/data<44>  12: XLXI_83/data_not0001  21: XLXN_86<2> 
+  3: XLXI_83/data<45>  13: XLXN_176<0>           22: XLXN_86<3> 
+  4: XLXI_83/data<46>  14: XLXN_238              23: XLXN_88<0> 
+  5: XLXI_83/data<47>  15: XLXN_85<0>            24: XLXN_88<1> 
+  6: XLXI_83/data<48>  16: XLXN_85<1>            25: XLXN_88<2> 
+  7: XLXI_83/data<49>  17: XLXN_85<2>            26: XLXN_88<3> 
+  8: XLXI_83/data<50>  18: XLXN_85<3>            27: XLXN_91<0> 
+  9: XLXI_83/data<51>  19: XLXN_86<0>            28: time_date_select 
+ 10: XLXI_83/data<52> 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXI_83/data<54>  ..........XX.X.......................... 3       
+XLXI_83/data<53>  .........X.X.X.......................... 3       
+XLXI_83/data<52>  ........X..X.X.......................... 3       
+XLXI_83/data<51>  .......X...X.X.......................... 3       
+XLXI_83/data<50>  ......X....X.X.......................... 3       
+XLXI_83/data<49>  .....X.....X.X.......................... 3       
+XLXI_83/data<48>  ....X......X.X.......................... 3       
+XLXI_83/data<47>  ...X.......X.X.......................... 3       
+XLXI_83/data<46>  ..X........X.X.......................... 3       
+XLXI_83/data<45>  .X.........X.X.......................... 3       
+DS2<5>            X.................XXXXXXXX.X............ 10      
+DS2<0>            X.................XXXXXXXX.X............ 10      
+DS2<1>            X.................XXXXXXXX.X............ 10      
+cln1              X...........X..............X............ 3       
+DS3<6>            X.............XXXX.........X............ 6       
+DS3<5>            X.............XXXX........XX............ 7       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB16 ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               17/23
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   30/26
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+XLXN_76<2>                    3     FB16_1       (b)     (b)    +          
+XLXN_76<1>                    3     FB16_2       (b)     (b)    +          
+XLXI_83/data<9>               3     FB16_3       (b)     (b)    +          
+XLXI_83/data<8>               3     FB16_4       (b)     (b)    +          
+(unused)                      0     FB16_5  43   I/O           
+XLXN_78<1>                    3     FB16_6  42   I/O     (b)    +          
+XLXI_83/data<7>               3     FB16_7       (b)     (b)    +          
+XLXI_83/data<6>               3     FB16_8       (b)     (b)    +          
+XLXI_83/data<5>               3     FB16_9       (b)     (b)    +          
+XLXI_83/data<58>              3     FB16_10      (b)     (b)    +          
+XLXN_78<0>                    3     FB16_11 41   I/O     (b)    +          
+LED1                          1     FB16_12 40   I/O     O                 
+XLXN_77<2>                    3     FB16_13 39   I/O     (b)    +          
+XLXI_83/data<57>              3     FB16_14      (b)     (b)    +          
+XLXI_83/data<56>              3     FB16_15      (b)     (b)    +          
+XLXI_83/data<55>              3     FB16_16      (b)     (b)    +          
+
+Signals Used by Logic in Function Block
+  1: XLXI_83/data<23>   7: XLXI_83/data<57>      13: XLXN_238 
+  2: XLXI_83/data<30>   8: XLXI_83/data<5>       14: XLXN_76<2> 
+  3: XLXI_83/data<4>    9: XLXI_83/data<6>       15: XLXN_77<3> 
+  4: XLXI_83/data<54>  10: XLXI_83/data<7>       16: XLXN_78<1> 
+  5: XLXI_83/data<55>  11: XLXI_83/data<8>       17: dcf_77 
+  6: XLXI_83/data<56>  12: XLXI_83/data_not0001 
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+XLXN_76<2>        .X.........XX........................... 3       
+XLXN_76<1>        ...........XXX.......................... 3       
+XLXI_83/data<9>   ..........XXX........................... 3       
+XLXI_83/data<8>   .........X.XX........................... 3       
+XLXN_78<1>        X..........XX........................... 3       
+XLXI_83/data<7>   ........X..XX........................... 3       
+XLXI_83/data<6>   .......X...XX........................... 3       
+XLXI_83/data<5>   ..X........XX........................... 3       
+XLXI_83/data<58>  ......X....XX........................... 3       
+XLXN_78<0>        ...........XX..X........................ 3       
+LED1              ................X....................... 1       
+XLXN_77<2>        ...........XX.X......................... 3       
+XLXI_83/data<57>  .....X.....XX........................... 3       
+XLXI_83/data<56>  ....X......XX........................... 3       
+XLXI_83/data<55>  ...X.......XX........................... 3       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+
+DS1(0) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND XLXN_89(0) AND NOT XLXN_89(1))
+	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+	NOT XLXN_87(2) AND NOT XLXN_87(3))
+	OR (time_date_select AND NOT XLXN_87(0) AND NOT XLXN_87(1) AND 
+	XLXN_87(2) AND NOT XLXN_87(3))));
+
+
+DS1(1) <= NOT DS1_dp
+	XOR ((time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+	XLXN_87(2) AND NOT XLXN_87(3))
+	OR (time_date_select AND NOT XLXN_87(0) AND XLXN_87(1) AND 
+	XLXN_87(2) AND NOT XLXN_87(3)));
+
+
+DS1(2) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND NOT XLXN_89(0) AND XLXN_89(1))
+	OR (time_date_select AND NOT XLXN_87(0) AND XLXN_87(1) AND 
+	NOT XLXN_87(2) AND NOT XLXN_87(3))));
+
+
+DS1(3) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND XLXN_89(0) AND NOT XLXN_89(1))
+	OR (time_date_select AND XLXN_87(0) AND XLXN_87(1) AND 
+	XLXN_87(2) AND NOT XLXN_87(3))
+	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+	NOT XLXN_87(2) AND NOT XLXN_87(3))
+	OR (time_date_select AND NOT XLXN_87(0) AND NOT XLXN_87(1) AND 
+	XLXN_87(2) AND NOT XLXN_87(3))));
+
+
+DS1(4) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND XLXN_89(0))
+	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(3))
+	OR (time_date_select AND XLXN_87(0) AND NOT XLXN_87(1) AND 
+	NOT XLXN_87(2))
+	OR (time_date_select AND NOT XLXN_87(1) AND XLXN_87(2) AND 
+	NOT XLXN_87(3))));
+
+
+DS1(5) <= DS1_dp
+	XOR ((time_date_select AND XLXN_87(3))
+	OR (time_date_select AND NOT XLXN_87(0) AND NOT XLXN_87(1))
+	OR (time_date_select AND NOT XLXN_87(0) AND XLXN_87(2))
+	OR (time_date_select AND NOT XLXN_87(1) AND XLXN_87(2))
+	OR (NOT time_date_select AND NOT XLXN_89(0) AND NOT XLXN_89(1)));
+
+
+DS1(6) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND NOT XLXN_89(1))
+	OR (time_date_select AND NOT XLXN_87(1) AND NOT XLXN_87(2) AND 
+	NOT XLXN_87(3))
+	OR (time_date_select AND XLXN_87(0) AND XLXN_87(1) AND 
+	XLXN_87(2) AND NOT XLXN_87(3))));
+
+FTCPE_DS1_dp: FTCPE port map (DS1_dp,DS1_dp_T,clk,'0','0','1');
+DS1_dp_T <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+
+
+DS2(0) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+	NOT XLXN_86(3) AND NOT XLXN_86(2))
+	OR (time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(0) AND 
+	NOT XLXN_86(3) AND XLXN_86(2))
+	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+	NOT XLXN_88(2) AND NOT XLXN_88(3))
+	OR (NOT time_date_select AND NOT XLXN_88(0) AND NOT XLXN_88(1) AND 
+	XLXN_88(2) AND NOT XLXN_88(3))));
+
+
+DS2(1) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_86(1) AND NOT XLXN_86(0) AND 
+	NOT XLXN_86(3) AND XLXN_86(2))
+	OR (time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+	NOT XLXN_86(3) AND XLXN_86(2))
+	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+	XLXN_88(2) AND NOT XLXN_88(3))
+	OR (NOT time_date_select AND NOT XLXN_88(0) AND XLXN_88(1) AND 
+	XLXN_88(2) AND NOT XLXN_88(3))));
+
+
+DS2(2) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_86(1) AND NOT XLXN_86(0) AND 
+	NOT XLXN_86(3) AND NOT XLXN_86(2))
+	OR (NOT time_date_select AND NOT XLXN_88(0) AND XLXN_88(1) AND 
+	NOT XLXN_88(2) AND NOT XLXN_88(3))));
+
+
+DS2(3) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_86(1) AND XLXN_86(0) AND 
+	NOT XLXN_86(3) AND XLXN_86(2))
+	OR (time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+	NOT XLXN_86(3) AND NOT XLXN_86(2))
+	OR (time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(0) AND 
+	NOT XLXN_86(3) AND XLXN_86(2))
+	OR (NOT time_date_select AND XLXN_88(0) AND XLXN_88(1) AND 
+	XLXN_88(2) AND NOT XLXN_88(3))
+	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+	NOT XLXN_88(2) AND NOT XLXN_88(3))
+	OR (NOT time_date_select AND NOT XLXN_88(0) AND NOT XLXN_88(1) AND 
+	XLXN_88(2) AND NOT XLXN_88(3))));
+
+
+DS2(4) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_86(0) AND NOT XLXN_86(3))
+	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(3))
+	OR (time_date_select AND NOT XLXN_86(1) AND XLXN_86(0) AND 
+	NOT XLXN_86(2))
+	OR (time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(3) AND 
+	XLXN_86(2))
+	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(1) AND 
+	NOT XLXN_88(2))
+	OR (NOT time_date_select AND NOT XLXN_88(1) AND XLXN_88(2) AND 
+	NOT XLXN_88(3))));
+
+
+DS2(5) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_86(1) AND XLXN_86(0) AND 
+	NOT XLXN_86(3))
+	OR (time_date_select AND XLXN_86(1) AND NOT XLXN_86(3) AND 
+	NOT XLXN_86(2))
+	OR (time_date_select AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+	NOT XLXN_86(2))
+	OR (NOT time_date_select AND XLXN_88(0) AND XLXN_88(1) AND 
+	NOT XLXN_88(3))
+	OR (NOT time_date_select AND XLXN_88(0) AND NOT XLXN_88(2) AND 
+	NOT XLXN_88(3))
+	OR (NOT time_date_select AND XLXN_88(1) AND NOT XLXN_88(2) AND 
+	NOT XLXN_88(3))));
+
+
+DS2(6) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_86(1) AND NOT XLXN_86(3) AND 
+	NOT XLXN_86(2))
+	OR (NOT time_date_select AND NOT XLXN_88(1) AND NOT XLXN_88(2) AND 
+	NOT XLXN_88(3))
+	OR (time_date_select AND XLXN_86(1) AND XLXN_86(0) AND 
+	NOT XLXN_86(3) AND XLXN_86(2))
+	OR (NOT time_date_select AND XLXN_88(0) AND XLXN_88(1) AND 
+	XLXN_88(2) AND NOT XLXN_88(3))));
+
+
+DS2_dp <= ((DS1_dp AND time_date_select)
+	OR (NOT DS1_dp AND NOT time_date_select));
+
+
+DS3(0) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND XLXN_91(0))
+	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+	NOT XLXN_85(2) AND NOT XLXN_85(3))
+	OR (time_date_select AND NOT XLXN_85(0) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3))));
+
+
+DS3(1) <= NOT DS1_dp
+	XOR ((time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3))
+	OR (time_date_select AND NOT XLXN_85(0) AND XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3)));
+
+
+DS3(2) <= NOT DS1_dp
+	XOR (time_date_select AND NOT XLXN_85(0) AND XLXN_85(1) AND 
+	NOT XLXN_85(2) AND NOT XLXN_85(3));
+
+
+DS3(3) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND XLXN_91(0))
+	OR (time_date_select AND XLXN_85(0) AND XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3))
+	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+	NOT XLXN_85(2) AND NOT XLXN_85(3))
+	OR (time_date_select AND NOT XLXN_85(0) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3))));
+
+
+DS3(4) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND XLXN_91(0))
+	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(3))
+	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(1) AND 
+	NOT XLXN_85(2))
+	OR (time_date_select AND NOT XLXN_85(1) AND XLXN_85(2) AND 
+	NOT XLXN_85(3))));
+
+
+DS3(5) <= NOT (DS1_dp
+	XOR ((NOT time_date_select AND XLXN_91(0))
+	OR (time_date_select AND XLXN_85(0) AND XLXN_85(1) AND 
+	NOT XLXN_85(3))
+	OR (time_date_select AND XLXN_85(0) AND NOT XLXN_85(2) AND 
+	NOT XLXN_85(3))
+	OR (time_date_select AND XLXN_85(1) AND NOT XLXN_85(2) AND 
+	NOT XLXN_85(3))));
+
+
+DS3(6) <= NOT (DS1_dp
+	XOR ((NOT time_date_select)
+	OR (NOT XLXN_85(1) AND NOT XLXN_85(2) AND NOT XLXN_85(3))
+	OR (XLXN_85(0) AND XLXN_85(1) AND XLXN_85(2) AND 
+	NOT XLXN_85(3))));
+
+FDCPE_DS3_dp: FDCPE port map (DS3_dp,DS3_dp_D,clk,'0','0','1');
+DS3_dp_D <= DS1_dp
+	XOR (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+
+
+DS4(0) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND NOT XLXN_84(3))
+	OR (time_date_select AND NOT XLXN_84(0) AND NOT XLXN_84(1) AND 
+	XLXN_84(2) AND NOT XLXN_84(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+	NOT XLXN_90(2) AND NOT XLXN_90(3))
+	OR (NOT time_date_select AND NOT XLXN_90(0) AND NOT XLXN_90(1) AND 
+	XLXN_90(2) AND NOT XLXN_90(3))));
+
+
+DS4(1) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+	XLXN_84(2) AND NOT XLXN_84(3))
+	OR (time_date_select AND NOT XLXN_84(0) AND XLXN_84(1) AND 
+	XLXN_84(2) AND NOT XLXN_84(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+	XLXN_90(2) AND NOT XLXN_90(3))
+	OR (NOT time_date_select AND NOT XLXN_90(0) AND XLXN_90(1) AND 
+	XLXN_90(2) AND NOT XLXN_90(3))));
+
+
+DS4(2) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_84(0) AND XLXN_84(1) AND 
+	NOT XLXN_84(2) AND NOT XLXN_84(3))
+	OR (NOT time_date_select AND NOT XLXN_90(0) AND XLXN_90(1) AND 
+	NOT XLXN_90(2) AND NOT XLXN_90(3))));
+
+
+DS4(3) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_84(0) AND XLXN_84(1) AND 
+	XLXN_84(2) AND NOT XLXN_84(3))
+	OR (time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND NOT XLXN_84(3))
+	OR (time_date_select AND NOT XLXN_84(0) AND NOT XLXN_84(1) AND 
+	XLXN_84(2) AND NOT XLXN_84(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND XLXN_90(1) AND 
+	XLXN_90(2) AND NOT XLXN_90(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+	NOT XLXN_90(2) AND NOT XLXN_90(3))
+	OR (NOT time_date_select AND NOT XLXN_90(0) AND NOT XLXN_90(1) AND 
+	XLXN_90(2) AND NOT XLXN_90(3))));
+
+
+DS4(4) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_84(0) AND NOT XLXN_84(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(3))
+	OR (time_date_select AND XLXN_84(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2))
+	OR (time_date_select AND NOT XLXN_84(1) AND XLXN_84(2) AND 
+	NOT XLXN_84(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(1) AND 
+	NOT XLXN_90(2))
+	OR (NOT time_date_select AND NOT XLXN_90(1) AND XLXN_90(2) AND 
+	NOT XLXN_90(3))));
+
+
+DS4(5) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_84(0) AND XLXN_84(1) AND 
+	NOT XLXN_84(3))
+	OR (time_date_select AND XLXN_84(0) AND NOT XLXN_84(2) AND 
+	NOT XLXN_84(3))
+	OR (time_date_select AND XLXN_84(1) AND NOT XLXN_84(2) AND 
+	NOT XLXN_84(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND XLXN_90(1) AND 
+	NOT XLXN_90(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND NOT XLXN_90(2) AND 
+	NOT XLXN_90(3))
+	OR (NOT time_date_select AND XLXN_90(1) AND NOT XLXN_90(2) AND 
+	NOT XLXN_90(3))));
+
+
+DS4(6) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	NOT XLXN_84(3))
+	OR (NOT time_date_select AND NOT XLXN_90(1) AND NOT XLXN_90(2) AND 
+	NOT XLXN_90(3))
+	OR (time_date_select AND XLXN_84(0) AND XLXN_84(1) AND 
+	XLXN_84(2) AND NOT XLXN_84(3))
+	OR (NOT time_date_select AND XLXN_90(0) AND XLXN_90(1) AND 
+	XLXN_90(2) AND NOT XLXN_90(3))));
+
+
+DS4_dp <= ((DS1_dp AND time_date_select)
+	OR (NOT DS1_dp AND NOT time_date_select));
+
+
+DS5(0) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+	NOT XLXN_83(2) AND NOT XLXN_83(3))
+	OR (time_date_select AND NOT XLXN_83(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+	NOT XLXN_218(2) AND NOT XLXN_218(3))
+	OR (NOT time_date_select AND NOT XLXN_218(0) AND NOT XLXN_218(1) AND 
+	XLXN_218(2) AND NOT XLXN_218(3))));
+
+
+DS5(1) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3))
+	OR (time_date_select AND NOT XLXN_83(0) AND XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+	XLXN_218(2) AND NOT XLXN_218(3))
+	OR (NOT time_date_select AND NOT XLXN_218(0) AND XLXN_218(1) AND 
+	XLXN_218(2) AND NOT XLXN_218(3))));
+
+
+DS5(2) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_83(0) AND XLXN_83(1) AND 
+	NOT XLXN_83(2) AND NOT XLXN_83(3))
+	OR (NOT time_date_select AND NOT XLXN_218(0) AND XLXN_218(1) AND 
+	NOT XLXN_218(2) AND NOT XLXN_218(3))));
+
+
+DS5(3) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_83(0) AND XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3))
+	OR (time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+	NOT XLXN_83(2) AND NOT XLXN_83(3))
+	OR (time_date_select AND NOT XLXN_83(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND XLXN_218(1) AND 
+	XLXN_218(2) AND NOT XLXN_218(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+	NOT XLXN_218(2) AND NOT XLXN_218(3))
+	OR (NOT time_date_select AND NOT XLXN_218(0) AND NOT XLXN_218(1) AND 
+	XLXN_218(2) AND NOT XLXN_218(3))));
+
+
+DS5(4) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_83(0) AND NOT XLXN_83(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(3))
+	OR (time_date_select AND XLXN_83(0) AND NOT XLXN_83(1) AND 
+	NOT XLXN_83(2))
+	OR (time_date_select AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(1) AND 
+	NOT XLXN_218(2))
+	OR (NOT time_date_select AND NOT XLXN_218(1) AND XLXN_218(2) AND 
+	NOT XLXN_218(3))));
+
+
+DS5(5) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_83(0) AND XLXN_83(1) AND 
+	NOT XLXN_83(3))
+	OR (time_date_select AND XLXN_83(0) AND NOT XLXN_83(2) AND 
+	NOT XLXN_83(3))
+	OR (time_date_select AND XLXN_83(1) AND NOT XLXN_83(2) AND 
+	NOT XLXN_83(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND XLXN_218(1) AND 
+	NOT XLXN_218(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND NOT XLXN_218(2) AND 
+	NOT XLXN_218(3))
+	OR (NOT time_date_select AND XLXN_218(1) AND NOT XLXN_218(2) AND 
+	NOT XLXN_218(3))));
+
+
+DS5(6) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_83(1) AND NOT XLXN_83(2) AND 
+	NOT XLXN_83(3))
+	OR (NOT time_date_select AND NOT XLXN_218(1) AND NOT XLXN_218(2) AND 
+	NOT XLXN_218(3))
+	OR (time_date_select AND XLXN_83(0) AND XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3))
+	OR (NOT time_date_select AND XLXN_218(0) AND XLXN_218(1) AND 
+	XLXN_218(2) AND NOT XLXN_218(3))));
+
+FDCPE_DS5_dp: FDCPE port map (DS5_dp,DS5_dp_D,clk,'0','0','1');
+DS5_dp_D <= DS1_dp
+	XOR (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+
+
+DS6(0) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+	NOT XLXN_176(2) AND NOT XLXN_176(3))
+	OR (time_date_select AND NOT XLXN_176(0) AND NOT XLXN_176(1) AND 
+	XLXN_176(2) AND NOT XLXN_176(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+	NOT XLXN_217(2) AND NOT XLXN_217(3))
+	OR (NOT time_date_select AND NOT XLXN_217(0) AND NOT XLXN_217(1) AND 
+	XLXN_217(2) AND NOT XLXN_217(3))));
+
+
+DS6(1) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+	XLXN_176(2) AND NOT XLXN_176(3))
+	OR (time_date_select AND NOT XLXN_176(0) AND XLXN_176(1) AND 
+	XLXN_176(2) AND NOT XLXN_176(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+	XLXN_217(2) AND NOT XLXN_217(3))
+	OR (NOT time_date_select AND NOT XLXN_217(0) AND XLXN_217(1) AND 
+	XLXN_217(2) AND NOT XLXN_217(3))));
+
+
+DS6(2) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_176(0) AND XLXN_176(1) AND 
+	NOT XLXN_176(2) AND NOT XLXN_176(3))
+	OR (NOT time_date_select AND NOT XLXN_217(0) AND XLXN_217(1) AND 
+	NOT XLXN_217(2) AND NOT XLXN_217(3))));
+
+
+DS6(3) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_176(0) AND XLXN_176(1) AND 
+	XLXN_176(2) AND NOT XLXN_176(3))
+	OR (time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+	NOT XLXN_176(2) AND NOT XLXN_176(3))
+	OR (time_date_select AND NOT XLXN_176(0) AND NOT XLXN_176(1) AND 
+	XLXN_176(2) AND NOT XLXN_176(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND XLXN_217(1) AND 
+	XLXN_217(2) AND NOT XLXN_217(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+	NOT XLXN_217(2) AND NOT XLXN_217(3))
+	OR (NOT time_date_select AND NOT XLXN_217(0) AND NOT XLXN_217(1) AND 
+	XLXN_217(2) AND NOT XLXN_217(3))));
+
+
+DS6(4) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_176(0) AND NOT XLXN_176(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(3))
+	OR (time_date_select AND XLXN_176(0) AND NOT XLXN_176(1) AND 
+	NOT XLXN_176(2))
+	OR (time_date_select AND NOT XLXN_176(1) AND XLXN_176(2) AND 
+	NOT XLXN_176(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(1) AND 
+	NOT XLXN_217(2))
+	OR (NOT time_date_select AND NOT XLXN_217(1) AND XLXN_217(2) AND 
+	NOT XLXN_217(3))));
+
+
+DS6(5) <= NOT (DS1_dp
+	XOR ((time_date_select AND XLXN_176(0) AND XLXN_176(1) AND 
+	NOT XLXN_176(3))
+	OR (time_date_select AND XLXN_176(0) AND NOT XLXN_176(2) AND 
+	NOT XLXN_176(3))
+	OR (time_date_select AND XLXN_176(1) AND NOT XLXN_176(2) AND 
+	NOT XLXN_176(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND XLXN_217(1) AND 
+	NOT XLXN_217(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND NOT XLXN_217(2) AND 
+	NOT XLXN_217(3))
+	OR (NOT time_date_select AND XLXN_217(1) AND NOT XLXN_217(2) AND 
+	NOT XLXN_217(3))));
+
+
+DS6(6) <= NOT (DS1_dp
+	XOR ((time_date_select AND NOT XLXN_176(1) AND NOT XLXN_176(2) AND 
+	NOT XLXN_176(3))
+	OR (NOT time_date_select AND NOT XLXN_217(1) AND NOT XLXN_217(2) AND 
+	NOT XLXN_217(3))
+	OR (time_date_select AND XLXN_176(0) AND XLXN_176(1) AND 
+	XLXN_176(2) AND NOT XLXN_176(3))
+	OR (NOT time_date_select AND XLXN_217(0) AND XLXN_217(1) AND 
+	XLXN_217(2) AND NOT XLXN_217(3))));
+
+
+LED1 <= dcf_77;
+
+
+N_PZ_1458 <= ((NOT XLXI_83/zero_time(7))
+	OR (NOT XLXI_83/zero_time(5) AND NOT XLXI_83/zero_time(6)));
+
+
+N_PZ_1459 <= (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+	XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND NOT XLXI_75/clkCnt(11) AND 
+	NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND NOT XLXI_75/clkCnt(14) AND 
+	NOT XLXN_176(1) AND NOT XLXN_176(2) AND XLXN_176(3));
+
+
+N_PZ_1498 <= ((XLXN_78(1) AND XLXI_83/data(23))
+	OR (NOT XLXN_78(1) AND NOT XLXI_83/data(23)));
+
+
+N_PZ_1517 <= ((NOT XLXI_83/zero_time(1) AND NOT XLXI_83/zero_time(3) AND 
+	NOT XLXI_83/zero_time(4))
+	OR (NOT XLXI_83/zero_time(2) AND NOT XLXI_83/zero_time(3) AND 
+	NOT XLXI_83/zero_time(4)));
+
+
+N_PZ_1548 <= ((NOT XLXI_83/mean(2) AND XLXI_83/zero_time(0))
+	OR (NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0) AND 
+	XLXI_83/zero_time(0)));
+
+
+N_PZ_738 <= (reset_n AND NOT XLXN_163);
+
+
+N_PZ_749 <= ((XLXN_78(0) AND 
+	NOT XLXI_83/Mxor_sync_next_xor0001__xor0001)
+	OR (NOT XLXN_78(0) AND 
+	XLXI_83/Mxor_sync_next_xor0001__xor0001));
+
+
+N_PZ_797 <= ((reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1)));
+
+
+N_PZ_834 <= ((NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (NOT XLXI_83/mean(4) AND XLXI_83/max_holder(4))
+	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/mean(3) AND 
+	XLXI_83/max_holder(4)));
+
+
+N_PZ_925 <= ((XLXI_83/mean(2) AND XLXI_83/mean(1))
+	OR (XLXI_83/mean(2) AND XLXI_83/mean(0)));
+
+FTCPE_XLXI_75/clkCnt0: FTCPE port map (XLXI_75/clkCnt(0),'0',clk,'0','0','1');
+
+FTCPE_XLXI_75/clkCnt1: FTCPE port map (XLXI_75/clkCnt(1),XLXI_75/clkCnt(0),clk,'0','0','1');
+
+FTCPE_XLXI_75/clkCnt2: FTCPE port map (XLXI_75/clkCnt(2),XLXI_75/clkCnt_T(2),clk,'0','0','1');
+XLXI_75/clkCnt_T(2) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1));
+
+FTCPE_XLXI_75/clkCnt3: FTCPE port map (XLXI_75/clkCnt(3),XLXI_75/clkCnt_T(3),clk,'0','0','1');
+XLXI_75/clkCnt_T(3) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2));
+
+FTCPE_XLXI_75/clkCnt4: FTCPE port map (XLXI_75/clkCnt(4),XLXI_75/clkCnt_T(4),clk,'0','0','1');
+XLXI_75/clkCnt_T(4) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3));
+
+FTCPE_XLXI_75/clkCnt5: FTCPE port map (XLXI_75/clkCnt(5),XLXI_75/clkCnt_T(5),clk,'0','0','1');
+XLXI_75/clkCnt_T(5) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4));
+
+FTCPE_XLXI_75/clkCnt6: FTCPE port map (XLXI_75/clkCnt(6),XLXI_75/clkCnt_T(6),clk,'0','0','1');
+XLXI_75/clkCnt_T(6) <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5));
+
+FTCPE_XLXI_75/clkCnt8: FTCPE port map (XLXI_75/clkCnt(8),XLXI_75/clkCnt_T(8),clk,'0','0','1');
+XLXI_75/clkCnt_T(8) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6));
+
+FTCPE_XLXI_75/clkCnt10: FTCPE port map (XLXI_75/clkCnt(10),XLXI_75/clkCnt_T(10),clk,'0','0','1');
+XLXI_75/clkCnt_T(10) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp);
+
+FTCPE_XLXI_75/clkCnt11: FTCPE port map (XLXI_75/clkCnt(11),XLXI_75/clkCnt_T(11),clk,'0','0','1');
+XLXI_75/clkCnt_T(11) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+	XLXI_75/clkCnt(10));
+
+FTCPE_XLXI_75/clkCnt12: FTCPE port map (XLXI_75/clkCnt(12),XLXI_75/clkCnt_T(12),clk,'0','0','1');
+XLXI_75/clkCnt_T(12) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+	XLXI_75/clkCnt(10) AND XLXI_75/clkCnt(11));
+
+FTCPE_XLXI_75/clkCnt13: FTCPE port map (XLXI_75/clkCnt(13),XLXI_75/clkCnt_T(13),clk,'0','0','1');
+XLXI_75/clkCnt_T(13) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+	XLXI_75/clkCnt(10) AND XLXI_75/clkCnt(11) AND XLXI_75/clkCnt(12));
+
+FTCPE_XLXI_75/clkCnt14: FTCPE port map (XLXI_75/clkCnt(14),XLXI_75/clkCnt_T(14),clk,'0','0','1');
+XLXI_75/clkCnt_T(14) <= (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8) AND DS1_dp AND 
+	XLXI_75/clkCnt(10) AND XLXI_75/clkCnt(11) AND XLXI_75/clkCnt(12) AND 
+	XLXI_75/clkCnt(13));
+
+
+XLXI_83/Mxor_sync_next_xor0000__xor0000 <= XLXN_76(0)
+	XOR ((XLXN_76(1) AND XLXN_76(2) AND XLXI_83/data(30))
+	OR (XLXN_76(1) AND NOT XLXN_76(2) AND NOT XLXI_83/data(30))
+	OR (NOT XLXN_76(1) AND XLXN_76(2) AND NOT XLXI_83/data(30))
+	OR (NOT XLXN_76(1) AND NOT XLXN_76(2) AND XLXI_83/data(30)));
+
+
+XLXI_83/Mxor_sync_next_xor0000__xor0001 <= XLXN_75(0)
+	XOR ((XLXN_75(1) AND XLXN_75(2) AND XLXN_75(3))
+	OR (XLXN_75(1) AND NOT XLXN_75(2) AND NOT XLXN_75(3))
+	OR (NOT XLXN_75(1) AND XLXN_75(2) AND NOT XLXN_75(3))
+	OR (NOT XLXN_75(1) AND NOT XLXN_75(2) AND XLXN_75(3)));
+
+
+XLXI_83/Mxor_sync_next_xor0001__xor0001 <= XLXN_77(0)
+	XOR ((XLXN_77(1) AND XLXN_77(2) AND XLXN_77(3))
+	OR (XLXN_77(1) AND NOT XLXN_77(2) AND NOT XLXN_77(3))
+	OR (NOT XLXN_77(1) AND XLXN_77(2) AND NOT XLXN_77(3))
+	OR (NOT XLXN_77(1) AND NOT XLXN_77(2) AND XLXN_77(3)));
+
+
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001 <= XLXI_83/data(3)
+	XOR ((XLXI_83/data(5) AND NOT XLXI_83/data(4))
+	OR (NOT XLXI_83/data(5) AND XLXI_83/data(4)));
+
+
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000 <= XLXI_83/data(10)
+	XOR ((XLXI_83/data(9) AND XLXI_83/data(8) AND 
+	XLXI_83/data(7) AND NOT XLXI_83/data(6))
+	OR (XLXI_83/data(9) AND XLXI_83/data(8) AND 
+	NOT XLXI_83/data(7) AND XLXI_83/data(6))
+	OR (XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+	XLXI_83/data(7) AND XLXI_83/data(6))
+	OR (XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+	NOT XLXI_83/data(7) AND NOT XLXI_83/data(6))
+	OR (NOT XLXI_83/data(9) AND XLXI_83/data(8) AND 
+	XLXI_83/data(7) AND XLXI_83/data(6))
+	OR (NOT XLXI_83/data(9) AND XLXI_83/data(8) AND 
+	NOT XLXI_83/data(7) AND NOT XLXI_83/data(6))
+	OR (NOT XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+	XLXI_83/data(7) AND NOT XLXI_83/data(6))
+	OR (NOT XLXI_83/data(9) AND NOT XLXI_83/data(8) AND 
+	NOT XLXI_83/data(7) AND XLXI_83/data(6)));
+
+
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000 <= XLXI_83/data(17)
+	XOR ((XLXI_83/data(19) AND NOT XLXI_83/data(18))
+	OR (NOT XLXI_83/data(19) AND XLXI_83/data(18)));
+
+
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 <= XLXI_83/data(20)
+	XOR ((XLXI_83/data(22) AND NOT XLXI_83/data(21))
+	OR (NOT XLXI_83/data(22) AND XLXI_83/data(21)));
+
+
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 <= XLXI_83/data(11)
+	XOR ((XLXI_83/data(13) AND NOT XLXI_83/data(12))
+	OR (NOT XLXI_83/data(13) AND XLXI_83/data(12)));
+
+
+XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001 <= XLXI_83/data(14)
+	XOR ((XLXI_83/data(16) AND NOT XLXI_83/data(15))
+	OR (NOT XLXI_83/data(16) AND XLXI_83/data(15)));
+
+
+XLXI_83/Mxor_sync_next_xor0002__xor0000 <= XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000_Mxor__xor0001__xor0001
+	XOR ((XLXI_83/data(2) AND XLXI_83/data(1) AND 
+	XLXI_83/data(0) AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+	OR (XLXI_83/data(2) AND XLXI_83/data(1) AND 
+	NOT XLXI_83/data(0) AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+	OR (XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+	XLXI_83/data(0) AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+	OR (XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+	NOT XLXI_83/data(0) AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+	OR (NOT XLXI_83/data(2) AND XLXI_83/data(1) AND 
+	XLXI_83/data(0) AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+	OR (NOT XLXI_83/data(2) AND XLXI_83/data(1) AND 
+	NOT XLXI_83/data(0) AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+	OR (NOT XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+	XLXI_83/data(0) AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000)
+	OR (NOT XLXI_83/data(2) AND NOT XLXI_83/data(1) AND 
+	NOT XLXI_83/data(0) AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0000__xor0000));
+
+
+XLXI_83/Mxor_sync_next_xor0002__xor0001 <= XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0000
+	XOR ((
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001)
+	OR (
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001)
+	OR (
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001)
+	OR (
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0000__xor0001 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002_Mxor__xor0001_Mxor__xor0001__xor0001));
+
+FDCPE_XLXI_83/data0: FDCPE port map (XLXI_83/data(0),XLXI_83/data_D(0),XLXN_238,'0','0','1');
+XLXI_83/data_D(0) <= NOT (((NOT XLXI_83/data(0) AND NOT XLXI_83/data_not0001)
+	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/max_holder(4) AND 
+	XLXI_83/max_holder(2) AND XLXI_83/data_not0001)
+	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/max_holder(4) AND 
+	XLXI_83/data_not0001 AND XLXI_83/max_holder(1))
+	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/max_holder(4) AND 
+	NOT XLXI_83/max_holder(2) AND XLXI_83/data_not0001 AND NOT XLXI_83/max_holder(1) AND 
+	NOT XLXI_83/max_holder(0))));
+
+FDCPE_XLXI_83/data1: FDCPE port map (XLXI_83/data(1),XLXI_83/data(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data2: FDCPE port map (XLXI_83/data(2),XLXI_83/data(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data3: FDCPE port map (XLXI_83/data(3),XLXI_83/data(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data4: FDCPE port map (XLXI_83/data(4),XLXI_83/data(3),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data5: FDCPE port map (XLXI_83/data(5),XLXI_83/data(4),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data6: FDCPE port map (XLXI_83/data(6),XLXI_83/data(5),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data7: FDCPE port map (XLXI_83/data(7),XLXI_83/data(6),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data8: FDCPE port map (XLXI_83/data(8),XLXI_83/data(7),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data9: FDCPE port map (XLXI_83/data(9),XLXI_83/data(8),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data10: FDCPE port map (XLXI_83/data(10),XLXI_83/data(9),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data11: FDCPE port map (XLXI_83/data(11),XLXI_83/data(10),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data12: FDCPE port map (XLXI_83/data(12),XLXI_83/data(11),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data13: FDCPE port map (XLXI_83/data(13),XLXI_83/data(12),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data14: FDCPE port map (XLXI_83/data(14),XLXI_83/data(13),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data15: FDCPE port map (XLXI_83/data(15),XLXI_83/data(14),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data16: FDCPE port map (XLXI_83/data(16),XLXI_83/data(15),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data17: FDCPE port map (XLXI_83/data(17),XLXI_83/data(16),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data18: FDCPE port map (XLXI_83/data(18),XLXI_83/data(17),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data19: FDCPE port map (XLXI_83/data(19),XLXI_83/data(18),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data20: FDCPE port map (XLXI_83/data(20),XLXI_83/data(19),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data21: FDCPE port map (XLXI_83/data(21),XLXI_83/data(20),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data22: FDCPE port map (XLXI_83/data(22),XLXI_83/data(21),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data23: FDCPE port map (XLXI_83/data(23),XLXI_83/data(22),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data30: FDCPE port map (XLXI_83/data(30),XLXN_77(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data38: FDCPE port map (XLXI_83/data(38),XLXN_75(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data39: FDCPE port map (XLXI_83/data(39),XLXI_83/data(38),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data40: FDCPE port map (XLXI_83/data(40),XLXI_83/data(39),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data41: FDCPE port map (XLXI_83/data(41),XLXI_83/data(40),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data42: FDCPE port map (XLXI_83/data(42),XLXI_83/data(41),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data43: FDCPE port map (XLXI_83/data(43),XLXI_83/data(42),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data44: FDCPE port map (XLXI_83/data(44),XLXI_83/data(43),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data45: FDCPE port map (XLXI_83/data(45),XLXI_83/data(44),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data46: FDCPE port map (XLXI_83/data(46),XLXI_83/data(45),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data47: FDCPE port map (XLXI_83/data(47),XLXI_83/data(46),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data48: FDCPE port map (XLXI_83/data(48),XLXI_83/data(47),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data49: FDCPE port map (XLXI_83/data(49),XLXI_83/data(48),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data50: FDCPE port map (XLXI_83/data(50),XLXI_83/data(49),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data51: FDCPE port map (XLXI_83/data(51),XLXI_83/data(50),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data52: FDCPE port map (XLXI_83/data(52),XLXI_83/data(51),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data53: FDCPE port map (XLXI_83/data(53),XLXI_83/data(52),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data54: FDCPE port map (XLXI_83/data(54),XLXI_83/data(53),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data55: FDCPE port map (XLXI_83/data(55),XLXI_83/data(54),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data56: FDCPE port map (XLXI_83/data(56),XLXI_83/data(55),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data57: FDCPE port map (XLXI_83/data(57),XLXI_83/data(56),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXI_83/data58: FDCPE port map (XLXI_83/data(58),XLXI_83/data(57),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+
+XLXI_83/data_not0001 <= (XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+	NOT XLXI_83/mean(3) AND NOT N_PZ_925)
+	XOR ((XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+	NOT XLXI_83/mean(3) AND NOT XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+	NOT XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))
+	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+	NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+	XLXI_83/max_holder(2) AND XLXI_83/max_holder(1))
+	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+	NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+	XLXI_83/max_holder(2) AND XLXI_83/max_holder(0))
+	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+	NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND NOT N_PZ_925 AND 
+	NOT XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1) AND NOT XLXI_83/max_holder(0)));
+
+FDCPE_XLXI_83/max_holder0: FDCPE port map (XLXI_83/max_holder(0),XLXI_83/max_holder_D(0),XLXN_238,'0','0','1');
+XLXI_83/max_holder_D(0) <= NOT (NOT XLXI_83/max_holder(0)
+	XOR ((NOT reset_n AND XLXI_83/max_holder(0))
+	OR (XLXI_83/mean(4) AND NOT XLXI_83/mean(0) AND 
+	NOT XLXI_83/max_holder(4) AND XLXI_83/max_holder(0))
+	OR (NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND N_PZ_797 AND 
+	XLXI_83/max_holder(0))
+	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(4) AND 
+	XLXI_83/mean(3) AND NOT XLXI_83/mean(0) AND XLXI_83/max_holder(0))
+	OR (XLXI_83/mean(2) AND NOT XLXI_83/mean(0) AND 
+	NOT XLXI_83/max_holder(2) AND NOT N_PZ_834 AND XLXI_83/max_holder(0))
+	OR (NOT XLXI_83/mean(0) AND N_PZ_925 AND NOT N_PZ_834 AND 
+	NOT XLXI_83/max_holder(1) AND XLXI_83/max_holder(0))
+	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(3) AND 
+	XLXI_83/mean(2) AND NOT XLXI_83/mean(0) AND NOT N_PZ_834 AND 
+	XLXI_83/max_holder(0))
+	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(0) AND NOT XLXI_83/max_holder(4) AND NOT N_PZ_834 AND 
+	XLXI_83/max_holder(0))
+	OR (reset_n AND NOT XLXI_83/max_holder(3) AND 
+	XLXI_83/mean(3) AND XLXI_83/mean(0) AND NOT N_PZ_797 AND NOT N_PZ_834 AND 
+	NOT XLXI_83/max_holder(0))
+	OR (reset_n AND NOT XLXI_83/max_holder(3) AND 
+	XLXI_83/mean(0) AND NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834 AND 
+	NOT XLXI_83/max_holder(0))
+	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(0) AND 
+	NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+	OR (reset_n AND XLXI_83/mean(1) AND XLXI_83/mean(0) AND 
+	N_PZ_925 AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+	OR (reset_n AND XLXI_83/mean(1) AND XLXI_83/mean(0) AND 
+	NOT XLXI_83/max_holder(2) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+	OR (reset_n AND XLXI_83/mean(0) AND N_PZ_925 AND 
+	NOT XLXI_83/max_holder(2) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(0))
+	OR (reset_n AND XLXI_83/mean(0) AND N_PZ_925 AND NOT N_PZ_797 AND 
+	NOT N_PZ_834 AND NOT XLXI_83/max_holder(1) AND NOT XLXI_83/max_holder(0))
+	OR (reset_n AND XLXI_83/mean(0) AND 
+	NOT XLXI_83/max_holder(2) AND NOT N_PZ_797 AND NOT N_PZ_834 AND NOT XLXI_83/max_holder(1) AND 
+	NOT XLXI_83/max_holder(0))
+	OR (XLXI_83/mean(4) AND XLXI_83/mean(1) AND 
+	NOT XLXI_83/mean(0) AND NOT XLXI_83/max_holder(2) AND NOT N_PZ_834 AND 
+	NOT XLXI_83/max_holder(1) AND XLXI_83/max_holder(0))));
+
+FDCPE_XLXI_83/max_holder1: FDCPE port map (XLXI_83/max_holder(1),XLXI_83/max_holder_D(1),XLXN_238,'0','0','1');
+XLXI_83/max_holder_D(1) <= NOT (((NOT reset_n)
+	OR (NOT XLXI_83/mean(1) AND NOT XLXI_83/max_holder(1))
+	OR (N_PZ_834 AND NOT XLXI_83/max_holder(1))
+	OR (NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND N_PZ_797)
+	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(0) AND NOT N_PZ_925 AND 
+	NOT XLXI_83/max_holder(1))
+	OR (XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND 
+	NOT XLXI_83/max_holder(2) AND NOT N_PZ_834)
+	OR (XLXI_83/max_holder(3) AND NOT XLXI_83/mean(4) AND 
+	NOT N_PZ_925 AND XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))
+	OR (XLXI_83/max_holder(3) AND XLXI_83/max_holder(4) AND 
+	NOT N_PZ_925 AND XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))
+	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(3) AND 
+	NOT XLXI_83/mean(1) AND NOT N_PZ_797 AND NOT N_PZ_834)
+	OR (NOT XLXI_83/max_holder(3) AND NOT XLXI_83/mean(1) AND 
+	NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834)
+	OR (XLXI_83/mean(4) AND NOT XLXI_83/mean(1) AND 
+	NOT XLXI_83/max_holder(4) AND NOT N_PZ_797 AND NOT N_PZ_834)
+	OR (NOT XLXI_83/mean(3) AND XLXI_83/max_holder(4) AND 
+	NOT N_PZ_925 AND XLXI_83/max_holder(2) AND NOT XLXI_83/max_holder(1))));
+
+FDCPE_XLXI_83/max_holder2: FDCPE port map (XLXI_83/max_holder(2),XLXI_83/max_holder_D(2),XLXN_238,'0','0','1');
+XLXI_83/max_holder_D(2) <= NOT (((NOT reset_n)
+	OR (NOT XLXI_83/mean(2) AND NOT XLXI_83/max_holder(2))
+	OR (NOT XLXI_83/max_holder(2) AND N_PZ_834)
+	OR (XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/max_holder(4))
+	OR (NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND N_PZ_797)
+	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(4) AND 
+	XLXI_83/mean(3) AND NOT XLXI_83/mean(2))
+	OR (NOT XLXI_83/max_holder(3) AND XLXI_83/mean(0) AND 
+	NOT XLXI_83/max_holder(4) AND NOT N_PZ_925 AND NOT N_PZ_797)
+	OR (XLXI_83/mean(4) AND XLXI_83/mean(0) AND 
+	NOT XLXI_83/max_holder(4) AND NOT N_PZ_925 AND NOT N_PZ_797)));
+
+FDCPE_XLXI_83/max_holder3: FDCPE port map (XLXI_83/max_holder(3),XLXI_83/max_holder_D(3),XLXN_238,'0','0','1');
+XLXI_83/max_holder_D(3) <= ((reset_n AND XLXI_83/max_holder(3) AND 
+	XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/max_holder(3) AND 
+	XLXI_83/mean(4) AND XLXI_83/max_holder(4))
+	OR (reset_n AND XLXI_83/max_holder(3) AND 
+	NOT XLXI_83/mean(4) AND N_PZ_925)
+	OR (reset_n AND XLXI_83/mean(3) AND XLXI_83/mean(2) AND 
+	NOT XLXI_83/max_holder(4))
+	OR (reset_n AND XLXI_83/mean(3) AND XLXI_83/mean(1) AND 
+	XLXI_83/mean(0) AND NOT XLXI_83/max_holder(4)));
+
+FDCPE_XLXI_83/max_holder4: FDCPE port map (XLXI_83/max_holder(4),XLXI_83/max_holder_D(4),XLXN_238,'0','0','1');
+XLXI_83/max_holder_D(4) <= ((reset_n AND XLXI_83/mean(4))
+	OR (reset_n AND XLXI_83/mean(3) AND 
+	XLXI_83/max_holder(4))
+	OR (reset_n AND XLXI_83/max_holder(4) AND N_PZ_925));
+
+FTCPE_XLXI_83/mean0: FTCPE port map (XLXI_83/mean(0),XLXI_83/mean_T(0),XLXN_238,'0','0','1');
+XLXI_83/mean_T(0) <= NOT (((NOT reset_n AND NOT XLXI_83/mean(0))
+	OR (reset_n AND XLXI_83/mean(4) AND dcf_77 AND 
+	XLXI_83/mean(3) AND XLXI_83/mean(2) AND XLXI_83/mean(0))
+	OR (XLXI_83/mean(4) AND dcf_77 AND XLXI_83/mean(3) AND 
+	XLXI_83/mean(2) AND XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+	OR (NOT XLXI_83/mean(4) AND NOT dcf_77 AND NOT XLXI_83/mean(3) AND 
+	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))));
+
+FTCPE_XLXI_83/mean1: FTCPE port map (XLXI_83/mean(1),XLXI_83/mean_T(1),XLXN_238,'0','0','1');
+XLXI_83/mean_T(1) <= NOT (((NOT reset_n AND NOT XLXI_83/mean(1))
+	OR (reset_n AND dcf_77 AND NOT XLXI_83/mean(0))
+	OR (reset_n AND NOT dcf_77 AND XLXI_83/mean(0))
+	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(3) AND 
+	XLXI_83/mean(2) AND XLXI_83/mean(0))
+	OR (NOT XLXI_83/mean(4) AND NOT dcf_77 AND NOT XLXI_83/mean(3) AND 
+	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1))));
+
+FDCPE_XLXI_83/mean2: FDCPE port map (XLXI_83/mean(2),XLXI_83/mean_D(2),XLXN_238,'0','0','1');
+XLXI_83/mean_D(2) <= ((reset_n AND dcf_77 AND XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(0))
+	OR (reset_n AND NOT dcf_77 AND XLXI_83/mean(2) AND 
+	XLXI_83/mean(1))
+	OR (reset_n AND XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND 
+	XLXI_83/mean(0))
+	OR (reset_n AND XLXI_83/mean(4) AND XLXI_83/mean(3) AND 
+	XLXI_83/mean(2) AND XLXI_83/mean(0))
+	OR (reset_n AND dcf_77 AND NOT XLXI_83/mean(2) AND 
+	XLXI_83/mean(1) AND XLXI_83/mean(0))
+	OR (reset_n AND XLXI_83/mean(4) AND NOT dcf_77 AND 
+	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+	OR (reset_n AND NOT dcf_77 AND XLXI_83/mean(3) AND 
+	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0)));
+
+FTCPE_XLXI_83/mean3: FTCPE port map (XLXI_83/mean(3),XLXI_83/mean_T(3),XLXN_238,'0','0','1');
+XLXI_83/mean_T(3) <= ((NOT reset_n AND XLXI_83/mean(3))
+	OR (NOT dcf_77 AND XLXI_83/mean(3) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+	OR (reset_n AND dcf_77 AND NOT XLXI_83/mean(3) AND 
+	XLXI_83/mean(2) AND XLXI_83/mean(1) AND XLXI_83/mean(0))
+	OR (NOT XLXI_83/mean(4) AND dcf_77 AND XLXI_83/mean(3) AND 
+	XLXI_83/mean(2) AND XLXI_83/mean(1) AND XLXI_83/mean(0))
+	OR (reset_n AND XLXI_83/mean(4) AND NOT dcf_77 AND 
+	NOT XLXI_83/mean(3) AND NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND 
+	NOT XLXI_83/mean(0)));
+
+FTCPE_XLXI_83/mean4: FTCPE port map (XLXI_83/mean(4),XLXI_83/mean_T(4),XLXN_238,'0','0','1');
+XLXI_83/mean_T(4) <= ((NOT reset_n AND XLXI_83/mean(4))
+	OR (XLXI_83/mean(4) AND NOT dcf_77 AND NOT XLXI_83/mean(3) AND 
+	NOT XLXI_83/mean(2) AND NOT XLXI_83/mean(1) AND NOT XLXI_83/mean(0))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND dcf_77 AND 
+	XLXI_83/mean(3) AND XLXI_83/mean(2) AND XLXI_83/mean(1) AND 
+	XLXI_83/mean(0)));
+
+FTCPE_XLXI_83/zero_time0: FTCPE port map (XLXI_83/zero_time(0),XLXI_83/zero_time_T(0),XLXN_238,'0','0','1');
+XLXI_83/zero_time_T(0) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(0))
+	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+	N_PZ_797 AND NOT XLXI_83/zero_time(7))
+	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+	N_PZ_797 AND NOT XLXI_83/zero_time(5) AND NOT XLXI_83/zero_time(6))
+	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+	N_PZ_797 AND NOT XLXI_83/zero_time(6) AND N_PZ_1517));
+
+FTCPE_XLXI_83/zero_time1: FTCPE port map (XLXI_83/zero_time(1),XLXI_83/zero_time_T(1),XLXN_238,'0','0','1');
+XLXI_83/zero_time_T(1) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(1))
+	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+	N_PZ_797 AND XLXI_83/zero_time(0) AND NOT XLXI_83/zero_time(7))
+	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+	N_PZ_797 AND NOT XLXI_83/zero_time(5) AND NOT XLXI_83/zero_time(6) AND 
+	XLXI_83/zero_time(0))
+	OR (NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND NOT N_PZ_925 AND 
+	N_PZ_797 AND NOT XLXI_83/zero_time(6) AND XLXI_83/zero_time(0) AND 
+	N_PZ_1517));
+
+FTCPE_XLXI_83/zero_time2: FTCPE port map (XLXI_83/zero_time(2),XLXI_83/zero_time_T(2),XLXN_238,'0','0','1');
+XLXI_83/zero_time_T(2) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(2))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+	N_PZ_1458 AND XLXI_83/zero_time(1) AND N_PZ_1548)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+	XLXI_83/zero_time(1) AND NOT XLXI_83/zero_time(6) AND NOT XLXI_83/zero_time(2) AND 
+	NOT XLXI_83/zero_time(3) AND N_PZ_1548 AND NOT XLXI_83/zero_time(4)));
+
+FTCPE_XLXI_83/zero_time3: FTCPE port map (XLXI_83/zero_time(3),XLXI_83/zero_time_T(3),XLXN_238,'0','0','1');
+XLXI_83/zero_time_T(3) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(3))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+	N_PZ_1458 AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+	N_PZ_1548));
+
+FTCPE_XLXI_83/zero_time4: FTCPE port map (XLXI_83/zero_time(4),XLXI_83/zero_time_T(4),XLXN_238,'0','0','1');
+XLXI_83/zero_time_T(4) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(4))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+	N_PZ_1458 AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+	XLXI_83/zero_time(3) AND N_PZ_1548));
+
+FTCPE_XLXI_83/zero_time5: FTCPE port map (XLXI_83/zero_time(5),XLXI_83/zero_time_T(5),XLXN_238,'0','0','1');
+XLXI_83/zero_time_T(5) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(5))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+	N_PZ_1458 AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+	XLXI_83/zero_time(3) AND N_PZ_1548 AND XLXI_83/zero_time(4)));
+
+FTCPE_XLXI_83/zero_time6: FTCPE port map (XLXI_83/zero_time(6),XLXI_83/zero_time_T(6),XLXN_238,'0','0','1');
+XLXI_83/zero_time_T(6) <= ((NOT N_PZ_797 AND XLXI_83/zero_time(6))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3) AND 
+	XLXI_83/zero_time(5) AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(2) AND 
+	XLXI_83/zero_time(3) AND N_PZ_1548 AND NOT XLXI_83/zero_time(7) AND 
+	XLXI_83/zero_time(4)));
+
+FDCPE_XLXI_83/zero_time7: FDCPE port map (XLXI_83/zero_time(7),XLXI_83/zero_time_D(7),XLXN_238,'0','0','1');
+XLXI_83/zero_time_D(7) <= ((N_PZ_797 AND XLXI_83/zero_time(7))
+	OR (NOT XLXI_83/mean(3) AND N_PZ_797 AND 
+	XLXI_83/zero_time(5) AND XLXI_83/zero_time(1) AND XLXI_83/zero_time(6) AND 
+	XLXI_83/zero_time(2) AND XLXI_83/zero_time(3) AND N_PZ_1548 AND 
+	XLXI_83/zero_time(4)));
+
+FDCPE_XLXN_163: FDCPE port map (XLXN_163,XLXN_163_D,XLXN_238,'0','0','1');
+XLXN_163_D <= NOT (((NOT reset_n)
+	OR (N_PZ_797)
+	OR (NOT XLXI_83/data(38))
+	OR (XLXI_83/data(58))
+	OR (N_PZ_1458)
+	OR (XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (N_PZ_749 AND N_PZ_1498)
+	OR (NOT N_PZ_749 AND NOT N_PZ_1498)));
+
+FDCPE_XLXN_1760: FDCPE port map (XLXN_176(0),XLXN_176_D(0),NOT clk,'0','0','1');
+XLXN_176_D(0) <= ((N_PZ_738 AND XLXN_176(0) AND NOT XLXN_237)
+	OR (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+	reset_n AND NOT XLXN_163 AND NOT XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND 
+	NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND 
+	NOT XLXI_75/clkCnt(14)));
+
+FDCPE_XLXN_1761: FDCPE port map (XLXN_176(1),XLXN_176_D(1),NOT clk,'0','0','1');
+XLXN_176_D(1) <= ((N_PZ_738 AND NOT XLXN_176(0) AND XLXN_176(1))
+	OR (N_PZ_738 AND NOT XLXN_237 AND XLXN_176(1))
+	OR (N_PZ_738 AND NOT N_PZ_1459 AND XLXN_176(0) AND XLXN_237 AND 
+	NOT XLXN_176(1)));
+
+FTCPE_XLXN_1762: FTCPE port map (XLXN_176(2),XLXN_176_T(2),NOT clk,'0','0','1');
+XLXN_176_T(2) <= ((NOT N_PZ_738 AND XLXN_176(2))
+	OR (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+	reset_n AND NOT XLXN_163 AND XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND 
+	NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND 
+	NOT XLXI_75/clkCnt(14) AND XLXN_176(1)));
+
+FTCPE_XLXN_1763: FTCPE port map (XLXN_176(3),XLXN_176_T(3),NOT clk,'0','0','1');
+XLXN_176_T(3) <= ((N_PZ_1459)
+	OR (NOT N_PZ_738 AND XLXN_176(3))
+	OR (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+	reset_n AND NOT XLXN_163 AND XLXN_176(0) AND NOT XLXI_75/clkCnt(10) AND 
+	NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND NOT XLXI_75/clkCnt(13) AND 
+	NOT XLXI_75/clkCnt(14) AND XLXN_176(1) AND XLXN_176(2)));
+
+FDCPE_XLXN_2170: FDCPE port map (XLXN_217(0),XLXN_217_D(0),XLXN_238,'0','0','1');
+XLXN_217_D(0) <= NOT (XLXN_217(0)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_217(0))
+	OR (NOT XLXI_83/data(8) AND NOT XLXN_217(0))
+	OR (reset_n AND XLXI_83/data(8) AND XLXN_217(0))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_2171: FDCPE port map (XLXN_217(1),XLXN_217_D(1),XLXN_238,'0','0','1');
+XLXN_217_D(1) <= NOT (XLXN_217(1)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_217(1))
+	OR (NOT XLXI_83/data(7) AND NOT XLXN_217(1))
+	OR (reset_n AND XLXI_83/data(7) AND XLXN_217(1))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_2172: FDCPE port map (XLXN_217(2),XLXN_217_D(2),XLXN_238,'0','0','1');
+XLXN_217_D(2) <= NOT (XLXN_217(2)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_217(2))
+	OR (NOT XLXI_83/data(6) AND NOT XLXN_217(2))
+	OR (reset_n AND XLXI_83/data(6) AND XLXN_217(2))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_2173: FDCPE port map (XLXN_217(3),XLXN_217_D(3),XLXN_238,'0','0','1');
+XLXN_217_D(3) <= NOT (XLXN_217(3)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_217(3))
+	OR (NOT XLXI_83/data(5) AND NOT XLXN_217(3))
+	OR (reset_n AND XLXI_83/data(5) AND XLXN_217(3))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_2180: FDCPE port map (XLXN_218(0),XLXN_218_D(0),XLXN_238,'0','0','1');
+XLXN_218_D(0) <= NOT (XLXN_218(0)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_218(0))
+	OR (NOT XLXI_83/data(4) AND NOT XLXN_218(0))
+	OR (reset_n AND XLXI_83/data(4) AND XLXN_218(0))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_2181: FDCPE port map (XLXN_218(1),XLXN_218_D(1),XLXN_238,'0','0','1');
+XLXN_218_D(1) <= NOT (XLXN_218(1)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_218(1))
+	OR (NOT XLXI_83/data(3) AND NOT XLXN_218(1))
+	OR (reset_n AND XLXI_83/data(3) AND XLXN_218(1))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_2182: FDCPE port map (XLXN_218(2),XLXN_218_D(2),XLXN_238,'0','0','1');
+XLXN_218_D(2) <= NOT (XLXN_218(2)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_218(2))
+	OR (NOT XLXI_83/data(2) AND NOT XLXN_218(2))
+	OR (reset_n AND XLXI_83/data(2) AND XLXN_218(2))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_2183: FDCPE port map (XLXN_218(3),XLXN_218_D(3),XLXN_238,'0','0','1');
+XLXN_218_D(3) <= NOT (XLXN_218(3)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_218(3))
+	OR (NOT XLXI_83/data(1) AND NOT XLXN_218(3))
+	OR (reset_n AND XLXI_83/data(1) AND XLXN_218(3))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+
+XLXN_237 <= (NOT XLXI_75/clkCnt(0) AND NOT XLXN_238 AND NOT XLXI_75/clkCnt(1) AND 
+	NOT XLXI_75/clkCnt(2) AND NOT XLXI_75/clkCnt(3) AND NOT XLXI_75/clkCnt(4) AND 
+	NOT XLXI_75/clkCnt(5) AND NOT XLXI_75/clkCnt(6) AND NOT XLXI_75/clkCnt(8) AND NOT DS1_dp AND 
+	NOT XLXI_75/clkCnt(10) AND NOT XLXI_75/clkCnt(11) AND NOT XLXI_75/clkCnt(12) AND 
+	NOT XLXI_75/clkCnt(13) AND NOT XLXI_75/clkCnt(14));
+
+FTCPE_XLXN_238: FTCPE port map (XLXN_238,XLXN_238_T,clk,'0','0','1');
+XLXN_238_T <= (XLXI_75/clkCnt(0) AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6));
+
+FDCPE_XLXN_750: FDCPE port map (XLXN_75(0),XLXN_75(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_751: FDCPE port map (XLXN_75(1),XLXN_75(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_752: FDCPE port map (XLXN_75(2),XLXN_75(3),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_753: FDCPE port map (XLXN_75(3),XLXN_76(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_760: FDCPE port map (XLXN_76(0),XLXN_76(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_761: FDCPE port map (XLXN_76(1),XLXN_76(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_762: FDCPE port map (XLXN_76(2),XLXI_83/data(30),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_770: FDCPE port map (XLXN_77(0),XLXN_77(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_771: FDCPE port map (XLXN_77(1),XLXN_77(2),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_772: FDCPE port map (XLXN_77(2),XLXN_77(3),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_773: FDCPE port map (XLXN_77(3),XLXN_78(0),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_780: FDCPE port map (XLXN_78(0),XLXN_78(1),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_781: FDCPE port map (XLXN_78(1),XLXI_83/data(23),XLXN_238,'0','0',XLXI_83/data_not0001);
+
+FDCPE_XLXN_830: FDCPE port map (XLXN_83(0),XLXN_83_D(0),NOT clk,'0','0','1');
+XLXN_83_D(0) <= ((XLXN_83(0) AND N_PZ_738 AND NOT N_PZ_1459)
+	OR (NOT XLXN_83(0) AND N_PZ_738 AND N_PZ_1459));
+
+FDCPE_XLXN_831: FDCPE port map (XLXN_83(1),XLXN_83_D(1),NOT clk,'0','0','1');
+XLXN_83_D(1) <= ((NOT XLXN_83(0) AND N_PZ_738 AND XLXN_83(1))
+	OR (N_PZ_738 AND NOT N_PZ_1459 AND XLXN_83(1))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND NOT XLXN_83(1) AND 
+	NOT XLXN_83(2))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND NOT XLXN_83(1) AND 
+	XLXN_83(3)));
+
+FTCPE_XLXN_832: FTCPE port map (XLXN_83(2),XLXN_83_T(2),NOT clk,'0','0','1');
+XLXN_83_T(2) <= ((NOT N_PZ_738 AND XLXN_83(2))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_83(1))
+	OR (XLXN_83(0) AND N_PZ_1459 AND XLXN_83(2) AND 
+	NOT XLXN_83(3)));
+
+FTCPE_XLXN_833: FTCPE port map (XLXN_83(3),XLXN_83_T(3),NOT clk,'0','0','1');
+XLXN_83_T(3) <= ((NOT N_PZ_738 AND XLXN_83(3))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_83(1) AND 
+	XLXN_83(2)));
+
+FTCPE_XLXN_840: FTCPE port map (XLXN_84(0),XLXN_84_T(0),NOT clk,'0','0','1');
+XLXN_84_T(0) <= ((NOT reset_n AND XLXN_84(0))
+	OR (XLXN_163 AND NOT XLXN_75(0) AND XLXN_84(0))
+	OR (reset_n AND XLXN_163 AND XLXN_75(0) AND NOT XLXN_84(0))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3)));
+
+FTCPE_XLXN_841: FTCPE port map (XLXN_84(1),XLXN_84_T(1),NOT clk,'0','0','1');
+XLXN_84_T(1) <= ((NOT reset_n AND XLXN_84(1))
+	OR (XLXN_163 AND NOT XLXN_75(1) AND XLXN_84(1))
+	OR (reset_n AND XLXN_163 AND XLXN_75(1) AND NOT XLXN_84(1))
+	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(1))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(2))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND NOT XLXN_84(3)));
+
+FTCPE_XLXN_842: FTCPE port map (XLXN_84(2),XLXN_84_T(2),NOT clk,'0','0','1');
+XLXN_84_T(2) <= ((NOT reset_n AND XLXN_84(2))
+	OR (XLXN_163 AND NOT XLXN_75(2) AND XLXN_84(2))
+	OR (reset_n AND XLXN_163 AND XLXN_75(2) AND NOT XLXN_84(2))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(1)));
+
+FTCPE_XLXN_843: FTCPE port map (XLXN_84(3),XLXN_84_T(3),NOT clk,'0','0','1');
+XLXN_84_T(3) <= ((NOT reset_n AND XLXN_84(3))
+	OR (XLXN_163 AND NOT XLXN_75(3) AND XLXN_84(3))
+	OR (reset_n AND XLXN_163 AND XLXN_75(3) AND NOT XLXN_84(3))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_84(1) AND 
+	XLXN_84(2))
+	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3)));
+
+FTCPE_XLXN_850: FTCPE port map (XLXN_85(0),XLXN_85_T(0),NOT clk,'0','0','1');
+XLXN_85_T(0) <= ((NOT reset_n AND XLXN_85(0))
+	OR (XLXN_163 AND NOT XLXN_76(0) AND XLXN_85(0))
+	OR (reset_n AND XLXN_163 AND XLXN_76(0) AND NOT XLXN_85(0))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3)));
+
+FTCPE_XLXN_851: FTCPE port map (XLXN_85(1),XLXN_85_T(1),NOT clk,'0','0','1');
+XLXN_85_T(1) <= ((NOT reset_n AND XLXN_85(1))
+	OR (XLXN_163 AND NOT XLXN_76(1) AND XLXN_85(1))
+	OR (reset_n AND XLXN_163 AND XLXN_76(1) AND NOT XLXN_85(1))
+	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(1))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND NOT XLXN_85(2))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(3)));
+
+FTCPE_XLXN_852: FTCPE port map (XLXN_85(2),XLXN_85_T(2),NOT clk,'0','0','1');
+XLXN_85_T(2) <= ((NOT reset_n AND XLXN_85(2))
+	OR (XLXN_163 AND NOT XLXN_76(2) AND XLXN_85(2))
+	OR (reset_n AND XLXN_163 AND XLXN_76(2) AND NOT XLXN_85(2))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(1))
+	OR (NOT XLXN_163 AND XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(2) AND 
+	NOT XLXN_85(3)));
+
+FTCPE_XLXN_853: FTCPE port map (XLXN_85(3),XLXN_85_T(3),NOT clk,'0','0','1');
+XLXN_85_T(3) <= ((NOT N_PZ_738 AND XLXN_85(3))
+	OR (XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND 
+	NOT XLXN_83(1) AND XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND 
+	NOT XLXN_84(1) AND NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_85(1) AND 
+	XLXN_85(2)));
+
+FTCPE_XLXN_860: FTCPE port map (XLXN_86(0),XLXN_86_T(0),NOT clk,'0','0','1');
+XLXN_86_T(0) <= ((NOT reset_n AND XLXN_86(0))
+	OR (XLXN_163 AND NOT XLXN_77(0) AND XLXN_86(0))
+	OR (reset_n AND XLXN_163 AND XLXN_77(0) AND NOT XLXN_86(0))
+	OR (XLXN_87(0) AND NOT XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND XLXN_85(2) AND 
+	NOT XLXN_85(3) AND NOT XLXN_87(3))
+	OR (NOT XLXN_87(0) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND XLXN_85(2) AND 
+	NOT XLXN_85(3) AND NOT XLXN_87(3)));
+
+FTCPE_XLXN_861: FTCPE port map (XLXN_86(1),XLXN_86_T(1),NOT clk,'0','0','1');
+XLXN_86_T(1) <= ((NOT reset_n AND XLXN_86(1))
+	OR (XLXN_163 AND NOT XLXN_77(1) AND XLXN_86(1))
+	OR (reset_n AND XLXN_163 AND XLXN_77(1) AND NOT XLXN_86(1))
+	OR (NOT XLXN_87(0) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+	OR (XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND NOT XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+	OR (XLXN_87(0) AND NOT XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_86(3) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+	OR (XLXN_87(0) AND NOT XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND NOT XLXN_87(3)));
+
+FTCPE_XLXN_862: FTCPE port map (XLXN_86(2),XLXN_86_T(2),NOT clk,'0','0','1');
+XLXN_86_T(2) <= ((NOT reset_n AND XLXN_86(2))
+	OR (XLXN_163 AND NOT XLXN_77(2) AND XLXN_86(2))
+	OR (reset_n AND XLXN_163 AND XLXN_77(2) AND NOT XLXN_86(2))
+	OR (XLXN_87(0) AND XLXN_86(1) AND NOT XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_87(3))
+	OR (NOT XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND 
+	NOT XLXN_87(3))
+	OR (NOT XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+	XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+	NOT XLXN_87(3)));
+
+FTCPE_XLXN_863: FTCPE port map (XLXN_86(3),XLXN_86_T(3),NOT clk,'0','0','1');
+XLXN_86_T(3) <= ((NOT reset_n AND XLXN_86(3))
+	OR (XLXN_163 AND NOT XLXN_77(3) AND XLXN_86(3))
+	OR (reset_n AND XLXN_163 AND XLXN_77(3) AND NOT XLXN_86(3))
+	OR (XLXN_87(0) AND XLXN_86(1) AND NOT XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND 
+	NOT XLXN_87(3))
+	OR (NOT XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND XLXN_86(2) AND 
+	NOT XLXN_87(3))
+	OR (XLXN_87(0) AND NOT XLXN_163 AND NOT XLXN_86(1) AND NOT XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND 
+	XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+	NOT XLXN_86(2) AND NOT XLXN_87(3)));
+
+FTCPE_XLXN_870: FTCPE port map (XLXN_87(0),XLXN_87_T(0),NOT clk,'0','0','1');
+XLXN_87_T(0) <= ((XLXN_87(0) AND NOT reset_n)
+	OR (XLXN_87(0) AND NOT XLXN_78(0) AND XLXN_163)
+	OR (NOT XLXN_87(0) AND reset_n AND XLXN_78(0) AND XLXN_163)
+	OR (XLXN_87(0) AND NOT XLXN_163 AND NOT XLXN_86(1) AND XLXN_83(0) AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND XLXN_86(3) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+	OR (XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+	OR (XLXN_86(1) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND XLXN_87(2) AND NOT XLXN_86(3) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+	OR (XLXN_86(1) AND XLXN_87(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2) AND XLXN_87(3)));
+
+FTCPE_XLXN_871: FTCPE port map (XLXN_87(1),XLXN_87_T(1),NOT clk,'0','0','1');
+XLXN_87_T(1) <= ((NOT reset_n AND XLXN_87(1))
+	OR (NOT XLXN_78(1) AND XLXN_163 AND XLXN_87(1))
+	OR (reset_n AND XLXN_78(1) AND XLXN_163 AND NOT XLXN_87(1))
+	OR (XLXN_87(0) AND NOT XLXN_86(1) AND XLXN_83(0) AND N_PZ_738 AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND XLXN_86(3) AND NOT XLXN_85(1) AND 
+	XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+	OR (XLXN_87(0) AND NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+	OR (NOT XLXN_163 AND XLXN_86(1) AND XLXN_87(1) AND XLXN_83(0) AND 
+	N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND XLXN_83(2) AND 
+	NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND NOT XLXN_84(2) AND 
+	XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_87(2) AND NOT XLXN_86(3) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2) AND 
+	NOT XLXN_87(3)));
+
+FTCPE_XLXN_872: FTCPE port map (XLXN_87(2),XLXN_87_T(2),NOT clk,'0','0','1');
+XLXN_87_T(2) <= ((NOT N_PZ_738 AND XLXN_87(2))
+	OR (XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND NOT XLXN_86(3) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2))
+	OR (XLXN_87(0) AND NOT XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND XLXN_86(3) AND 
+	NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND NOT XLXN_86(2)));
+
+FTCPE_XLXN_873: FTCPE port map (XLXN_87(3),XLXN_87_T(3),NOT clk,'0','0','1');
+XLXN_87_T(3) <= ((NOT N_PZ_738 AND XLXN_87(3))
+	OR (XLXN_87(0) AND XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND XLXN_87(2) AND 
+	NOT XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+	NOT XLXN_86(2))
+	OR (XLXN_87(0) AND NOT XLXN_86(1) AND XLXN_87(1) AND 
+	XLXN_83(0) AND N_PZ_738 AND N_PZ_1459 AND XLXN_84(0) AND NOT XLXN_83(1) AND 
+	XLXN_83(2) AND NOT XLXN_83(3) AND XLXN_85(0) AND NOT XLXN_84(1) AND 
+	NOT XLXN_84(2) AND XLXN_84(3) AND XLXN_86(0) AND XLXN_87(2) AND 
+	XLXN_86(3) AND NOT XLXN_85(1) AND XLXN_85(2) AND NOT XLXN_85(3) AND 
+	NOT XLXN_86(2)));
+
+FDCPE_XLXN_880: FDCPE port map (XLXN_88(0),XLXN_88_D(0),XLXN_238,'0','0','1');
+XLXN_88_D(0) <= NOT (XLXN_88(0)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_88(0))
+	OR (NOT XLXI_83/data(22) AND NOT XLXN_88(0))
+	OR (reset_n AND XLXI_83/data(22) AND XLXN_88(0))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_881: FDCPE port map (XLXN_88(1),XLXN_88_D(1),XLXN_238,'0','0','1');
+XLXN_88_D(1) <= NOT (XLXN_88(1)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_88(1))
+	OR (NOT XLXI_83/data(21) AND NOT XLXN_88(1))
+	OR (reset_n AND XLXI_83/data(21) AND XLXN_88(1))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_882: FDCPE port map (XLXN_88(2),XLXN_88_D(2),XLXN_238,'0','0','1');
+XLXN_88_D(2) <= NOT (XLXN_88(2)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_88(2))
+	OR (NOT XLXI_83/data(20) AND NOT XLXN_88(2))
+	OR (reset_n AND XLXI_83/data(20) AND XLXN_88(2))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_883: FDCPE port map (XLXN_88(3),XLXN_88_D(3),XLXN_238,'0','0','1');
+XLXN_88_D(3) <= NOT (XLXN_88(3)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_88(3))
+	OR (NOT XLXI_83/data(19) AND NOT XLXN_88(3))
+	OR (reset_n AND XLXI_83/data(19) AND XLXN_88(3))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_890: FDCPE port map (XLXN_89(0),XLXN_89_D(0),XLXN_238,'0','0','1');
+XLXN_89_D(0) <= NOT (XLXN_89(0)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_89(0))
+	OR (NOT XLXI_83/data(18) AND NOT XLXN_89(0))
+	OR (reset_n AND XLXI_83/data(18) AND XLXN_89(0))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_891: FDCPE port map (XLXN_89(1),XLXN_89_D(1),XLXN_238,'0','0','1');
+XLXN_89_D(1) <= NOT (XLXN_89(1)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_89(1))
+	OR (NOT XLXI_83/data(17) AND NOT XLXN_89(1))
+	OR (reset_n AND XLXI_83/data(17) AND XLXN_89(1))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_900: FDCPE port map (XLXN_90(0),XLXN_90_D(0),XLXN_238,'0','0','1');
+XLXN_90_D(0) <= NOT (XLXN_90(0)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_90(0))
+	OR (NOT XLXI_83/data(13) AND NOT XLXN_90(0))
+	OR (reset_n AND XLXI_83/data(13) AND XLXN_90(0))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_901: FDCPE port map (XLXN_90(1),XLXN_90_D(1),XLXN_238,'0','0','1');
+XLXN_90_D(1) <= NOT (XLXN_90(1)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_90(1))
+	OR (NOT XLXI_83/data(12) AND NOT XLXN_90(1))
+	OR (reset_n AND XLXI_83/data(12) AND XLXN_90(1))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_902: FDCPE port map (XLXN_90(2),XLXN_90_D(2),XLXN_238,'0','0','1');
+XLXN_90_D(2) <= NOT (XLXN_90(2)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_90(2))
+	OR (NOT XLXI_83/data(11) AND NOT XLXN_90(2))
+	OR (reset_n AND XLXI_83/data(11) AND XLXN_90(2))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_903: FDCPE port map (XLXN_90(3),XLXN_90_D(3),XLXN_238,'0','0','1');
+XLXN_90_D(3) <= NOT (XLXN_90(3)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_90(3))
+	OR (NOT XLXI_83/data(10) AND NOT XLXN_90(3))
+	OR (reset_n AND XLXI_83/data(10) AND XLXN_90(3))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+FDCPE_XLXN_910: FDCPE port map (XLXN_91(0),XLXN_91_D(0),XLXN_238,'0','0','1');
+XLXN_91_D(0) <= NOT (XLXN_91(0)
+	XOR ((reset_n AND NOT XLXI_83/data(38))
+	OR (reset_n AND XLXI_83/data(58))
+	OR (reset_n AND N_PZ_1458)
+	OR (NOT reset_n AND NOT XLXN_91(0))
+	OR (NOT XLXI_83/data(9) AND NOT XLXN_91(0))
+	OR (reset_n AND XLXI_83/data(9) AND XLXN_91(0))
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(3))
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0000__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0000__xor0001)
+	OR (reset_n AND XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	NOT XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/Mxor_sync_next_xor0002__xor0000 AND 
+	XLXI_83/Mxor_sync_next_xor0002__xor0001)
+	OR (reset_n AND NOT XLXI_83/zero_time(6) AND N_PZ_1517)
+	OR (reset_n AND N_PZ_749 AND N_PZ_1498)
+	OR (reset_n AND NOT N_PZ_749 AND NOT N_PZ_1498)
+	OR (reset_n AND NOT XLXI_83/mean(4) AND NOT XLXI_83/mean(2) AND 
+	NOT XLXI_83/mean(1))));
+
+
+cln1 <= DS1_dp
+	XOR (time_date_select AND XLXN_176(0));
+
+
+cln2 <= DS1_dp
+	XOR (time_date_select AND XLXN_176(0));
+
+FDCPE_com: FDCPE port map (com,com_D,clk,'0','0','1');
+com_D <= DS1_dp
+	XOR (XLXI_75/clkCnt(0) AND XLXN_238 AND XLXI_75/clkCnt(1) AND 
+	XLXI_75/clkCnt(2) AND XLXI_75/clkCnt(3) AND XLXI_75/clkCnt(4) AND 
+	XLXI_75/clkCnt(5) AND XLXI_75/clkCnt(6) AND XLXI_75/clkCnt(8));
+
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FDDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ FTDCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC2C256-6-VQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13                XC2C256-6-VQ100               63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 DS6<3>                           51 VCCIO-1.8                     
+  2 DS6<4>                           52 DS1<6>                        
+  3 DS5_dp                           53 DS1<5>                        
+  4 DS5<2>                           54 DS1<0>                        
+  5 VCCAUX                           55 DS1<1>                        
+  6 DS5<3>                           56 DS2<6>                        
+  7 DS5<4>                           57 VCC                           
+  8 DS4_dp                           58 DS2<5>                        
+  9 DS4<2>                           59 DS2<0>                        
+ 10 DS4<3>                           60 DS2<1>                        
+ 11 DS4<4>                           61 cln1                          
+ 12 DS3_dp                           62 GND                           
+ 13 DS3<2>                           63 DS3<6>                        
+ 14 DS3<3>                           64 DS3<5>                        
+ 15 DS3<4>                           65 DS3<0>                        
+ 16 DS2_dp                           66 DS3<1>                        
+ 17 DS2<2>                           67 DS4<6>                        
+ 18 DS2<3>                           68 DS4<5>                        
+ 19 DS2<4>                           69 GND                           
+ 20 VCCIO-1.8                        70 DS4<0>                        
+ 21 GND                              71 DS4<1>                        
+ 22 clk                              72 cln2                          
+ 23 KPR                              73 DS5<6>                        
+ 24 KPR                              74 DS5<5>                        
+ 25 GND                              75 GND                           
+ 26 VCC                              76 DS5<0>                        
+ 27 KPR                              77 reset_n                       
+ 28 KPR                              78 DS5<1>                        
+ 29 DS1_dp                           79 DS6<6>                        
+ 30 DS1<2>                           80 DS6<5>                        
+ 31 GND                              81 KPR                           
+ 32 DS1<3>                           82 DS6<0>                        
+ 33 DS1<4>                           83 TDO                           
+ 34 com                              84 GND                           
+ 35 time_date_select                 85 KPR                           
+ 36 KPR                              86 KPR                           
+ 37 KPR                              87 KPR                           
+ 38 VCCIO-1.8                        88 VCCIO-1.8                     
+ 39 KPR                              89 KPR                           
+ 40 LED1                             90 KPR                           
+ 41 KPR                              91 KPR                           
+ 42 KPR                              92 dcf_77                        
+ 43 KPR                              93 KPR                           
+ 44 KPR                              94 KPR                           
+ 45 TDI                              95 KPR                           
+ 46 KPR                              96 DS6<1>                        
+ 47 TMS                              97 DS6<2>                        
+ 48 TCK                              98 VCCIO-1.8                     
+ 49 KPR                              99 KPR                           
+ 50 KPR                             100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+        PGND  = Unused I/O configured as additional Ground pin
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         WPU  = Unused I/O with weak pull up (leave unconnected)
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+      VCCAUX  = Power supply for JTAG pins
+   VCCIO-3.3  = I/O supply voltage for LVTTL, LVCMOS33, SSTL3_I
+   VCCIO-2.5  = I/O supply voltage for LVCMOS25, SSTL2_I
+   VCCIO-1.8  = I/O supply voltage for LVCMOS18
+   VCCIO-1.5  = I/O supply voltage for LVCMOS15, HSTL_I
+        VREF  = Reference voltage for indicated input standard
+       *VREF  = Reference voltage pin selected by software
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc2c256-6-VQ100
+Optimization Method                         : SPEED
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Set Unused I/O Pin Termination              : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Use DATA_GATE Attribute                     : ON
+Set Tristate Outputs to Termination Mode    : KEEPER
+Default Voltage Standard for All Outputs    : LVCMOS18
+Input Limit                                 : 32
+Pterm Limit                                 : 28

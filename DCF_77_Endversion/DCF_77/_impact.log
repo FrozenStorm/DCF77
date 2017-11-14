@@ -1,0 +1,156 @@
+iMPACT Version: 14.2
+
+iMPACT log file Started on Thu Jun 04 12:43:03 2015
+
+Welcome to iMPACT
+iMPACT Version: 14.2
+Project: 'U:\3. Semester\Elektronische Systemedigital\RFID\RFID_Reader\\auto_project.ipf' already exists.
+Original project has been renamed to 'U:\3. Semester\Elektronische Systemedigital\RFID\RFID_Reader\\auto_project_1.ipf'.
+Project: U:\3. Semester\Elektronische Systemedigital\RFID\RFID_Reader\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.2.10
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+AutoDetecting cable. Please wait.
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_emb.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS14:14:44, version = 1021.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS14:14:44, version = 1021.
+ LPT base address = E800h.
+ ECP base address = E480h.
+Cable connection established.
+PROGRESS_END - End Operation.
+Elapsed time =      3 sec.
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 04.06.2015 12:43:09
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xc2c256, Version : 1
+INFO:iMPACT:1777 - 
+   Reading C:/Apps/Xilinx/14.2/ISE_DS/ISE/xbr/data/xc2c256.bsd...
+INFO:iMPACT:501 - '1': Added Device xc2c256 successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file"//bfhfilerbe01.bfh.ch/rihsf1/Desktop/DCF_77/Top_Schema.jed"
+'1': Loading file '//bfhfilerbe01.bfh.ch/rihsf1/Desktop/DCF_77/Top_Schema.jed'...
+done.
+INFO:iMPACT:501 - '1': Added Device xc2c256 successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 04.06.2015 12:43:24
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 04.06.2015 12:44:47
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+PROGRESS_START - Starting Operation.
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 04.06.2015 12:55:10
+Updating config file//bfhfilerbe01.bfh.ch/rihsf1/Desktop/DCF_77/Top_Schema.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+PROGRESS_START - Starting Operation.
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 04.06.2015 13:27:54
+Updating config file//bfhfilerbe01.bfh.ch/rihsf1/Desktop/DCF_77/Top_Schema.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+PROGRESS_START - Starting Operation.
+'1': Erasing device...
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+INFO:iMPACT - Current time: 04.06.2015 14:12:40
+Updating config file//bfhfilerbe01.bfh.ch/rihsf1/Desktop/DCF_77/Top_Schema.jed...
+// *** BATCH CMD : Program -p 1 -e -v 
+Maximum TCK operating frequency for this device chain: 0.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Erasing device...
+PROGRESS_START - Starting Operation.
+'1': Erasure completed successfully.
+'1': Programming device...
+done.
+'1': Verifying device...
+done.
+'1': Setting ISC done bits...done
+'1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Cable is not connected.
+Project: 'U:\3. Semester\Elektronische Systemedigital\RFID\RFID_Reader\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file "U:\3. Semester\Elektronische Systemedigital\RFID\RFID_Reader\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at U:\3.   Semester\Elektronische Systeme digital\RFID\RFID_Reader\webtalk.log for   details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
